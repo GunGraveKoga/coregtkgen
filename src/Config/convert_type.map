@@ -1,22 +1,22 @@
 {
-    "const gchar*" = {
-	NSString* = "[NSString stringWithUTF8String:%@]";
-    };
+    "const gchar*" : {
+	"OFString*" : "[OFString stringWithUTF8String:%@]"
+    },
     
-    BOOL = {
-    gboolean = "(%@ ? TRUE : FALSE)";
-    };
+    "BOOL" : {
+    "gboolean" : "(%@ ? TRUE : FALSE)"
+    },
     
-    gboolean = {
-    BOOL = "(%@ ? YES : NO)";
-    };
+    "gboolean" : {
+    "BOOL" : "(%@ ? YES : NO)"
+    },
     
-    gchar* = {
-    NSString* = "[NSString stringWithUTF8String:%@]";
-    };
+    "gchar*" : {
+    "OFString*" : "[OFString stringWithUTF8String:%@]"
+    },
     
-    NSString* = {
-    "gchar*" = "[%@ UTF8String]";
-    "const gchar*" = "[%@ UTF8String]";
-    };
+    "OFString*" : {
+    "gchar*" : "[%@ UTF8String]",
+    "const gchar*" : "[%@ UTF8String]"
+    }
 }
