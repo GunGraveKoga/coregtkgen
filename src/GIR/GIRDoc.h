@@ -33,13 +33,13 @@
 
 @interface GIRDoc : GIRBase
 {
-	NSString *xmlSpace;
-	NSString *xmlWhitespace;
-	NSString *docText;
+    OFString * xmlSpace;
+    OFString * xmlWhitespace;
+    OFString * docText;
 }
-
-@property (nonatomic, retain) NSString *xmlSpace;
-@property (nonatomic, retain) NSString *xmlWhitespace;
-@property (nonatomic, retain) NSString *docText;
+- (instancetype)initWithDictionary:(OFDictionary *)dict;
+@property (nonatomic, retain) OFString * xmlSpace;
+@property (nonatomic, retain) OFString * xmlWhitespace;
+@property (nonatomic, retain) OFString * docText;
 
 @end

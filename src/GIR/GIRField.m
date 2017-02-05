@@ -29,6 +29,7 @@
 /*
  * Objective-C imports
  */
+#import <ObjFW/ObjFW.h>
 #import "GIRField.h"
 
 @implementation GIRField
@@ -40,77 +41,55 @@
 @synthesize type;
 @synthesize array;
 
--(id)init
-{
-	self = [super init];
-	
-	if(self)
-	{
-		self.elementTypeName = @"GIRField";
-	}
-	
-	return self;
+- (id) init {
+    self = [super init];
+
+    if (self) {
+        self.elementTypeName = @"GIRField";
+    }
+
+    return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
-{
-	self = [self init];
-	
-	if(self)
-	{
-		[self parseDictionary:dict];
-	}
-	
-	return self;
+- (id) initWithDictionary:(OFDictionary *)dict {
+    self = [self init];
+
+    if (self) {
+        [self parseDictionary:dict];
+    }
+
+    return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
-{
-	for (NSString *key in dict)
-	{	
-		id value = [dict objectForKey:key];
-	
-		if([key isEqualToString:@"text"])
-		{
-			// Do nothing
-		}	
-		else if([key isEqualToString:@"name"])
-		{
-			self.name = value;
-		}	
-		else if([key isEqualToString:@"private"])
-		{
-			self.isPrivate = [value isEqualToString:@"1"];
-		}	
-		else if([key isEqualToString:@"readable"])
-		{
-			self.readable = [value isEqualToString:@"1"];
-		}	
-		else if([key isEqualToString:@"bits"])
-		{
-			self.bits = [value intValue];
-		}		
-		else if([key isEqualToString:@"type"])
-		{
-			self.type = [[GIRType alloc] initWithDictionary:value];
-		}	
-		else if([key isEqualToString:@"array"])
-		{
-			self.array = [[GIRArray alloc] initWithDictionary:value];
-		}
-		else
-		{
-			[self logUnknownElement:key];
-		}
-	}	
-}
+- (void) parseDictionary:(OFDictionary *)dict {
+    for (OFString * key in dict) {
+        id value = [dict objectForKey:key];
 
--(void)dealloc
-{
-	[name release];
-	[type release];
-	[array release];
-	[super dealloc];
+        if ([key isEqual:@"text"]) {
+            // Do nothing
+        } else if ([key isEqual:@"name"]) {
+            self.name = value;
+        } else if ([key isEqual:@"private"]) {
+            self.isPrivate = [value isEqual:@"1"];
+        } else if ([key isEqual:@"readable"]) {
+            self.readable = [value isEqual:@"1"];
+        } else if ([key isEqual:@"bits"]) {
+            self.bits = [value decimalValue];
+        } else if ([key isEqual:@"type"]) {
+            self.type = [[GIRType alloc] initWithDictionary:value];
+        } else if ([key isEqual:@"array"]) {
+            self.array = [[GIRArray alloc] initWithDictionary:value];
+        } else {
+            [self logUnknownElement:key];
+        }
+    }
+} /* parseDictionary */
+
+- (void) dealloc {
+    [name release];
+    [type release];
+    [array release];
+    [super dealloc];
 }
 
 @end

@@ -1,20 +1,20 @@
 //
 // XMLReader.h
-// Based on Simple XML to NSDictionary Converter by Troy Brant
-// Original source here http://troybrant.net/blog/2010/09/simple-xml-to-nsdictionary-converter/
+// Based on Simple XML to OFDictionary Converter by Troy Brant
+// Original source here http://troybrant.net/blog/2010/09/simple-xml-to-OFDictionary-converter/
 //
 
-#import <Foundation/Foundation.h>
+#import <ObjFW/ObjFW.h>
 
-@interface XMLReader : NSObject
+@interface XMLReader : OFObject<OFXMLParserDelegate>
 {
-    NSMutableArray *dictionaryStack;
-    NSMutableString *textInProgress;
-    NSError **errorPointer;
+    OFMutableArray * dictionaryStack;
+    OFMutableString * textInProgress;
+    id * errorPointer;
 }
 
-+ (NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError **)errorPointer;
-+ (NSDictionary *)dictionaryForXMLString:(NSString *)string error:(NSError **)errorPointer;
++ (OFDictionary *)dictionaryForXMLData:(OFDataArray *)data error:(id *)errorPointer;
++ (OFDictionary *)dictionaryForXMLString:(OFString *)string error:(id *)errorPointer;
 
 @end
 

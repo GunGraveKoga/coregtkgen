@@ -38,23 +38,23 @@
 
 @interface GIRNamespace: GIRBase
 {
-	NSString *name;
-	NSString *cSymbolPrefixes;
-	NSString *cIdentifierPrefixes;
-	NSMutableArray *classes;
-	NSMutableArray *functions;
-	NSMutableArray *enumerations;
-	NSMutableArray *constants;
-	NSMutableArray *interfaces;
+	OFString *name;
+	OFString *cSymbolPrefixes;
+	OFString *cIdentifierPrefixes;
+	OFMutableArray *classes;
+	OFMutableArray *functions;
+	OFMutableArray *enumerations;
+	OFMutableArray *constants;
+	OFMutableArray *interfaces;
 }
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *cSymbolPrefixes;
-@property (nonatomic, retain) NSString *cIdentifierPrefixes;
-@property (nonatomic, retain) NSMutableArray *classes;
-@property (nonatomic, retain) NSMutableArray *functions;
-@property (nonatomic, retain) NSMutableArray *enumerations;
-@property (nonatomic, retain) NSMutableArray *constants;
-@property (nonatomic, retain) NSMutableArray *interfaces;
+@property (nonatomic, retain) OFString *name;
+@property (nonatomic, retain) OFString *cSymbolPrefixes;
+@property (nonatomic, retain) OFString *cIdentifierPrefixes;
+@property (nonatomic, retain) OFMutableArray *classes;
+@property (nonatomic, retain) OFMutableArray *functions;
+@property (nonatomic, retain) OFMutableArray *enumerations;
+@property (nonatomic, retain) OFMutableArray *constants;
+@property (nonatomic, retain) OFMutableArray *interfaces;
 
 @end

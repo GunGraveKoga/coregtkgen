@@ -34,16 +34,16 @@
 
 @interface GIRArray : GIRBase
 {
-	NSString *cType;
-	NSString *name;
+	OFString *cType;
+	OFString *name;
 	int length;
 	int fixedSize;
 	BOOL zeroTerminated;
 	GIRType *type;
 }
 
-@property (nonatomic, retain) NSString *cType;
-@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) OFString *cType;
+@property (nonatomic, retain) OFString *name;
 @property (nonatomic) int length;
 @property (nonatomic) int fixedSize;
 @property (nonatomic) BOOL zeroTerminated;

@@ -33,7 +33,7 @@
 
 @implementation CGTK
 
-+(NSString *)coreGtkVersion
++(OFString *)coreGtkVersion
 {
 	return @"3.18.0";
 }

@@ -49,130 +49,92 @@
 @synthesize functions;
 
 
--(id)init
-{
-	self = [super init];
-	
-	if(self)
-	{
-		self.elementTypeName = @"GIRClass";
-		self.constructors = [[NSMutableArray alloc] init];
-		self.fields = [[NSMutableArray alloc] init];
-		self.methods = [[NSMutableArray alloc] init];
-		self.virtualMethods = [[NSMutableArray alloc] init];
-		self.properties = [[NSMutableArray alloc] init];
-		self.implements = [[NSMutableArray alloc] init];
-		self.functions = [[NSMutableArray alloc] init];
-	}
-	
-	return self;
+- (id) init {
+    self = [super init];
+
+    if (self) {
+        self.elementTypeName = @"GIRClass";
+        self.constructors = [[OFMutableArray alloc] init];
+        self.fields = [[OFMutableArray alloc] init];
+        self.methods = [[OFMutableArray alloc] init];
+        self.virtualMethods = [[OFMutableArray alloc] init];
+        self.properties = [[OFMutableArray alloc] init];
+        self.implements = [[OFMutableArray alloc] init];
+        self.functions = [[OFMutableArray alloc] init];
+    }
+
+    return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
-{
-	self = [self init];
-	
-	if(self)
-	{
-		[self parseDictionary:dict];
-	}
-	
-	return self;
+- (id) initWithDictionary:(OFDictionary *)dict {
+    self = [self init];
+
+    if (self) {
+        [self parseDictionary:dict];
+    }
+
+    return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
-{
-	for (NSString *key in dict)
-	{	
-		id value = [dict objectForKey:key];
-	
-		if([key isEqualToString:@"text"]
-			|| [key isEqualToString:@"glib:type-name"]
-			|| [key isEqualToString:@"glib:type-struct"]
-			|| [key isEqualToString:@"glib:get-type"]
-			|| [key isEqualToString:@"glib:signal"])
-		{
-			// Do nothing
-		}
-		else if([key isEqualToString:@"name"])
-		{
-			self.name = value;
-		}
-		else if([key isEqualToString:@"c:type"])
-		{
-			self.cType = value;
-		}
-		else if([key isEqualToString:@"c:symbol-prefix"])
-		{
-			self.cSymbolPrefix = value;
-		}
-		else if([key isEqualToString:@"parent"])
-		{
-			self.parent = value;
-		}	
-		else if([key isEqualToString:@"version"])
-		{
-			self.version = value;
-		}	
-		else if([key isEqualToString:@"abstract"])
-		{
-			self.abstract = [value isEqualToString:@"1"];
-		}
-		else if([key isEqualToString:@"doc"])
-		{
-			self.doc = [[GIRDoc alloc] initWithDictionary:value];
-		}	
-		else if([key isEqualToString:@"constructor"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRConstructor class] andArray:constructors];
-		}
-		else if([key isEqualToString:@"field"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRField class] andArray:fields];
-		}
-		else if([key isEqualToString:@"method"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRMethod class] andArray:methods];
-		}
-		else if([key isEqualToString:@"virtual-method"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRVirtualMethod class] andArray:virtualMethods];
-		}
-		else if([key isEqualToString:@"property"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRProperty class] andArray:properties];
-		}
-		else if([key isEqualToString:@"implements"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRImplements class] andArray:implements];
-		}
-		else if([key isEqualToString:@"function"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRFunction class] andArray:functions];
-		}
-		else
-		{
-			[self logUnknownElement:key];
-		}
-	}	
-}
+- (void) parseDictionary:(OFDictionary *)dict {
+    for (OFString * key in dict) {
+        id value = [dict objectForKey:key];
 
--(void)dealloc
-{
-	[name release];
-	[cType release];
-	[cSymbolPrefix release];
-	[parent release];
-	[version release];
-	[doc release];
-	[constructors release];
-	[fields release];
-	[methods release];
-	[virtualMethods release];
-	[properties release];
-	[implements release];
-	[functions release];
-	[super dealloc];
+        if ([key isEqual:@"text"]
+            || [key isEqual:@"glib:type-name"]
+            || [key isEqual:@"glib:type-struct"]
+            || [key isEqual:@"glib:get-type"]
+            || [key isEqual:@"glib:signal"]) {
+            // Do nothing
+        } else if ([key isEqual:@"name"]) {
+            self.name = value;
+        } else if ([key isEqual:@"c:type"]) {
+            self.cType = value;
+        } else if ([key isEqual:@"c:symbol-prefix"]) {
+            self.cSymbolPrefix = value;
+        } else if ([key isEqual:@"parent"]) {
+            self.parent = value;
+        } else if ([key isEqual:@"version"]) {
+            self.version = value;
+        } else if ([key isEqual:@"abstract"]) {
+            self.abstract = [value isEqual:@"1"];
+        } else if ([key isEqual:@"doc"]) {
+            self.doc = [[GIRDoc alloc] initWithDictionary:value];
+        } else if ([key isEqual:@"constructor"]) {
+            [self processArrayOrDictionary:value withClass:[GIRConstructor class] andArray:constructors];
+        } else if ([key isEqual:@"field"]) {
+            [self processArrayOrDictionary:value withClass:[GIRField class] andArray:fields];
+        } else if ([key isEqual:@"method"]) {
+            [self processArrayOrDictionary:value withClass:[GIRMethod class] andArray:methods];
+        } else if ([key isEqual:@"virtual-method"]) {
+            [self processArrayOrDictionary:value withClass:[GIRVirtualMethod class] andArray:virtualMethods];
+        } else if ([key isEqual:@"property"]) {
+            [self processArrayOrDictionary:value withClass:[GIRProperty class] andArray:properties];
+        } else if ([key isEqual:@"implements"]) {
+            [self processArrayOrDictionary:value withClass:[GIRImplements class] andArray:implements];
+        } else if ([key isEqual:@"function"]) {
+            [self processArrayOrDictionary:value withClass:[GIRFunction class] andArray:functions];
+        } else {
+            [self logUnknownElement:key];
+        }
+    }
+} /* parseDictionary */
+
+- (void) dealloc {
+    [name release];
+    [cType release];
+    [cSymbolPrefix release];
+    [parent release];
+    [version release];
+    [doc release];
+    [constructors release];
+    [fields release];
+    [methods release];
+    [virtualMethods release];
+    [properties release];
+    [implements release];
+    [functions release];
+    [super dealloc];
 }
 
 @end

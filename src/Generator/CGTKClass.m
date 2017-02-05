@@ -39,15 +39,15 @@
 
 	if(self)
 	{
-		constructors = [[NSMutableArray alloc] init];
-		functions = [[NSMutableArray alloc] init];
-		methods = [[NSMutableArray alloc] init];
+		constructors = [[OFMutableArray alloc] init];
+		functions = [[OFMutableArray alloc] init];
+		methods = [[OFMutableArray alloc] init];
 	}
 
 	return self;
 }
 
--(void)setCName:(NSString *)name
+-(void)setCName:(OFString *)name
 {
 	if(cName != nil)
 	{
@@ -64,12 +64,12 @@
 	}
 }
 
--(NSString *)cName
+-(OFString *)cName
 {
 	return [[cName retain] autorelease];
 }
 
--(void)setCType:(NSString *)type
+-(void)setCType:(OFString *)type
 {
 	if(cType != nil)
 	{
@@ -86,17 +86,17 @@
 	}
 }
 
--(NSString *)cType
+-(OFString *)cType
 {
 	return [[cType retain] autorelease];
 }
 
--(NSString *)type
+-(OFString *)type
 {
 	return [CGTKUtil swapTypes:cType];
 }
 
--(void)setCParentType:(NSString *)type
+-(void)setCParentType:(OFString *)type
 {
 	if(cParentType != nil)
 	{
@@ -113,14 +113,14 @@
 	}
 }
 
--(NSString *)cParentType
+-(OFString *)cParentType
 {
 	return [[cParentType retain] autorelease];
 }
 
--(NSString *)name
+-(OFString *)name
 {
-	return [NSString stringWithFormat:@"CGTK%@", cName];
+	return [OFString stringWithFormat:@"CGTK%@", cName];
 }
 
 -(void)addConstructor:(CGTKMethod *)ctor
@@ -131,7 +131,7 @@
 	}
 }
 
--(NSArray *)constructors
+-(OFArray *)constructors
 {
 	return constructors;
 }
@@ -149,7 +149,7 @@
 	}
 }
 
--(NSArray *)functions
+-(OFArray *)functions
 {
 	return functions;
 }
@@ -167,7 +167,7 @@
 	}
 }
 
--(NSArray *)methods
+-(OFArray *)methods
 {
 	return methods;
 }

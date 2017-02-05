@@ -29,7 +29,7 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/Foundation.h>
+#import <ObjFW/ObjFW.h>
 
 #import "CoreGTK/CGTKBase.h"
 
@@ -41,7 +41,7 @@
 /**
  * Global level CoreGTK functionality
  */
-@interface CGTK : NSObject
+@interface CGTK : OFObject
 {
 
 }
@@ -51,7 +51,7 @@
  *
  * @return the version string
  */
-+(NSString *)coreGtkVersion;
++(OFString *)coreGtkVersion;
 
 /**
  * Call this function before using any other GTK+ functions in your GUI 

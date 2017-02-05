@@ -49,7 +49,7 @@
 	return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
+-(id)initWithDictionary:(OFDictionary *) dict
 {
 	self = [self init];
 	
@@ -61,21 +61,21 @@
 	return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
+-(void)parseDictionary:(OFDictionary *) dict
 {
-	for (NSString *key in dict)
+	for (OFString *key in dict)
 	{	
 		id value = [dict objectForKey:key];
 	
-		if([key isEqualToString:@"text"])
+		if([key isEqual:@"text"])
 		{
 			self.docText = value;
 		}
-		else if([key isEqualToString:@"xml:space"])
+		else if([key isEqual:@"xml:space"])
 		{
 			self.xmlSpace = value;
 		}
-		else if([key isEqualToString:@"xml:whitespace"])
+		else if([key isEqual:@"xml:whitespace"])
 		{
 			self.xmlWhitespace = value;
 		}

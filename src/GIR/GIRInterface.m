@@ -43,104 +43,76 @@
 @synthesize properties;
 @synthesize prerequisite;
 
--(id)init
-{
-	self = [super init];
-	
-	if(self)
-	{
-		self.elementTypeName = @"GIRInterface";
-		self.fields = [[NSMutableArray alloc] init];
-		self.methods = [[NSMutableArray alloc] init];
-		self.virtualMethods = [[NSMutableArray alloc] init];
-		self.properties = [[NSMutableArray alloc] init];
-		self.prerequisite = [[NSMutableArray alloc] init];
-	}
-	
-	return self;
+- (id) init {
+    self = [super init];
+
+    if (self) {
+        self.elementTypeName = @"GIRInterface";
+        self.fields = [[OFMutableArray alloc] init];
+        self.methods = [[OFMutableArray alloc] init];
+        self.virtualMethods = [[OFMutableArray alloc] init];
+        self.properties = [[OFMutableArray alloc] init];
+        self.prerequisite = [[GIRPrerequisite alloc] initWithDictionary:nil];
+    }
+
+    return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
-{
-	self = [self init];
-	
-	if(self)
-	{
-		[self parseDictionary:dict];
-	}
-	
-	return self;
+- (id) initWithDictionary:(OFDictionary *)dict {
+    self = [self init];
+
+    if (self) {
+        [self parseDictionary:dict];
+    }
+
+    return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
-{
-	for (NSString *key in dict)
-	{	
-		id value = [dict objectForKey:key];
-	
-		if([key isEqualToString:@"text"]
-			|| [key isEqualToString:@"glib:type-name"]
-			|| [key isEqualToString:@"glib:type-struct"]
-			|| [key isEqualToString:@"glib:signal"]
-			|| [key isEqualToString:@"glib:get-type"])
-		{
-			// Do nothing
-		}
-		else if([key isEqualToString:@"name"])
-		{
-			self.name = value;
-		}
-		else if([key isEqualToString:@"c:type"])
-		{
-			self.cType = value;
-		}
-		else if([key isEqualToString:@"c:symbol-prefix"])
-		{
-			self.cSymbolPrefix = value;
-		}
-		else if([key isEqualToString:@"doc"])
-		{
-			self.doc = [[GIRDoc alloc] initWithDictionary:value];
-		}
-		else if([key isEqualToString:@"fields"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRField class] andArray:fields];
-		}
-		else if([key isEqualToString:@"method"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRMethod class] andArray:methods];
-		}
-		else if([key isEqualToString:@"virtual-method"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRMethod class] andArray:virtualMethods];
-		}
-		else if([key isEqualToString:@"property"])
-		{
-			[self processArrayOrDictionary:value withClass:[GIRProperty class] andArray:properties];
-		}
-		else if([key isEqualToString:@"prerequisite"])
-		{
-			self.prerequisite = [[GIRPrerequisite alloc] initWithDictionary:value];
-		}
-		else
-		{
-			[self logUnknownElement:key];
-		}
-	}	
-}
+- (void) parseDictionary:(OFDictionary *)dict {
+    for (OFString * key in dict) {
+        id value = [dict objectForKey:key];
 
--(void)dealloc
-{
-	[name release];
-	[cType release];
-	[cSymbolPrefix release];
-	[doc release];
-	[fields release];
-	[methods release];
-	[virtualMethods release];
-	[properties release];
-	[prerequisite release];
-	[super dealloc];
+        if ([key isEqual:@"text"]
+            || [key isEqual:@"glib:type-name"]
+            || [key isEqual:@"glib:type-struct"]
+            || [key isEqual:@"glib:signal"]
+            || [key isEqual:@"glib:get-type"]) {
+            // Do nothing
+        } else if ([key isEqual:@"name"]) {
+            self.name = value;
+        } else if ([key isEqual:@"c:type"]) {
+            self.cType = value;
+        } else if ([key isEqual:@"c:symbol-prefix"]) {
+            self.cSymbolPrefix = value;
+        } else if ([key isEqual:@"doc"]) {
+            self.doc = [[GIRDoc alloc] initWithDictionary:value];
+        } else if ([key isEqual:@"fields"]) {
+            [self processArrayOrDictionary:value withClass:[GIRField class] andArray:fields];
+        } else if ([key isEqual:@"method"]) {
+            [self processArrayOrDictionary:value withClass:[GIRMethod class] andArray:methods];
+        } else if ([key isEqual:@"virtual-method"]) {
+            [self processArrayOrDictionary:value withClass:[GIRMethod class] andArray:virtualMethods];
+        } else if ([key isEqual:@"property"]) {
+            [self processArrayOrDictionary:value withClass:[GIRProperty class] andArray:properties];
+        } else if ([key isEqual:@"prerequisite"]) {
+            self.prerequisite = [[GIRPrerequisite alloc] initWithDictionary:value];
+        } else {
+            [self logUnknownElement:key];
+        }
+    }
+} /* parseDictionary */
+
+- (void) dealloc {
+    [name release];
+    [cType release];
+    [cSymbolPrefix release];
+    [doc release];
+    [fields release];
+    [methods release];
+    [virtualMethods release];
+    [properties release];
+    [prerequisite release];
+    [super dealloc];
 }
 
 @end

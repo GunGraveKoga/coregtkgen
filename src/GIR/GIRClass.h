@@ -41,35 +41,35 @@
 
 @interface GIRClass : GIRBase
 {
-	NSString *name;
-	NSString *cType;
-	NSString *cSymbolPrefix;
-	NSString *parent;
-	NSString *version;
+	OFString *name;
+	OFString *cType;
+	OFString *cSymbolPrefix;
+	OFString *parent;
+	OFString *version;
 	BOOL abstract;
 	GIRDoc *doc;
-	NSMutableArray *constructors;
-	NSMutableArray *fields;
-	NSMutableArray *methods;
-	NSMutableArray *virtualMethods;
-	NSMutableArray *properties;
-	NSMutableArray *implements;
-	NSMutableArray *functions;
+	OFMutableArray *constructors;
+	OFMutableArray *fields;
+	OFMutableArray *methods;
+	OFMutableArray *virtualMethods;
+	OFMutableArray *properties;
+	OFMutableArray *implements;
+	OFMutableArray *functions;
 }
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *cType;
-@property (nonatomic, retain) NSString *cSymbolPrefix;
-@property (nonatomic, retain) NSString *parent;
-@property (nonatomic, retain) NSString *version;
+@property (nonatomic, retain) OFString *name;
+@property (nonatomic, retain) OFString *cType;
+@property (nonatomic, retain) OFString *cSymbolPrefix;
+@property (nonatomic, retain) OFString *parent;
+@property (nonatomic, retain) OFString *version;
 @property (nonatomic) BOOL abstract;
 @property (nonatomic, retain) GIRDoc *doc;
-@property (nonatomic, retain) NSMutableArray *constructors;
-@property (nonatomic, retain) NSMutableArray *fields;
-@property (nonatomic, retain) NSMutableArray *methods;
-@property (nonatomic, retain) NSMutableArray *virtualMethods;
-@property (nonatomic, retain) NSMutableArray *properties;
-@property (nonatomic, retain) NSMutableArray *implements;
-@property (nonatomic, retain) NSMutableArray *functions;
+@property (nonatomic, retain) OFMutableArray *constructors;
+@property (nonatomic, retain) OFMutableArray *fields;
+@property (nonatomic, retain) OFMutableArray *methods;
+@property (nonatomic, retain) OFMutableArray *virtualMethods;
+@property (nonatomic, retain) OFMutableArray *properties;
+@property (nonatomic, retain) OFMutableArray *implements;
+@property (nonatomic, retain) OFMutableArray *functions;
 
 @end

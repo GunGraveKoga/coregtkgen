@@ -40,25 +40,25 @@
 
 @interface GIRInterface : GIRBase
 {
-	NSString *name;
-	NSString *cType;
-	NSString *cSymbolPrefix;
+	OFString *name;
+	OFString *cType;
+	OFString *cSymbolPrefix;
 	GIRDoc *doc;
-	NSMutableArray *fields;
-	NSMutableArray *methods;
-	NSMutableArray *virtualMethods;
-	NSMutableArray *properties;
+	OFMutableArray *fields;
+	OFMutableArray *methods;
+	OFMutableArray *virtualMethods;
+	OFMutableArray *properties;
 	GIRPrerequisite *prerequisite;
 }
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *cType;
-@property (nonatomic, retain) NSString *cSymbolPrefix;
+@property (nonatomic, retain) OFString *name;
+@property (nonatomic, retain) OFString *cType;
+@property (nonatomic, retain) OFString *cSymbolPrefix;
 @property (nonatomic, retain) GIRDoc *doc;
-@property (nonatomic, retain) NSMutableArray *fields;
-@property (nonatomic, retain) NSMutableArray *methods;
-@property (nonatomic, retain) NSMutableArray *virtualMethods;
-@property (nonatomic, retain) NSMutableArray *properties;
+@property (nonatomic, retain) OFMutableArray *fields;
+@property (nonatomic, retain) OFMutableArray *methods;
+@property (nonatomic, retain) OFMutableArray *virtualMethods;
+@property (nonatomic, retain) OFMutableArray *properties;
 @property (nonatomic, retain) GIRPrerequisite *prerequisite;
 
 @end

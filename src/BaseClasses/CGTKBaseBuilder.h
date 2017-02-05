@@ -29,9 +29,9 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSObject.h>
-#import <Foundation/NSString.h>
+#import <ObjFW/OFDictionary.h>
+#import <ObjFW/OFObject.h>
+#import <ObjFW/OFString.h>
 
 #import "CoreGTK/CGTKBuilder.h"
 #import "CoreGTK/CGTKCallbackData.h"
@@ -41,7 +41,7 @@
 /**
  * CGTKBuilder adds additional functionality to GtkBuilder
  */
-@interface CGTKBaseBuilder : NSObject
+@interface CGTKBaseBuilder : OFObject
 {
 
 }
@@ -57,7 +57,7 @@
  * associated signals as values and connects them accordingly.
  *
  * Example usage:
- *  NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys: 
+ *  OFDictionary *dict = [[OFDictionary alloc] initWithObjectsAndKeys: 
  *  [CallbackData withObject:[CGTK class] andSEL:@selector(endMainLoop)],
  *  @"mainQuit", 
  *  [CallbackData withObject:button andSEL:@selector(clicked)],
@@ -71,9 +71,9 @@
  * A CGTKBuilder to use while attaching signals
  *
  * @param objectSignalDictionary
- *  A dictionary mapping CallbackData objects to NSString signal names
+ *  A dictionary mapping CallbackData objects to OFString signal names
  */
-+(void)connectSignalsToObjectsWithBuilder:(CGTKBuilder *)builder andSignalDictionary:(NSDictionary *)objectSignalDictionary;
++(void)connectSignalsToObjectsWithBuilder:(CGTKBuilder *)builder andSignalDictionary:(OFDictionary *)objectSignalDictionary;
 
 /**
  * Attempts to get the object witht he name returning it as a CGTKWidget. If the 
@@ -88,6 +88,6 @@
  *
  * @returns the CGTKWidget or nil
  */
-+(CGTKWidget *)getWidgetFromBuilder:(CGTKBuilder *)builder withName:(NSString *)name;
++(CGTKWidget *)getWidgetFromBuilder:(CGTKBuilder *)builder withName:(OFString *)name;
 
 @end

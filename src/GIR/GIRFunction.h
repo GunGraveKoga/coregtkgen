@@ -36,33 +36,33 @@
 
 @interface GIRFunction : GIRBase
 {
-	NSString *name;
-	NSString *cIdentifier;
-	NSString *movedTo;
-	NSString *version;
+	OFString *name;
+	OFString *cIdentifier;
+	OFString *movedTo;
+	OFString *version;
 	BOOL introspectable;
 	BOOL deprecated;
-	NSString *deprecatedVersion;
+	OFString *deprecatedVersion;
 	BOOL throws;
 	GIRDoc *docDeprecated;
 	GIRDoc *doc;
 	GIRReturnValue *returnValue;
-	NSMutableArray *parameters;
-	NSMutableArray *instanceParameters;
+	OFMutableArray *parameters;
+	OFMutableArray *instanceParameters;
 }
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *cIdentifier;
-@property (nonatomic, retain) NSString *movedTo;
-@property (nonatomic, retain) NSString *version;
+@property (nonatomic, retain) OFString *name;
+@property (nonatomic, retain) OFString *cIdentifier;
+@property (nonatomic, retain) OFString *movedTo;
+@property (nonatomic, retain) OFString *version;
 @property (nonatomic) BOOL introspectable;
 @property (nonatomic) BOOL deprecated;
-@property (nonatomic, retain) NSString *deprecatedVersion;
+@property (nonatomic, retain) OFString *deprecatedVersion;
 @property (nonatomic) BOOL throws;
 @property (nonatomic, retain) GIRDoc *docDeprecated;
 @property (nonatomic, retain) GIRDoc *doc;
 @property (nonatomic, retain) GIRReturnValue *returnValue;
-@property (nonatomic, retain) NSMutableArray *parameters;
-@property (nonatomic, retain) NSMutableArray *instanceParameters;
+@property (nonatomic, retain) OFMutableArray *parameters;
+@property (nonatomic, retain) OFMutableArray *instanceParameters;
 
 @end

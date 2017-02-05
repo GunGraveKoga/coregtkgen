@@ -36,25 +36,25 @@
 
 @interface GIREnumeration : GIRBase
 {
-	NSString *cType;
-	NSString *name;
-	NSString *version;
-	NSString *deprecatedVersion;
+	OFString *cType;
+	OFString *name;
+	OFString *version;
+	OFString *deprecatedVersion;
 	BOOL deprecated;
 	GIRDoc *doc;
 	GIRDoc *docDeprecated;
-	NSMutableArray *members;
-	NSMutableArray *functions;
+	OFMutableArray *members;
+	OFMutableArray *functions;
 }
 
-@property (nonatomic, retain) NSString *cType;
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *version;
-@property (nonatomic, retain) NSString *deprecatedVersion;
+@property (nonatomic, retain) OFString *cType;
+@property (nonatomic, retain) OFString *name;
+@property (nonatomic, retain) OFString *version;
+@property (nonatomic, retain) OFString *deprecatedVersion;
 @property (nonatomic) BOOL deprecated;
 @property (nonatomic, retain) GIRDoc *doc;
 @property (nonatomic, retain) GIRDoc *docDeprecated;
-@property (nonatomic, retain) NSMutableArray *members;
-@property (nonatomic, retain) NSMutableArray *functions;
+@property (nonatomic, retain) OFMutableArray *members;
+@property (nonatomic, retain) OFMutableArray *functions;
 
 @end

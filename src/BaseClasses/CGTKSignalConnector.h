@@ -29,8 +29,8 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/NSObject.h>
-#import <Foundation/NSString.h>
+#import <ObjFW/OFObject.h>
+#import <ObjFW/OFString.h>
 #import <gtk/gtk.h>
 
 #import "CoreGTK/CGTKSignalData.h"
@@ -40,7 +40,7 @@ void gsignal_forwarder(gpointer gtk, CGTKSignalData *data);
 /**
  * Provides functions for GCallback signal connecting
  */
-@interface CGTKSignalConnector : NSObject
+@interface CGTKSignalConnector : OFObject
 {
 }
 
@@ -64,6 +64,6 @@ void gsignal_forwarder(gpointer gtk, CGTKSignalData *data);
  *
  * @returns a new CGTKCallbackData
  */
-+(void)connectGpointer:(gpointer) object withSignal:(NSString *) name toTarget:(id) target withSelector:(SEL) selector andData:(gpointer) data;
++(void)connectGpointer:(gpointer) object withSignal:(OFString *) name toTarget:(id) target withSelector:(SEL) selector andData:(gpointer) data;
 
 @end

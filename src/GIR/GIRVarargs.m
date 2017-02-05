@@ -46,7 +46,7 @@
 	return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
+-(id)initWithDictionary:(OFDictionary *) dict
 {
 	self = [self init];
 	
@@ -58,14 +58,14 @@
 	return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
+-(void)parseDictionary:(OFDictionary *) dict
 {
-	for (NSString *key in dict)
+	for (OFString *key in dict)
 	{	
 		//id value = [dict objectForKey:key];
 	
-		if([key isEqualToString:@"text"]
-			|| [key isEqualToString:@"type"])
+		if([key isEqual:@"text"]
+			|| [key isEqual:@"type"])
 		{
 			// Do nothing
 		}		

@@ -29,7 +29,7 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/Foundation.h>
+#import <ObjFW/ObjFW.h>
 
 #import "Generator/CGTKClassWriter.h"
 #import "Generator/CGTKParameter.h"
@@ -42,24 +42,24 @@
 /**
  * Provides functionality to convert GObject Introspection GIR files into CoreGTK source code
  */
-@interface Gir2Objc : NSObject
+@interface Gir2Objc : OFObject
 
 /**
- * Parses the girFile XML into the NSDictionary
+ * Parses the girFile XML into the OFDictionary
  */
-+(BOOL)parseGirFromFile:(NSString *) girFile intoDictionary:(NSDictionary **) girDict withError:(NSError **) parseError;
++(BOOL)parseGirFromFile:(OFString *) girFile intoDictionary:(OFDictionary **) girDict withError:(id*) parseError;
 
 /**
- * Recurses through the NSDictionary looking for the first "api" or "repository" key and then attempts to parse that into 
+ * Recurses through the OFDictionary looking for the first "api" or "repository" key and then attempts to parse that into 
  * a GIRApi. If no key is found nil is returned.
  */
-+(GIRApi *)firstApiFromDictionary:(NSDictionary *) girDict;
++(GIRApi *)firstApiFromDictionary:(OFDictionary *) girDict;
 
 /**
  * Parses the girFile XML and then attempts to extract a GIRApi from the parsed contents. If the GIR is successfully parsed, 
  * but no valid data is found, nil is returned.
  */
-+(GIRApi *)firstApiFromGirFile:(NSString *) girFile withError:(NSError **) parseError;
++(GIRApi *)firstApiFromGirFile:(OFString *) girFile withError:(id*) parseError;
 
 /**
  * Generates CoreGTK source from the GIR API level

@@ -29,7 +29,9 @@
 /*
  * Objective-C imports
  */
+#import <ObjFW/ObjFW.h>
 #import "GIRArray.h"
+#import "GIRType.h"
 
 @implementation GIRArray
 
@@ -40,77 +42,64 @@
 @synthesize zeroTerminated;
 @synthesize type;
 
--(id)init
-{
-	self = [super init];
-	
-	if(self)
-	{	
-		self.elementTypeName = @"GIRArray";
-	}
-	
-	return self;
+- (id) init {
+    self = [super init];
+
+    if (self) {
+        self.elementTypeName = @"GIRArray";
+    }
+
+    return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
-{
-	self = [self init];
-	
-	if(self)
-	{
-		[self parseDictionary:dict];
-	}
-	
-	return self;
+- (id) initWithDictionary:(OFDictionary *)dict {
+    self = [self init];
+
+    if (self) {
+        [self parseDictionary:dict];
+    }
+
+    return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
-{
-	for (NSString *key in dict)
-	{	
-		id value = [dict objectForKey:key];
-	
-		if([key isEqualToString:@"text"])
-		{
-			// Do nothing
-		}	
-		else if([key isEqualToString:@"c:type"])
-		{
-			self.cType = value;
-		}
-		else if([key isEqualToString:@"name"])
-		{
-			self.name = value;
-		}
-		else if([key isEqualToString:@"length"])
-		{
-			self.length = [value intValue];
-		}
-		else if([key isEqualToString:@"fixed-size"])
-		{
-			self.fixedSize = [value intValue];
-		}
-		else if([key isEqualToString:@"zero-terminated"])
-		{
-			self.zeroTerminated = [value isEqualToString:@"1"];
-		}
-		else if([key isEqualToString:@"type"])
-		{
-			self.type = [[GIRType alloc] initWithDictionary:value];
-		}		
-		else
-		{
-			[self logUnknownElement:key];
-		}
-	}	
-}
+- (void) parseDictionary:(OFDictionary *)dict {
 
--(void)dealloc
-{
-	[cType release];
-	[name release];
-	[type release];
-	[super dealloc];
+    for (OFString * key in dict) {
+        id value = [dict objectForKey:key];
+
+        if ([key isEqual:@"text"]) {
+            // Do nothing
+        } else if ([key isEqual:@"c:type"]) {
+            self.cType = value;
+        } else if ([key isEqual:@"name"]) {
+            self.name = value;
+        } else if ([key isEqual:@"length"]) {
+            self.length = [value decimalValue];
+        } else if ([key isEqual:@"fixed-size"]) {
+            self.fixedSize = [value decimalValue];
+        } else if ([key isEqual:@"zero-terminated"]) {
+            self.zeroTerminated = [value isEqual:@"1"];
+        } else if ([key isEqual:@"type"]) {
+            /*if ([value isKindOfClass:[OFArray class]]) {
+             *  for (id obj in ((OFArray *)value)) {
+             *      if ([obj isKindOfClass:[OFDictionary class]]) {
+             *          value = obj;
+             *          break;
+             *      }
+             *  }
+             * }*/
+            self.type = [[GIRType alloc] initWithDictionary:value];
+        } else {
+            [self logUnknownElement:key];
+        }
+    }
+} /* parseDictionary */
+
+- (void) dealloc {
+    [cType release];
+    [name release];
+    [type release];
+    [super dealloc];
 }
 
 @end

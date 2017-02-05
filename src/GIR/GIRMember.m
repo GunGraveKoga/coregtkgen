@@ -38,70 +38,52 @@
 @synthesize theValue;
 @synthesize doc;
 
--(id)init
-{
-	self = [super init];
-	
-	if(self)
-	{
-		self.elementTypeName = @"GIRMember";
-	}
-	
-	return self;
+- (id) init {
+    self = [super init];
+
+    if (self) {
+        self.elementTypeName = @"GIRMember";
+    }
+
+    return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
-{
-	self = [self init];
-	
-	if(self)
-	{
-		[self parseDictionary:dict];
-	}
-	
-	return self;
+- (id) initWithDictionary:(OFDictionary *)dict {
+    self = [self init];
+
+    if (self) {
+        [self parseDictionary:dict];
+    }
+
+    return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
-{
-	for (NSString *key in dict)
-	{	
-		id value = [dict objectForKey:key];
-	
-		if([key isEqualToString:@"text"]
-			|| [key isEqualToString:@"glib:nick"])
-		{
-			// Do nothing
-		}	
-		else if([key isEqualToString:@"c:identifier"])
-		{
-			self.cIdentifier = value;
-		}
-		else if([key isEqualToString:@"name"])
-		{
-			self.name = value;
-		}
-		else if([key isEqualToString:@"value"])
-		{
-			self.theValue = [value intValue];
-		}	
-		else if([key isEqualToString:@"doc"])
-		{
-			self.doc = [[GIRDoc alloc] initWithDictionary:value];
-		}	
-		else
-		{
-			[self logUnknownElement:key];
-		}
-	}	
+- (void) parseDictionary:(OFDictionary *)dict {
+    for (OFString * key in dict) {
+        id value = [dict objectForKey:key];
+
+        if ([key isEqual:@"text"]
+            || [key isEqual:@"glib:nick"]) {
+            // Do nothing
+        } else if ([key isEqual:@"c:identifier"]) {
+            self.cIdentifier = value;
+        } else if ([key isEqual:@"name"]) {
+            self.name = value;
+        } else if ([key isEqual:@"value"]) {
+            self.theValue = [value decimalValue];
+        } else if ([key isEqual:@"doc"]) {
+            self.doc = [[GIRDoc alloc] initWithDictionary:value];
+        } else {
+            [self logUnknownElement:key];
+        }
+    }
 }
 
--(void)dealloc
-{
-	[cIdentifier release];
-	[name release];
-	[doc release];
-	[super dealloc];
+- (void) dealloc {
+    [cIdentifier release];
+    [name release];
+    [doc release];
+    [super dealloc];
 }
 
 @end

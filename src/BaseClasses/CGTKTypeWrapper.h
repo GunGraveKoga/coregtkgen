@@ -29,13 +29,13 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/NSObject.h>
+#import <ObjFW/OFObject.h>
 #import <gtk/gtk.h>
 
 /**
  * Provides functions for wrapping GTK types
  */
-@interface CGTKTypeWrapper : NSObject
+@interface CGTKTypeWrapper : OFObject
 {
 	void* ptrValue;
 	gint gintValue;

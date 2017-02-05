@@ -36,10 +36,10 @@
 
 @interface GIRProperty : GIRBase
 {
-	NSString *name;
-	NSString *transferOwnership;
-	NSString *version;
-	NSString *deprecatedVersion;
+	OFString *name;
+	OFString *transferOwnership;
+	OFString *version;
+	OFString *deprecatedVersion;
 	GIRDoc *doc;
 	GIRDoc *docDeprecated;
 	GIRType *type;
@@ -47,15 +47,15 @@
 	BOOL constructOnly;
 	BOOL readable;
 	BOOL deprecated;
-	NSString *construct;
-	NSString *writable;
+	OFString *construct;
+	OFString *writable;
 	GIRArray *array;
 }
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *transferOwnership;
-@property (nonatomic, retain) NSString *version;
-@property (nonatomic, retain) NSString *deprecatedVersion;
+@property (nonatomic, retain) OFString *name;
+@property (nonatomic, retain) OFString *transferOwnership;
+@property (nonatomic, retain) OFString *version;
+@property (nonatomic, retain) OFString *deprecatedVersion;
 @property (nonatomic, retain) GIRDoc *doc;
 @property (nonatomic, retain) GIRDoc *docDeprecated;
 @property (nonatomic, retain) GIRType *type;
@@ -63,8 +63,8 @@
 @property (nonatomic) BOOL constructOnly;
 @property (nonatomic) BOOL readable;
 @property (nonatomic) BOOL deprecated;
-@property (nonatomic, retain) NSString *construct;
-@property (nonatomic, retain) NSString *writable;
+@property (nonatomic, retain) OFString *construct;
+@property (nonatomic, retain) OFString *writable;
 @property (nonatomic, retain) GIRArray *array;
 
 @end

@@ -29,6 +29,7 @@
 /*
  * Objective-C imports
  */
+
 #import "GIRParameter.h"
 
 @implementation GIRParameter
@@ -46,106 +47,72 @@
 @synthesize array;
 @synthesize varargs;
 
--(id)init
-{
-	self = [super init];
-	
-	if(self)
-	{
-		self.elementTypeName = @"GIRParameter";
-	}
-	
-	return self;
+- (id) init {
+    self = [super init];
+
+    if (self) {
+        self.elementTypeName = @"GIRParameter";
+    }
+
+    return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
-{
-	self = [self init];
-	
-	if(self)
-	{
-		[self parseDictionary:dict];
-	}
-	
-	return self;
+- (id) initWithDictionary:(OFDictionary *)dict {
+    self = [self init];
+
+    if (self) {
+        [self parseDictionary:dict];
+    }
+
+    return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
-{
-	for (NSString *key in dict)
-	{	
-		id value = [dict objectForKey:key];
-	
-		if([key isEqualToString:@"text"])
-		{
-			// Do nothing
-		}	
-		else if([key isEqualToString:@"name"])
-		{
-			self.name = value;
-		}	
-		else if([key isEqualToString:@"transfer-ownership"])
-		{
-			self.transferOwnership = value;
-		}
-		else if([key isEqualToString:@"direction"])
-		{
-			self.direction = value;
-		}
-		else if([key isEqualToString:@"scope"])
-		{
-			self.scope = value;
-		}			
-		else if([key isEqualToString:@"allow-none"])
-		{
-			self.allowNone = [value isEqualToString:@"1"];
-		}
-		else if([key isEqualToString:@"caller-allocates"])
-		{
-			self.callerAllocates = [value isEqualToString:@"1"];
-		}
-		else if([key isEqualToString:@"closure"])
-		{
-			self.closure = [value intValue];
-		}
-		else if([key isEqualToString:@"destroy"])
-		{
-			self.destroy = [value intValue];
-		}
-		else if([key isEqualToString:@"doc"])
-		{
-			self.doc = [[GIRDoc alloc] initWithDictionary:value];
-		}	
-		else if([key isEqualToString:@"type"])
-		{
-			self.type = [[GIRType alloc] initWithDictionary:value];
-		}	
-		else if([key isEqualToString:@"array"])
-		{
-			self.array = [[GIRArray alloc] initWithDictionary:value];
-		}	
-		else if([key isEqualToString:@"varargs"])
-		{
-			self.varargs = [[GIRVarargs alloc] initWithDictionary:value];
-		}			
-		else
-		{
-			[self logUnknownElement:key];
-		}
-	}	
-}
+- (void) parseDictionary:(OFDictionary *)dict {
+    for (OFString * key in dict) {
+        id value = [dict objectForKey:key];
 
--(void)dealloc
-{
-	[name release];
-	[transferOwnership release];
-	[direction release];
-	[scope release];
-	[doc release];
-	[type release];
-	[array release];
-	[varargs release];
-	[super dealloc];
+        if ([key isEqual:@"text"]) {
+            // Do nothing
+        } else if ([key isEqual:@"name"]) {
+            self.name = value;
+        } else if ([key isEqual:@"transfer-ownership"]) {
+            self.transferOwnership = value;
+        } else if ([key isEqual:@"direction"]) {
+            self.direction = value;
+        } else if ([key isEqual:@"scope"]) {
+            self.scope = value;
+        } else if ([key isEqual:@"allow-none"]) {
+            self.allowNone = [value isEqual:@"1"];
+        } else if ([key isEqual:@"caller-allocates"]) {
+            self.callerAllocates = [value isEqual:@"1"];
+        } else if ([key isEqual:@"closure"]) {
+            self.closure = [value decimalValue];
+        } else if ([key isEqual:@"destroy"]) {
+            self.destroy = [value decimalValue];
+        } else if ([key isEqual:@"doc"]) {
+            self.doc = [[GIRDoc alloc] initWithDictionary:value];
+        } else if ([key isEqual:@"type"]) {
+            self.type = [[GIRType alloc] initWithDictionary:value];
+        } else if ([key isEqual:@"array"]) {
+            self.array = [[GIRArray alloc] initWithDictionary:value];
+        } else if ([key isEqual:@"varargs"]) {
+            self.varargs = [[GIRVarargs alloc] initWithDictionary:value];
+        } else {
+            [self logUnknownElement:key];
+        }
+    }
+} /* parseDictionary */
+
+- (void) dealloc {
+    [name release];
+    [transferOwnership release];
+    [direction release];
+    [scope release];
+    [doc release];
+    [type release];
+    [array release];
+    [varargs release];
+    [super dealloc];
 }
 
 @end

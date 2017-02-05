@@ -48,7 +48,7 @@
 	return self;
 }
 
--(void)setCType:(NSString *)type
+-(void)setCType:(OFString *)type
 {
 	if(cType != nil)
 	{
@@ -65,17 +65,17 @@
 	}
 }
 
--(NSString *)cType
+-(OFString *)cType
 {
 	return [[cType retain] autorelease];
 }
 
--(NSString *)type
+-(OFString *)type
 {
 	return [CGTKUtil swapTypes:[self cType]];
 }
 
--(void)setCName:(NSString *)name
+-(void)setCName:(OFString *)name
 {
 	if(cName != nil)
 	{
@@ -92,12 +92,12 @@
 	}
 }
 
--(NSString *)cName
+-(OFString *)cName
 {
 	return [[cName retain] autorelease];
 }
 
--(NSString *)name
+-(OFString *)name
 {
 	return [CGTKUtil convertUSSToCamelCase:cName];
 }

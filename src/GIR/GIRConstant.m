@@ -55,7 +55,7 @@
 	return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
+-(id)initWithDictionary:(OFDictionary *) dict
 {
 	self = [self init];
 	
@@ -67,50 +67,50 @@
 	return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
+-(void)parseDictionary:(OFDictionary *) dict
 {
-	for (NSString *key in dict)
+	for (OFString *key in dict)
 	{	
 		id value = [dict objectForKey:key];
 	
-		if([key isEqualToString:@"text"]
-			|| [key isEqualToString:@"type"])
+		if([key isEqual:@"text"]
+			|| [key isEqual:@"type"])
 		{
 			// Do nothing
 		}	
-		else if([key isEqualToString:@"c:type"])
+		else if([key isEqual:@"c:type"])
 		{
 			self.cType = value;
 		}
-		else if([key isEqualToString:@"name"])
+		else if([key isEqual:@"name"])
 		{
 			self.name = value;
 		}	
-		else if([key isEqualToString:@"value"])
+		else if([key isEqual:@"value"])
 		{
 			self.theValue = value;
 		}
-		else if([key isEqualToString:@"version"])
+		else if([key isEqual:@"version"])
 		{
 			self.version = value;
 		}
-		else if([key isEqualToString:@"deprecated-version"])
+		else if([key isEqual:@"deprecated-version"])
 		{
 			self.deprecatedVersion = value;
 		}
-		else if([key isEqualToString:@"deprecated"])
+		else if([key isEqual:@"deprecated"])
 		{
-			self.deprecated = [value isEqualToString:@"1"];
+			self.deprecated = [value isEqual:@"1"];
 		}
-		else if([key isEqualToString:@"doc"])
+		else if([key isEqual:@"doc"])
 		{
 			self.doc = [[GIRDoc alloc] initWithDictionary:value];
 		}
-		else if([key isEqualToString:@"doc-deprecated"])
+		else if([key isEqual:@"doc-deprecated"])
 		{
 			self.docDeprecated = [[GIRDoc alloc] initWithDictionary:value];
 		}
-		else if([key isEqualToString:@"type"])
+		else if([key isEqual:@"type"])
 		{
 			self.type = [[GIRType alloc] initWithDictionary:value];
 		}			

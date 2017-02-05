@@ -44,13 +44,13 @@
 	if(self)
 	{
 		self.elementTypeName = @"GIRApi";
-		self.namespaces = [[NSMutableArray alloc] init];
+		self.namespaces = [[OFMutableArray alloc] init];
 	}
 	
 	return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
+-(id)initWithDictionary:(OFDictionary *) dict
 {
 	self = [self init];
 	
@@ -62,30 +62,30 @@
 	return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
+-(void)parseDictionary:(OFDictionary *) dict
 {
-	for (NSString *key in dict)
+	for (OFString *key in dict)
 	{
 		id value = [dict objectForKey:key];
 		
-		if([key isEqualToString:@"text"]
-			|| [key isEqualToString:@"include"]
-			|| [key isEqualToString:@"xmlns:glib"]
-			|| [key isEqualToString:@"xmlns:c"]
-			|| [key isEqualToString:@"xmlns"]
-			|| [key isEqualToString:@"package"])
+		if([key isEqual:@"text"]
+			|| [key isEqual:@"include"]
+			|| [key isEqual:@"xmlns:glib"]
+			|| [key isEqual:@"xmlns:c"]
+			|| [key isEqual:@"xmlns"]
+			|| [key isEqual:@"package"])
 		{
 			// Do nothing
 		}
-		else if([key isEqualToString:@"version"])
+		else if([key isEqual:@"version"])
 		{
 			self.version = value;
 		}
-		else if([key isEqualToString:@"c:include"])
+		else if([key isEqual:@"c:include"])
 		{
 			self.cInclude = value;
 		}
-		else if([key isEqualToString:@"namespace"])
+		else if([key isEqual:@"namespace"])
 		{
 			[self processArrayOrDictionary:value withClass:[GIRNamespace class] andArray:namespaces];
 		}

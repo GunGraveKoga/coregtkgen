@@ -33,164 +33,137 @@
 
 @implementation CGTKMethod
 
--(id)init
-{
-	self = [super init];
+- (id) init {
+    self = [super init];
 
-	if(self)
-	{
-		// Do nothing
-	}
+    if (self) {
+        // Do nothing
+    }
 
-	return self;
+    return self;
 }
 
--(void)setCName:(NSString *)name
-{
-	if(cName != nil)
-	{
-		[cName release];
-	}
+- (void) setCName:(OFString *)name {
+    if (cName != nil) {
+        [cName release];
+    }
 
-	if(name == nil)
-	{
-		cName = nil;
-	}
-	else
-	{
-		cName = [name retain];
-	}
+    if (name == nil) {
+        cName = nil;
+    } else {
+        cName = [name retain];
+    }
 }
 
--(NSString *)cName
-{
-	return [[cName retain] autorelease];
+- (OFString *) cName {
+    return [[cName retain] autorelease];
 }
 
--(NSString *)name
-{
-	return [CGTKUtil convertUSSToCamelCase:[CGTKUtil trimMethodName:cName]];
+- (OFString *) name {
+    return [CGTKUtil convertUSSToCamelCase:[CGTKUtil trimMethodName:cName]];
 }
 
--(NSString *)sig
-{
-	int i;
-	
-	// C method with no parameters
-	if(parameters == nil || [parameters count] == 0)
-	{	
-		return [NSString stringWithFormat:@"%@", [self name]];
-	}
-	// C method with only one parameter
-	else if([parameters count] == 1)
-	{
-		CGTKParameter *p = [parameters objectAtIndex:0];
-		
-		return [NSString stringWithFormat:@"%@:(%@) %@", 
-			 [self name],
-			 [p type],
-			 [p name]];
-	}
-	// C method with multiple parameters
-	else
-	{
-		NSMutableString *output = [[NSMutableString alloc] init];
-		
-		[output appendString:[NSString stringWithFormat:@"%@With", [self name]]];
-		
-		for(i = 0; i < [parameters count]; i++)
-		{
-			CGTKParameter *p = [parameters objectAtIndex:i];
-			
-			if(i != 0)
-			{
-				[output appendString:@" and"];
-			}
-			
-			[output appendFormat:@"%@:(%@) %@",
-				[CGTKUtil convertUSSToCapCase:[p name]],
-				[p type],
-				[p name]];
-		}
-		
-		return [output autorelease];
-	}
+- (OFString *) sig {
+    size_t i;
+
+    // C method with no parameters
+    if (parameters == nil || [parameters count] == 0) {
+        return [OFString stringWithFormat:@"%@", [self name]];
+    }
+    // C method with only one parameter
+    else if ([parameters count] == 1) {
+        CGTKParameter * p = [parameters objectAtIndex:0];
+
+        return [OFString stringWithFormat:@"%@:(%@) %@",
+                [self name],
+                [p type],
+                [p name]];
+    }
+    // C method with multiple parameters
+    else {
+        OFMutableString * output = [[OFMutableString alloc] init];
+
+        [output appendString:[OFString stringWithFormat:@"%@With", [self name]]];
+
+        for (i = 0; i < [parameters count]; i++) {
+            CGTKParameter * p = [parameters objectAtIndex:i];
+
+            if (i != 0) {
+                [output appendString:@" and"];
+            }
+
+            [output appendFormat:@"%@:(%@) %@",
+             [CGTKUtil convertUSSToCapCase:[p name]],
+             [p type],
+             [p name]];
+        }
+
+        return [output autorelease];
+    }
+} /* sig */
+
+- (void) setCReturnType:(OFString *)returnType {
+    if (cReturnType != nil) {
+        [cReturnType release];
+    }
+
+    if (returnType == nil) {
+        cReturnType = nil;
+    } else {
+        cReturnType = [returnType retain];
+    }
 }
 
--(void)setCReturnType:(NSString *)returnType
-{
-	if(cReturnType != nil)
-	{
-		[cReturnType release];
-	}
-	
-	if(returnType == nil)
-	{
-		cReturnType = nil;
-	}
-	else
-	{
-		cReturnType = [returnType retain];
-	}
+- (OFString *) cReturnType {
+    return [[cReturnType retain] autorelease];
 }
 
--(NSString *)cReturnType
-{
-	return [[cReturnType retain] autorelease];
+- (OFString *) returnType {
+    return [CGTKUtil swapTypes:cReturnType];
 }
 
--(NSString *)returnType
-{
-	return [CGTKUtil swapTypes:cReturnType];
+- (BOOL) returnsVoid {
+    return [cReturnType isEqual:@"void"];
 }
 
--(BOOL)returnsVoid
-{
-	return [cReturnType isEqualToString:@"void"];
+- (void) setParameters:(OFArray *)params {
+    // Hacky fix to get around issue with missing GError parameter from GIR file
+    if (     [[self cName] isEqual:@"gtk_window_set_icon_from_file"]
+             || [[self cName] isEqual:@"gtk_window_set_default_icon_from_file"]
+             || [[self cName] isEqual:@"gtk_builder_add_from_file"]
+             || [[self cName] isEqual:@"gtk_builder_add_from_resource"]
+             || [[self cName] isEqual:@"gtk_builder_add_from_string"]
+             || [[self cName] isEqual:@"gtk_builder_add_objects_from_file"]
+             || [[self cName] isEqual:@"gtk_builder_add_objects_from_resource"]
+             || [[self cName] isEqual:@"gtk_builder_add_objects_from_string"]
+             || [[self cName] isEqual:@"gtk_builder_value_from_string"]
+             || [[self cName] isEqual:@"gtk_builder_value_from_string_type"]
+             ) {
+        CGTKParameter * param = [[CGTKParameter alloc] init];
+        [param setCType:@"GError**"];
+        [param setCName:@"err"];
+
+        OFMutableArray * hackyArray = [[[OFMutableArray alloc] init] autorelease];
+        [hackyArray addObjectsFromArray:params];
+        [hackyArray addObject:param];
+
+        [param release];
+
+        params = hackyArray;
+    }
+
+    parameters = [params retain];
+} /* setParameters */
+
+- (OFArray *) parameters {
+    return [[parameters retain] autorelease];
 }
 
--(void)setParameters:(NSArray *) params
-{
-	// Hacky fix to get around issue with missing GError parameter from GIR file
-	if(	[[self cName] isEqualToString:@"gtk_window_set_icon_from_file"]
-		|| [[self cName] isEqualToString:@"gtk_window_set_default_icon_from_file"]
-		|| [[self cName] isEqualToString:@"gtk_builder_add_from_file"]
-		|| [[self cName] isEqualToString:@"gtk_builder_add_from_resource"]
-		|| [[self cName] isEqualToString:@"gtk_builder_add_from_string"]
-		|| [[self cName] isEqualToString:@"gtk_builder_add_objects_from_file"]
-		|| [[self cName] isEqualToString:@"gtk_builder_add_objects_from_resource"]
-		|| [[self cName] isEqualToString:@"gtk_builder_add_objects_from_string"]
-		|| [[self cName] isEqualToString:@"gtk_builder_value_from_string"]
-		|| [[self cName] isEqualToString:@"gtk_builder_value_from_string_type"]
-		)
-	{		
-		CGTKParameter *param = [[CGTKParameter alloc] init];
-		[param setCType:@"GError**"];
-		[param setCName:@"err"];
-		
-		NSMutableArray *hackyArray = [[[NSMutableArray alloc] init] autorelease];
-		[hackyArray addObjectsFromArray:params];
-		[hackyArray addObject:param];
-		
-		[param release];
-		
-		params = hackyArray;
-	}
-
-	parameters = [params retain];
-}
-
--(NSArray *)parameters
-{
-	return [[parameters retain] autorelease];
-}
-
--(void)dealloc
-{
-	[cName release];
-	[cReturnType release];
-	[parameters release];
-	[super dealloc];
+- (void) dealloc {
+    [cName release];
+    [cReturnType release];
+    [parameters release];
+    [super dealloc];
 }
 
 @end

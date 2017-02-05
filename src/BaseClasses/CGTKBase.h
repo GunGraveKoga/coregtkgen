@@ -29,7 +29,7 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/Foundation.h>
+#import <ObjFW/ObjFW.h>
 #import "CGTKTypeWrapper.h"
 
 /*
@@ -40,7 +40,7 @@
 /**
  * The base class for all CoreGTK wrapper classes
  */
-@interface CGTKBase : NSObject
+@interface CGTKBase : OFObject
 {
 	/**
 	 * The internal GtkObject pointer

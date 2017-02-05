@@ -36,13 +36,13 @@
 
 @interface GIRReturnValue : GIRBase
 {
-	NSString *transferOwnership;
+	OFString *transferOwnership;
 	GIRDoc *doc;
 	GIRType *type;
 	GIRArray *array;
 }
 
-@property (nonatomic, retain) NSString *transferOwnership;
+@property (nonatomic, retain) OFString *transferOwnership;
 @property (nonatomic, retain) GIRDoc *doc;
 @property (nonatomic, retain) GIRType *type;
 @property (nonatomic, retain) GIRArray *array;

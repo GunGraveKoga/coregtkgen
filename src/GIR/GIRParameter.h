@@ -37,10 +37,10 @@
 
 @interface GIRParameter : GIRBase
 {
-	NSString *name;
-	NSString *transferOwnership;
-	NSString *direction;
-	NSString *scope;
+	OFString *name;
+	OFString *transferOwnership;
+	OFString *direction;
+	OFString *scope;
 	BOOL allowNone;
 	BOOL callerAllocates;
 	int closure;
@@ -51,10 +51,10 @@
 	GIRVarargs *varargs;
 }
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *transferOwnership;
-@property (nonatomic, retain) NSString *direction;
-@property (nonatomic, retain) NSString *scope;
+@property (nonatomic, retain) OFString *name;
+@property (nonatomic, retain) OFString *transferOwnership;
+@property (nonatomic, retain) OFString *direction;
+@property (nonatomic, retain) OFString *scope;
 @property (nonatomic) BOOL allowNone;
 @property (nonatomic) BOOL callerAllocates;
 @property (nonatomic) int closure;

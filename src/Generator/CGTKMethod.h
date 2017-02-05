@@ -29,7 +29,7 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/Foundation.h>
+#import <ObjFW/ObjFW.h>
 
 #import "Generator/CGTKUtil.h"
 #import "Generator/CGTKParameter.h"
@@ -37,26 +37,26 @@
 /**
  * Abstracts Method operations
  */
-@interface CGTKMethod : NSObject
+@interface CGTKMethod : OFObject
 {
-	NSString *cName;
-	NSString *cReturnType;
-	NSArray *parameters;
+	OFString *cName;
+	OFString *cReturnType;
+	OFArray *parameters;
 }
 
--(void)setCName:(NSString *)name;
--(NSString *)cName;
+-(void)setCName:(OFString *)name;
+-(OFString *)cName;
 
--(NSString *)name;
--(NSString *)sig;
+-(OFString *)name;
+-(OFString *)sig;
 
--(void)setCReturnType:(NSString *)returnType;
--(NSString *)cReturnType;
+-(void)setCReturnType:(OFString *)returnType;
+-(OFString *)cReturnType;
 
--(NSString *)returnType;
+-(OFString *)returnType;
 -(BOOL)returnsVoid;
 
--(void)setParameters:(NSArray *) params;
--(NSArray *)parameters;
+-(void)setParameters:(OFArray *) params;
+-(OFArray *)parameters;
 
 @end

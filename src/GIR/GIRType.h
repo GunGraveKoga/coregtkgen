@@ -33,11 +33,13 @@
 
 @interface GIRType : GIRBase
 {
-	NSString *cType;
-	NSString *name;
+    OFString * cType;
+    OFString * name;
 }
 
-@property (nonatomic, retain) NSString *cType;
-@property (nonatomic, retain) NSString *name;
+- (instancetype)initWithDictionary:(OFDictionary *)dict;
+
+@property (nonatomic, retain) OFString * cType;
+@property (nonatomic, retain) OFString * name;
 
 @end

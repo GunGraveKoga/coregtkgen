@@ -33,9 +33,9 @@
 
 @interface GIRImplements : GIRBase
 {
-	NSString *name;
+	OFString *name;
 }
 
-@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) OFString *name;
 
 @end

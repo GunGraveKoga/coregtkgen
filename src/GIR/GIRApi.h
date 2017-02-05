@@ -29,22 +29,22 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/NSArray.h>
-#import <Foundation/NSObject.h>
-#import <Foundation/NSString.h>
+#import <ObjFW/OFArray.h>
+#import <ObjFW/OFObject.h>
+#import <ObjFW/OFString.h>
 
 #import "GIR/GIRNamespace.h"
 #import "GIR/GIRBase.h"
 
 @interface GIRApi : GIRBase
 {
-	NSString *version;
-	NSString *cInclude;
-	NSMutableArray *namespaces;
+	OFString *version;
+	OFString *cInclude;
+	OFMutableArray *namespaces;
 }
 
-@property (nonatomic, retain) NSString *version;
-@property (nonatomic, retain) NSString *cInclude;
-@property (nonatomic, retain) NSMutableArray *namespaces;
+@property (nonatomic, retain) OFString *version;
+@property (nonatomic, retain) OFString *cInclude;
+@property (nonatomic, retain) OFMutableArray *namespaces;
 
 @end

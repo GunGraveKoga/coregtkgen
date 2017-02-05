@@ -41,7 +41,7 @@ void gsignal_forwarder(gpointer gtk, CGTKSignalData *data)
 
 @implementation CGTKSignalConnector
 
-+(void)connectGpointer:(gpointer) object withSignal:(NSString *) name toTarget:(id) target withSelector:(SEL) selector andData:(gpointer) data
++(void)connectGpointer:(gpointer) object withSignal:(OFString *) name toTarget:(id) target withSelector:(SEL) selector andData:(gpointer) data
 {
 	/*
 	 * Don't release this or else we could seg fault! (Note that to avoid memory leaks in the case of a short-lived GUI, the application should 

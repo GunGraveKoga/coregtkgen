@@ -34,14 +34,14 @@
 
 @interface GIRMember : GIRBase
 {
-	NSString *cIdentifier;
-	NSString *name;
+	OFString *cIdentifier;
+	OFString *name;
 	int	theValue;
 	GIRDoc *doc;
 }
 
-@property (nonatomic, retain) NSString *cIdentifier;
-@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) OFString *cIdentifier;
+@property (nonatomic, retain) OFString *name;
 @property (nonatomic) int theValue;
 @property (nonatomic, retain) GIRDoc *doc;
 

@@ -50,14 +50,14 @@
 	if(self)
 	{
 		self.elementTypeName = @"GIREnumeration";
-		self.members = [[NSMutableArray alloc] init];
-		self.functions = [[NSMutableArray alloc] init];
+		self.members = [[OFMutableArray alloc] init];
+		self.functions = [[OFMutableArray alloc] init];
 	}
 	
 	return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
+-(id)initWithDictionary:(OFDictionary *) dict
 {
 	self = [self init];
 	
@@ -69,52 +69,52 @@
 	return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
+-(void)parseDictionary:(OFDictionary *) dict
 {
-	for (NSString *key in dict)
+	for (OFString *key in dict)
 	{	
 		id value = [dict objectForKey:key];
 	
-		if([key isEqualToString:@"text"]
-			|| [key isEqualToString:@"glib:type-name"]
-			|| [key isEqualToString:@"glib:get-type"]
-			|| [key isEqualToString:@"glib:error-domain"])
+		if([key isEqual:@"text"]
+			|| [key isEqual:@"glib:type-name"]
+			|| [key isEqual:@"glib:get-type"]
+			|| [key isEqual:@"glib:error-domain"])
 		{
 			// Do nothing
 		}	
-		else if([key isEqualToString:@"c:type"])
+		else if([key isEqual:@"c:type"])
 		{
 			self.cType = value;
 		}
-		else if([key isEqualToString:@"name"])
+		else if([key isEqual:@"name"])
 		{
 			self.name = value;
 		}
-		else if([key isEqualToString:@"version"])
+		else if([key isEqual:@"version"])
 		{
 			self.version = value;
 		}
-		else if([key isEqualToString:@"deprecated-version"])
+		else if([key isEqual:@"deprecated-version"])
 		{
 			self.deprecatedVersion = value;
 		}
-		else if([key isEqualToString:@"deprecated"])
+		else if([key isEqual:@"deprecated"])
 		{
-			self.deprecated = [value isEqualToString:@"1"];
+			self.deprecated = [value isEqual:@"1"];
 		}
-		else if([key isEqualToString:@"doc"])
+		else if([key isEqual:@"doc"])
 		{
 			self.doc = [[GIRDoc alloc] initWithDictionary:value];
 		}	
-		else if([key isEqualToString:@"doc-deprecated"])
+		else if([key isEqual:@"doc-deprecated"])
 		{
 			self.docDeprecated = [[GIRDoc alloc] initWithDictionary:value];
 		}	
-		else if([key isEqualToString:@"member"])
+		else if([key isEqual:@"member"])
 		{
 			[self processArrayOrDictionary:value withClass:[GIRMember class] andArray:members];
 		}
-		else if([key isEqualToString:@"function"])
+		else if([key isEqual:@"function"])
 		{
 			[self processArrayOrDictionary:value withClass:[GIRFunction class] andArray:functions];
 		}
@@ -132,10 +132,10 @@
 	// Create the array if this is the first time through
 	if(members == nil)
 	{
-		members = [[NSMutableArray alloc] init];
+		members = [[OFMutableArray alloc] init];
 	}
 
-	if([object isKindOfClass: [NSDictionary class]])
+	if([object isKindOfClass: [OFDictionary class]])
 	{
 		[members addObject:[[GIRMember alloc] initWithDictionary:object]];
 	}
@@ -148,10 +148,10 @@
 	// Create the array if this is the first time through
 	if(functions == nil)
 	{
-		functions = [[NSMutableArray alloc] init];
+		functions = [[OFMutableArray alloc] init];
 	}
 
-	if([object isKindOfClass: [NSDictionary class]])
+	if([object isKindOfClass: [OFDictionary class]])
 	{
 		[functions addObject:[[GIRFunction alloc] initWithDictionary:object]];
 	}

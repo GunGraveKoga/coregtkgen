@@ -35,7 +35,7 @@
 
 @interface GIRField : GIRBase
 {
-	NSString *name;
+	OFString *name;
 	BOOL isPrivate;
 	BOOL readable;
 	int bits;
@@ -43,7 +43,7 @@
 	GIRArray *array;
 }
 
-@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) OFString *name;
 @property (nonatomic) BOOL isPrivate;
 @property (nonatomic) BOOL readable;
 @property (nonatomic) int bits;

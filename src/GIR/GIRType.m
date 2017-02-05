@@ -36,61 +36,47 @@
 @synthesize cType;
 @synthesize name;
 
--(id)init
-{
-	self = [super init];
-	
-	if(self)
-	{
-		self.elementTypeName = @"GIRType";
-	}
-	
-	return self;
+- (id) init {
+    self = [super init];
+
+    if (self) {
+        self.elementTypeName = @"GIRType";
+    }
+
+    return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
-{
-	self = [self init];
-	
-	if(self)
-	{
-		[self parseDictionary:dict];
-	}
-	
-	return self;
+- (id) initWithDictionary:(OFDictionary *)dict {
+    self = [self init];
+
+    if (self) {
+        [self parseDictionary:dict];
+    }
+
+    return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
-{
-	for (NSString *key in dict)
-	{	
-		id value = [dict objectForKey:key];
-	
-		if([key isEqualToString:@"text"]
-			|| [key isEqualToString:@"type"])
-		{
-			// Do nothing
-		}	
-		else if([key isEqualToString:@"c:type"])
-		{
-			self.cType = value;
-		}
-		else if([key isEqualToString:@"name"])
-		{
-			self.name = value;
-		}		
-		else
-		{
-			[self logUnknownElement:key];
-		}
-	}	
+- (void) parseDictionary:(OFDictionary *)dict {
+    for (OFString * key in dict) {
+        id value = [dict objectForKey:key];
+
+        if ([key isEqual:@"text"]
+            || [key isEqual:@"type"]) {
+            // Do nothing
+        } else if ([key isEqual:@"c:type"]) {
+            self.cType = value;
+        } else if ([key isEqual:@"name"]) {
+            self.name = value;
+        } else {
+            [self logUnknownElement:key];
+        }
+    }
 }
 
--(void)dealloc
-{
-	[cType release];
-	[name release];
-	[super dealloc];
+- (void) dealloc {
+    [cType release];
+    [name release];
+    [super dealloc];
 }
 
 @end

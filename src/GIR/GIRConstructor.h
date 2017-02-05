@@ -36,35 +36,35 @@
 
 @interface GIRConstructor : GIRBase
 {
-	NSString *name;
-	NSString *cIdentifier;
-	NSString *version;
-	NSString *deprecatedVersion;
-	NSString *shadowedBy;
-	NSString *shadows;
+	OFString *name;
+	OFString *cIdentifier;
+	OFString *version;
+	OFString *deprecatedVersion;
+	OFString *shadowedBy;
+	OFString *shadows;
 	BOOL introspectable;
 	BOOL deprecated;
 	BOOL throws;
 	GIRDoc *doc;
 	GIRDoc *docDeprecated;
 	GIRReturnValue *returnValue;
-	NSMutableArray *parameters;
-	NSMutableArray *instanceParameters;
+	OFMutableArray *parameters;
+	OFMutableArray *instanceParameters;
 }
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *cIdentifier;
-@property (nonatomic, retain) NSString *version;
-@property (nonatomic, retain) NSString *deprecatedVersion;
-@property (nonatomic, retain) NSString *shadowedBy;
-@property (nonatomic, retain) NSString *shadows;
+@property (nonatomic, retain) OFString *name;
+@property (nonatomic, retain) OFString *cIdentifier;
+@property (nonatomic, retain) OFString *version;
+@property (nonatomic, retain) OFString *deprecatedVersion;
+@property (nonatomic, retain) OFString *shadowedBy;
+@property (nonatomic, retain) OFString *shadows;
 @property (nonatomic) BOOL introspectable;
 @property (nonatomic) BOOL deprecated;
 @property (nonatomic) BOOL throws;
 @property (nonatomic, retain) GIRDoc *doc;
 @property (nonatomic, retain) GIRDoc *docDeprecated;
 @property (nonatomic, retain) GIRReturnValue *returnValue;
-@property (nonatomic, retain) NSMutableArray *parameters;
-@property (nonatomic, retain) NSMutableArray *instanceParameters;
+@property (nonatomic, retain) OFMutableArray *parameters;
+@property (nonatomic, retain) OFMutableArray *instanceParameters;
 
 @end

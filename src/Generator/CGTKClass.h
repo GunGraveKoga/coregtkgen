@@ -29,46 +29,46 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/Foundation.h>
+#import <ObjFW/ObjFW.h>
 
 #import "Generator/CGTKMethod.h"
 
 /**
  * Abstracts Class operations
  */
-@interface CGTKClass : NSObject
+@interface CGTKClass : OFObject
 {
-	NSString *cName;
-	NSString *cType;
-	NSString *cParentType;
-	NSMutableArray *constructors;
-	NSMutableArray *functions;
-	NSMutableArray *methods;
+	OFString *cName;
+	OFString *cType;
+	OFString *cParentType;
+	OFMutableArray *constructors;
+	OFMutableArray *functions;
+	OFMutableArray *methods;
 }
 
--(void)setCName:(NSString *)name;
--(NSString *)cName;
+-(void)setCName:(OFString *)name;
+-(OFString *)cName;
 
--(void)setCType:(NSString *)type;
--(NSString *)cType;
+-(void)setCType:(OFString *)type;
+-(OFString *)cType;
 
--(NSString *)type;
+-(OFString *)type;
 
--(void)setCParentType:(NSString *)type;
--(NSString *)cParentType;
+-(void)setCParentType:(OFString *)type;
+-(OFString *)cParentType;
 
--(NSString *)name;
+-(OFString *)name;
 
 -(void)addConstructor:(CGTKMethod *)ctor;
--(NSArray *)constructors;
+-(OFArray *)constructors;
 -(BOOL)hasConstructors;
 
 -(void)addFunction:(CGTKMethod *)fun;
--(NSArray *)functions;
+-(OFArray *)functions;
 -(BOOL)hasFunctions;
 
 -(void)addMethod:(CGTKMethod *)meth;
--(NSArray *)methods;
+-(OFArray *)methods;
 -(BOOL)hasMethods;
 
 @end

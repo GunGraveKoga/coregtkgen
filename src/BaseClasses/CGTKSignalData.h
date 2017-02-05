@@ -29,12 +29,12 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/NSObject.h>
+#import <ObjFW/OFObject.h>
 
 /**
  * Wraps GCallback signal data
  */
-@interface CGTKSignalData : NSObject
+@interface CGTKSignalData : OFObject
 {
 	id target;
 	SEL selector;

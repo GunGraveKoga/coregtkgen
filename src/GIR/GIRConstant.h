@@ -35,22 +35,22 @@
 
 @interface GIRConstant : GIRBase
 {
-	NSString *cType;
-	NSString *name;
-	NSString *theValue;
-	NSString *version;
-	NSString *deprecatedVersion;
+	OFString *cType;
+	OFString *name;
+	OFString *theValue;
+	OFString *version;
+	OFString *deprecatedVersion;
 	BOOL deprecated;
 	GIRDoc *doc;
 	GIRDoc *docDeprecated;
 	GIRType *type;
 }
 
-@property (nonatomic, retain) NSString *cType;
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *theValue;
-@property (nonatomic, retain) NSString *version;
-@property (nonatomic, retain) NSString *deprecatedVersion;
+@property (nonatomic, retain) OFString *cType;
+@property (nonatomic, retain) OFString *name;
+@property (nonatomic, retain) OFString *theValue;
+@property (nonatomic, retain) OFString *version;
+@property (nonatomic, retain) OFString *deprecatedVersion;
 @property (nonatomic) BOOL deprecated;
 @property (nonatomic, retain) GIRDoc *doc;
 @property (nonatomic, retain) GIRDoc *docDeprecated;

@@ -50,7 +50,7 @@
 	return self;
 }
 
--(id)initWithDictionary:(NSDictionary *) dict
+-(id)initWithDictionary:(OFDictionary *) dict
 {
 	self = [self init];
 	
@@ -62,29 +62,29 @@
 	return self;
 }
 
--(void)parseDictionary:(NSDictionary *) dict
+-(void)parseDictionary:(OFDictionary *) dict
 {
-	for (NSString *key in dict)
+	for (OFString *key in dict)
 	{	
 		id value = [dict objectForKey:key];
 	
-		if([key isEqualToString:@"text"])
+		if([key isEqual:@"text"])
 		{
 			// Do nothing
 		}
-		else if([key isEqualToString:@"transfer-ownership"])
+		else if([key isEqual:@"transfer-ownership"])
 		{
 			self.transferOwnership = value;
 		}		
-		else if([key isEqualToString:@"doc"])
+		else if([key isEqual:@"doc"])
 		{
 			self.doc = [[GIRDoc alloc] initWithDictionary:value];
 		}			
-		else if([key isEqualToString:@"type"])
+		else if([key isEqual:@"type"])
 		{
 			self.type = [[GIRType alloc] initWithDictionary:value];
 		}	
-		else if([key isEqualToString:@"array"])
+		else if([key isEqual:@"array"])
 		{
 			self.array = [[GIRArray alloc] initWithDictionary:value];
 		}
