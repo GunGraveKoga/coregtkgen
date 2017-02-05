@@ -51,6 +51,7 @@ OF_APPLICATION_DELEGATE(coregtkgen)
         of_log(@"Invalid MSYSTEM_PREFIX env!");
         [OFApplication terminateWithStatus:1];
     }
+
     girFile = ([msys stringByAppendingPathComponent:girFile]).stringByStandardizingPath;
 #else
     girFile = ([@"/usr/" stringByAppendingPathComponent:girFile]).stringByStandardizingPath;

@@ -3,20 +3,20 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-INCLUDEPATH += "C:/msys64/mingw32/i686-w64-mingw32/include"
-INCLUDEPATH += "C:/msys64/mingw32/include"
-INCLUDEPATH += "C:/msys64/mingw32/include/gtk-3.0"
-INCLUDEPATH += "C:/msys64/mingw32/include/cairo"
-INCLUDEPATH += "C:/msys64/mingw32/include/pango-1.0"
-INCLUDEPATH += "C:/msys64/mingw32/include/atk-1.0"
-INCLUDEPATH += "C:/msys64/mingw32/include/pixman-1"
-INCLUDEPATH += "C:/msys64/mingw32/include/freetype2"
-INCLUDEPATH += "C:/msys64/mingw32/include/libpng16"
-INCLUDEPATH += "C:/msys64/mingw32/include/harfbuzz"
-INCLUDEPATH += "C:/msys64/mingw32/include/glib-2.0"
-INCLUDEPATH += "C:/msys64/mingw32/lib/glib-2.0/include"
-INCLUDEPATH += "C:/msys64/mingw32/include/harfbuzz"
-INCLUDEPATH += "C:/msys64/mingw32/include/gdk-pixbuf-2.0"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/$$(MSYSTEM_CHOST)/include"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/gtk-3.0"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/cairo"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/pango-1.0"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/atk-1.0"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/pixman-1"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/freetype2"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/libpng16"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/harfbuzz"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/glib-2.0"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/lib/glib-2.0/include"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/harfbuzz"
+INCLUDEPATH += "$$(MSYSTEM_PREFIX)/include/gdk-pixbuf-2.0"
 
 INCLUDEPATH += $$PWD/src
 
