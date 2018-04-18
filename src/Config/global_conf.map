@@ -1,5 +1,5 @@
 {
-	"girFile" : "/share/gir-1.0/Gtk-3.0.gir",
+	"girFile" : "/usr/share/gir-1.0/Gtk-3.0.gir",
 	
 	"outputDir" : "Output/CoreGTK",
 	
@@ -83,6 +83,7 @@
 		"MessageDialog",
 		"Misc",
 		"ModelButton",
+        "NativeDialog",
 		"Notebook",
 		"OffscreenWindow",
 		"Overlay",
@@ -110,6 +111,7 @@
 		"Separator",
 		"SeparatorMenuItem",
 		"SeparatorToolItem",
+        "ShortcutsShortcut",
 		"SpinButton",
 		"Spinner",
 		"Stack",

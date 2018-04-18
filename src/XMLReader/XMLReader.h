@@ -13,7 +13,7 @@
     id * errorPointer;
 }
 
-+ (OFDictionary *)dictionaryForXMLData:(OFDataArray *)data error:(id *)errorPointer;
++ (OFDictionary *)dictionaryForXMLData:(OFData *)data error:(id *)errorPointer;
 + (OFDictionary *)dictionaryForXMLString:(OFString *)string error:(id *)errorPointer;
 
 @end

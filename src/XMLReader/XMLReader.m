@@ -21,7 +21,7 @@ OFString * const kXMLReaderTextNodeKey = @"text";
 @interface XMLReader (Internal)
 
 - (id) initWithError:(id *)error;
-- (OFDictionary *) objectWithData:(OFDataArray *)data;
+- (OFDictionary *) objectWithData:(OFData *)data;
 
 @end
 
@@ -30,7 +30,7 @@ OFString * const kXMLReaderTextNodeKey = @"text";
 #pragma mark -
 #pragma mark Public methods
 
-+ (OFDictionary *) dictionaryForXMLData:(OFDataArray *)data error:(id *)error {
++ (OFDictionary *) dictionaryForXMLData:(OFData *)data error:(id *)error {
     XMLReader * reader = [[XMLReader alloc] initWithError:error];
     OFDictionary * rootDictionary = [reader objectWithData:data];
 
@@ -39,9 +39,11 @@ OFString * const kXMLReaderTextNodeKey = @"text";
 }
 
 + (OFDictionary *) dictionaryForXMLString:(OFString *)string error:(id *)error {
-    OFDataArray * data = [OFDataArray dataArray];
+    OFMutableData * data = [OFMutableData data];
 
     [data addItems:string.UTF8String count:string.UTF8StringLength];
+    
+    [data makeImmutable];
 
     return [XMLReader dictionaryForXMLData:data error:error];
 }
@@ -64,7 +66,7 @@ OFString * const kXMLReaderTextNodeKey = @"text";
     [super dealloc];
 }
 
-- (OFDictionary *) objectWithData:(OFDataArray *)data {
+- (OFDictionary *) objectWithData:(OFData *)data {
     // Clear out any old data
     [dictionaryStack release];
     [textInProgress release];

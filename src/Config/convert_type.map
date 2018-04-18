@@ -3,12 +3,12 @@
 	"OFString*" : "[OFString stringWithUTF8String:%@]"
     },
     
-    "BOOL" : {
-    "gboolean" : "(%@ ? TRUE : FALSE)"
+    "bool" : {
+    "gboolean" : "(%@ ? true : false)"
     },
     
     "gboolean" : {
-    "BOOL" : "(%@ ? YES : NO)"
+    "bool" : "(%@ ? true : false)"
     },
     
     "gchar*" : {

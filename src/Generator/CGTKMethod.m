@@ -136,6 +136,7 @@
              || [[self cName] isEqual:@"gtk_builder_add_objects_from_file"]
              || [[self cName] isEqual:@"gtk_builder_add_objects_from_resource"]
              || [[self cName] isEqual:@"gtk_builder_add_objects_from_string"]
+             || [[self cName] isEqual:@"gtk_builder_extend_with_template"]
              || [[self cName] isEqual:@"gtk_builder_value_from_string"]
              || [[self cName] isEqual:@"gtk_builder_value_from_string_type"]
              ) {

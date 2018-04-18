@@ -44,19 +44,6 @@ OF_APPLICATION_DELEGATE(coregtkgen)
 - (void) applicationDidFinishLaunching {
     OFString * girFile = [CGTKUtil globalConfigValueFor:@"girFile"];
 
-#if defined(OF_WINDOWS)
-    OFString * msys = ([OFApplication environment])[@"MSYSTEM_PREFIX"];
-
-    if (msys == nil) {
-        of_log(@"Invalid MSYSTEM_PREFIX env!");
-        [OFApplication terminateWithStatus:1];
-    }
-
-    girFile = ([msys stringByAppendingPathComponent:girFile]).stringByStandardizingPath;
-#else
-    girFile = ([@"/usr/" stringByAppendingPathComponent:girFile]).stringByStandardizingPath;
-#endif
-
     id parseError = nil;
 
     of_log(@"Attempting to parse GIR file...");
