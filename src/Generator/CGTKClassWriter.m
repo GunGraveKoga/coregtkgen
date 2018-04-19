@@ -84,18 +84,24 @@
             [output appendFormat:@"#import %@\n", imp];
         }
     }
-
+    
     [output appendString:@"\n"];
 
     // Interface declaration
-    [output appendFormat:@"@interface %@ : %@\n{\n\n}\n\n", [cgtkClass name], [CGTKUtil swapTypes:[cgtkClass cParentType]]];
+    [output appendFormat:@"\nOF_ASSUME_NONNULL_BEGIN\n\n@interface %@ : %@\n{\n\n}\n\n", [cgtkClass name], [CGTKUtil swapTypes:[cgtkClass cParentType]]];
 
     // Function declarations
     if ([cgtkClass hasFunctions]) {
         [output appendString:@"/**\n * Functions\n */\n"];
 
         for (CGTKMethod * func in [cgtkClass functions]) {
-            [output appendFormat:@"+(%@)%@;\n", [func returnType], [func sig]];
+            [output appendFormat:@"+ (%@)%@", [func returnType], [func sig]];
+            
+            if ([func isDeprecated]) {
+                [output appendFormat:@" GTK_OBJC_DEPRECATED(%@)", [func deprecatedMessage]];
+            }
+            
+            [output appendUTF8String:";\n"];
         }
     }
 
@@ -104,7 +110,13 @@
 
         // Constructor declarations
         for (CGTKMethod * ctor in [cgtkClass constructors]) {
-            [output appendFormat:@"-(instancetype)%@;\n", [CGTKUtil convertFunctionToInit:[ctor sig]]];
+            [output appendFormat:@"- (instancetype)%@", [CGTKUtil convertFunctionToInit:[ctor sig]]];
+            
+            if ([ctor isDeprecated]) {
+                [output appendFormat:@" GTK_OBJC_DEPRECATED(\"%@\")", [ctor deprecatedMessage]];
+            }
+            
+            [output appendUTF8String:";\n"];
         }
     }
 
@@ -123,11 +135,17 @@
 
     for (CGTKMethod * meth in [cgtkClass methods]) {
         [output appendFormat:@"\n%@\n", [CGTKClassWriter generateDocumentationForMethod:meth]];
-        [output appendFormat:@"-(%@)%@;\n", [meth returnType], [meth sig]];
+        [output appendFormat:@"- (%@)%@", [meth returnType], [meth sig]];
+        
+        if ([meth isDeprecated]) {
+            [output appendFormat:@" GTK_OBJC_DEPRECATED(\"%@\")", [meth deprecatedMessage]];
+        }
+        
+        [output appendUTF8String:";\n"];
     }
 
     // End interface
-    [output appendString:@"\n@end"];
+    [output appendString:@"\n@end\n\nOF_ASSUME_NONNULL_END\n\n"];
 
     return [output autorelease];
 } /* headerStringFor */
@@ -140,13 +158,14 @@
     // Imports
     [output appendString:@"\n/*\n * Objective-C imports\n */\n"];
     [output appendFormat:@"#import \"CoreGTK/%@.h\"\n\n", [cgtkClass name]];
+    [output appendUTF8String:"\t#pragma clang diagnostic push\n\t#pragma clang diagnostic ignored \"-Wdeprecated-declarations\"\n\n"];
 
     // Implementation declaration
     [output appendFormat:@"@implementation %@\n\n", [cgtkClass name]];
 
     // Function implementations
     for (CGTKMethod * func in [cgtkClass functions]) {
-        [output appendFormat:@"+(%@)%@", [func returnType], [func sig]];
+        [output appendFormat:@"+ (%@)%@", [func returnType], [func sig]];
 
         [output appendString:@"\n{\n"];
 
@@ -179,7 +198,8 @@
 
     // Constructor implementations
     for (CGTKMethod * ctor in [cgtkClass constructors]) {
-        [output appendFormat:@"-(instancetype)%@", [CGTKUtil convertFunctionToInit:[ctor sig]]];
+        
+        [output appendFormat:@"- (instancetype)%@", [CGTKUtil convertFunctionToInit:[ctor sig]]];
 
         [output appendString:@"\n{\n"];
 
@@ -191,9 +211,10 @@
     }
 
     // Self type method implementation
-    [output appendFormat:@"-(%@*)%@\n{\n\treturn %@;\n}\n\n", [cgtkClass cType], [[cgtkClass cName] uppercaseString], [CGTKUtil selfTypeMethodCall:[cgtkClass cType]]];
+    [output appendFormat:@"- (%@*)%@\n{\n\treturn %@;\n}\n\n", [cgtkClass cType], [[cgtkClass cName] uppercaseString], [CGTKUtil selfTypeMethodCall:[cgtkClass cType]]];
 
     for (CGTKMethod * meth in [cgtkClass methods]) {
+        
         [output appendFormat:@"-(%@)%@", [meth returnType], [meth sig]];
 
         [output appendString:@"\n{\n"];
@@ -219,6 +240,8 @@
 
     // End implementation
     [output appendString:@"\n@end"];
+    
+    [output appendUTF8String:"\n\n\t#pragma clang diagnostic pop\n"];
 
     return [output autorelease];
 } /* sourceStringFor */

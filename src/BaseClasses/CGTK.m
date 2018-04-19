@@ -59,4 +59,16 @@
 	gtk_main_quit();
 }
 
++ (bool)eventsPending {
+    return (g_main_context_pending(NULL)) ? true : false;
+}
+
++ (bool)mainIteration {
+    return [self mainIteration:true];
+}
+
++ (bool)mainIteration:(bool)blocking {
+    return g_main_context_iteration(NULL, blocking ? TRUE : FALSE);
+}
+
 @end

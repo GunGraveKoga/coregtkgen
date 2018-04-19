@@ -58,33 +58,33 @@ static OFMutableDictionary * dictExtraMethods;
 } /* convertUSSToCamelCase */
 
 + (OFString *) convertUSSToCapCase:(OFString *)input {
-    OFMutableString * output = [OFMutableString stringWithString:input];
-
-    [output replaceOccurrencesOfString:@"_" withString:@" "];
-    [output deleteEnclosingWhitespaces];
-    [output capitalize];
-    [output replaceOccurrencesOfString:@" " withString:@""];
-    [output makeImmutable];
-    /*
-     * OFArray * inputItems = [input componentsSeparatedByString:@"_"];
-     *
-     * BOOL previousItemWasSingleChar = NO;
-     *
-     * for (OFString * item in inputItems) {
-     * if ([item length] > 1) {
-     *  // Special case where we don't strand single characters
-     *  if (previousItemWasSingleChar) {
-     *      [output appendString:item];
-     *  } else {
-     *      [output appendFormat:@"%@%@", [[item substringWithRange:of_range(0, 1)] uppercaseString], [item substringWithRange:of_range(1, (output.length - 1))]];
-     *  }
-     *  previousItemWasSingleChar = NO;
-     * } else {
-     *  [output appendString:[item uppercaseString]];
-     *  previousItemWasSingleChar = YES;
-     * }
-     * }
-     */
+    OFMutableString * output = [OFMutableString string];
+    
+    OFArray * inputItems = [input componentsSeparatedByString:@"_"];
+     
+    BOOL previousItemWasSingleChar = NO;
+     
+    for (OFString * item in inputItems) {
+        void *pool = objc_autoreleasePoolPush();
+        
+        if ([item length] > 1) {
+            // Special case where we don't strand single characters
+            if (previousItemWasSingleChar) {
+                [output appendString:item];
+            } else {
+                const char *item_str = [item UTF8String];
+                [output appendFormat:@"%c%s", of_ascii_toupper(item_str[0]), item_str + 1];
+            }
+            
+            previousItemWasSingleChar = NO;
+        } else {
+            [output appendString:[item uppercaseString]];
+            previousItemWasSingleChar = YES;
+        }
+        
+        objc_autoreleasePoolPop(pool);
+    }
+     
     return output;
 } /* convertUSSToCapCase */
 

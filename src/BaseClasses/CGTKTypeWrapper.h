@@ -32,6 +32,16 @@
 #import <ObjFW/OFObject.h>
 #import <gtk/gtk.h>
 
+#if defined(__clang__)
+    #if __has_extension(attribute_deprecated_with_message)
+        #define GTK_OBJC_DEPRECATED(message) __attribute__((deprecated(message)))
+    #else
+        #define GTK_OBJC_DEPRECATED(message) __attribute__((__deprecated__))
+    #endif
+#else
+    #define GTK_OBJC_DEPRECATED(message) __attribute__((__deprecated__))
+#endif
+
 /**
  * Provides functions for wrapping GTK types
  */

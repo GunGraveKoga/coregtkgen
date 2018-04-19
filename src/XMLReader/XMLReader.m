@@ -1,7 +1,7 @@
 //
 // XMLReader.m
 // Based on Simple XML to OFDictionary Converter by Troy Brant
-// Original source here http://troybrant.net/blog/2010/09/simple-xml-to-OFDictionary-converter/
+// Original source here http://troybrant.net/blog/2010/09/simple-xml-to-NSDictionary-converter/
 //
 
 #import "XMLReader.h"

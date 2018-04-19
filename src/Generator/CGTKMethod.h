@@ -42,6 +42,8 @@
 	OFString *cName;
 	OFString *cReturnType;
 	OFArray *parameters;
+    BOOL deprecated;
+    OFString *deprecatedMessage;
 }
 
 -(void)setCName:(OFString *)name;
@@ -58,5 +60,11 @@
 
 -(void)setParameters:(OFArray *) params;
 -(OFArray *)parameters;
+
+- (void)setDeprecated:(BOOL)deprecated;
+- (BOOL)isDeprecated;
+
+- (void)setDeprecatedMessage:(OFString *)deprecatedMessage;
+- (OFString *)deprecatedMessage;
 
 @end

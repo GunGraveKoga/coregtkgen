@@ -38,6 +38,7 @@
 #import "CoreGTK/CGTK.h"
 #import "CoreGTK/CGTKSignalConnector.h"
 #import "CoreGTK/CGTKWindow.h"
+#import "CoreGTK/CGTKToolPalette.h"
 
 @interface HelloWorld : OFObject
 /* This is a callback function. The data arguments are ignored

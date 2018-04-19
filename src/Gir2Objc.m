@@ -85,7 +85,7 @@
     if (![Gir2Objc parseGirFromFile:girFile intoDictionary:&girDict withError:parseError]) {
         return nil;
     }
-
+    
     return [Gir2Objc firstApiFromDictionary:girDict];
 }
 
@@ -119,8 +119,6 @@
 + (BOOL) generateClassFilesFromNamespace:(GIRNamespace *)namespace {
     size_t i = 0;
 
-    // @try
-    // {
     if (namespace == nil) {
         return NO;
     }
@@ -193,6 +191,9 @@
                 }
                 [objcCtor setParameters:paramArray];
                 [paramArray release];
+                
+                [objcCtor setDeprecated:ctor.deprecated];
+                [objcCtor setDeprecatedMessage:ctor.docDeprecated.docText];
 
                 [cgtkClass addConstructor:objcCtor];
                 [objcCtor release];
@@ -237,6 +238,9 @@
                 }
                 [objcFunc setParameters:paramArray];
                 [paramArray release];
+                
+                [objcFunc setDeprecated:func.deprecated];
+                [objcFunc setDeprecatedMessage:func.docDeprecated.docText];
 
                 [cgtkClass addFunction:objcFunc];
                 [objcFunc release];
@@ -281,6 +285,9 @@
                 }
                 [objcMeth setParameters:paramArray];
                 [paramArray release];
+                
+                [objcMeth setDeprecated:meth.deprecated];
+                [objcMeth setDeprecatedMessage:meth.docDeprecated.docText];
 
                 [cgtkClass addMethod:objcMeth];
                 [objcMeth release];
@@ -293,12 +300,6 @@
     }
 
     return YES;
-    // }
-    /*@catch (OFException * e)
-     * {
-     *  of_log(@"Exception: %@", e);
-     *  return NO;
-     * }*/
 } /* generateClassFilesFromNamespace */
 
 @end

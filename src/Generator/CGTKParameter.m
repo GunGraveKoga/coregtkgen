@@ -72,7 +72,13 @@
 
 -(OFString *)type
 {
-	return [CGTKUtil swapTypes:[self cType]];
+	OFString *res = [CGTKUtil swapTypes:[self cType]];
+    
+    if ([res hasSuffix:@"**"]) {
+        res = [res stringByReplacingOccurrencesOfString:@"**" withString:@" * _Nullable * _Nullable"];
+    }
+    
+    return res;
 }
 
 -(void)setCName:(OFString *)name

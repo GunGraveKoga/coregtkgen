@@ -119,7 +119,13 @@
 }
 
 - (OFString *) returnType {
-    return [CGTKUtil swapTypes:cReturnType];
+    OFString *res = [CGTKUtil swapTypes:cReturnType];
+    
+    if ([res hasSuffix:@"**"]) {
+        res = [res stringByReplacingOccurrencesOfString:@"**" withString:@" * _Nullable * _Nullable"];
+    }
+    
+    return res;
 }
 
 - (BOOL) returnsVoid {
@@ -158,6 +164,45 @@
 
 - (OFArray *) parameters {
     return [[parameters retain] autorelease];
+}
+
+- (void)setDeprecated:(BOOL)deprecated_ {
+    self->deprecated = deprecated_;
+}
+
+- (BOOL)isDeprecated {
+    return deprecated;
+}
+
+- (void)setDeprecatedMessage:(OFString *)deprecatedMessage_ {
+    if (self->deprecatedMessage != nil) {
+        [self->deprecatedMessage release];
+        self->deprecatedMessage = nil;
+    }
+    
+    if (deprecatedMessage_ != nil) {
+        self->deprecatedMessage = [deprecatedMessage_ copy];
+    }
+}
+
+- (OFString *)deprecatedMessage {
+    if (deprecatedMessage.length > 0) {
+        OFMutableString *result = [self->deprecatedMessage mutableCopy];
+        OFCharacterSet *charset = [OFCharacterSet characterSetWithCharactersInString:@"\t\r\n"];
+        
+        size_t idx = 0;
+        while ((idx = [result indexOfCharacterFromSet:charset]) != OF_NOT_FOUND) {
+            [result replaceCharactersInRange:of_range(idx, 1) withString:@" "];
+        }
+        
+        [result deleteEnclosingWhitespaces];
+        
+        [result makeImmutable];
+        
+        return result;
+    }
+    
+    return @"";
 }
 
 - (void) dealloc {

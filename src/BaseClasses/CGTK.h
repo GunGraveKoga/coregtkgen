@@ -37,6 +37,15 @@
  * C imports
  */
 #import <gtk/gtk.h>
+
+#define CGTK_APPLICATION_DELEGATE(cls)                  \
+    int                                                 \
+    main(int argc, char *argv[])                        \
+    {                                                   \
+        [CGTK autoInitWithArgc:argc andArgv:argv];      \
+        return of_application_main(&argc, &argv,        \
+            (cls *)[[cls alloc] init]);                 \
+    }
  
 /**
  * Global level CoreGTK functionality
@@ -51,7 +60,7 @@
  *
  * @return the version string
  */
-+(OFString *)coreGtkVersion;
++ (OFString *)coreGtkVersion;
 
 /**
  * Call this function before using any other GTK+ functions in your GUI 
@@ -73,7 +82,7 @@
  *  Address of the argv parameter of main(), or NULL. Any options understood by 
  *  GTK+ are stripped before return. [array length=argc][inout][allow-none]
  */
-+(void)initWithArgc:(int *)argc andArgv:(char ***)argv;
++ (void)initWithArgc:(int *)argc andArgv:(char ***)argv;
 
 /**
  * Same as initWithArgc:andArgv: but does the type conversion automatically.
@@ -86,11 +95,11 @@
  *  Address of the argv parameter of main(), or NULL. Any options understood by 
  *  GTK+ are stripped before return. [array length=argc][inout][allow-none]
  *
- * @returns modified argc value
+ * @return modified argc value
  *
  * @see initWithArgc:andArgv:
  */
-+(int)autoInitWithArgc:(int)argc andArgv:(char *[])argv;
++ (int)autoInitWithArgc:(int)argc andArgv:(char *[])argv;
 
 /**
  * Runs the main loop until mainQuit is called. 
@@ -99,12 +108,40 @@
  *
  * @see mainQuit
  */
-+(void)main;
++ (void)main;
 
 /**
  * Makes the innermost invocation of the main loop return when it regains 
  * control.
  */
-+(void)mainQuit;
++ (void)mainQuit;
 
+/**
+ * Checks if any events are pending.
+ * This can be used to update the UI and invoke timeouts etc. while doing some time intensive computation.
+ *
+ * @return true if any events are pending, false otherwise
+ */
++ (bool)eventsPending;
+
+/**
+ * Runs a single iteration of the mainloop.
+ * If no events are waiting to be processed GTK+ will block until the next event is noticed. If you don’t want
+ * to block look at +mainIteration: or check if any events are pending with +eventsPending first.
+ *
+ * @return true if +mainQuit has been called for the innermost mainloop
+*/
++ (bool)mainIteration;
+
+/**
+ * Runs a single iteration of the mainloop. If no events are available either return
+ * or block depending on the value of blocking .
+ *
+ * @param blocking
+ *  true if you want GTK+ to block if no events are pending
+ *
+ * @return true if +mainQuit has been called for the innermost mainloop
+ */
++ (bool)mainIteration:(bool)blocking;
+ 
 @end

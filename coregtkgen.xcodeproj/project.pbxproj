@@ -20,6 +20,51 @@
 		};
 /* End PBXAggregateTarget section */
 
+/* Begin PBXBuildFile section */
+		ED7283752088A42600AE4216 /* Gir2Objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD1A2087F24000E9FD9F /* Gir2Objc.m */; };
+		ED7283762088A42600AE4216 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD1B2087F24000E9FD9F /* main.m */; };
+		ED7283772088A43D00AE4216 /* GIRClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD222087F24000E9FD9F /* GIRClass.m */; };
+		ED7283782088A43D00AE4216 /* GIRType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD232087F24000E9FD9F /* GIRType.m */; };
+		ED7283792088A43D00AE4216 /* GIRArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD242087F24000E9FD9F /* GIRArray.m */; };
+		ED72837A2088A43D00AE4216 /* GIRReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD272087F24000E9FD9F /* GIRReturnValue.m */; };
+		ED72837B2088A43D00AE4216 /* GIRConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD292087F24000E9FD9F /* GIRConstant.m */; };
+		ED72837C2088A43D00AE4216 /* GIRInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD2B2087F24000E9FD9F /* GIRInterface.m */; };
+		ED72837D2088A43D00AE4216 /* GIRApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD2C2087F24000E9FD9F /* GIRApi.m */; };
+		ED72837E2088A43D00AE4216 /* GIRVarargs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD2F2087F24000E9FD9F /* GIRVarargs.m */; };
+		ED72837F2088A43D00AE4216 /* GIRVirtualMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD322087F24000E9FD9F /* GIRVirtualMethod.m */; };
+		ED7283802088A43D00AE4216 /* GIRMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD352087F24000E9FD9F /* GIRMethod.m */; };
+		ED7283812088A43D00AE4216 /* GIREnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD392087F24000E9FD9F /* GIREnumeration.m */; };
+		ED7283822088A43D00AE4216 /* GIRDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD3A2087F24000E9FD9F /* GIRDoc.m */; };
+		ED7283832088A43D00AE4216 /* GIRPrerequisite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD3C2087F24000E9FD9F /* GIRPrerequisite.m */; };
+		ED7283842088A43D00AE4216 /* GIRNamespace.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD3D2087F24000E9FD9F /* GIRNamespace.m */; };
+		ED7283852088A43D00AE4216 /* GIRMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD3F2087F24000E9FD9F /* GIRMember.m */; };
+		ED7283862088A43D00AE4216 /* GIRConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD402087F24000E9FD9F /* GIRConstructor.m */; };
+		ED7283872088A43D00AE4216 /* GIRProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD442087F24000E9FD9F /* GIRProperty.m */; };
+		ED7283882088A43D00AE4216 /* GIRImplements.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD452087F24000E9FD9F /* GIRImplements.m */; };
+		ED7283892088A43D00AE4216 /* GIRParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD472087F24000E9FD9F /* GIRParameter.m */; };
+		ED72838A2088A43D00AE4216 /* GIRFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD482087F24000E9FD9F /* GIRFunction.m */; };
+		ED72838B2088A43D00AE4216 /* GIRBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD4A2087F24000E9FD9F /* GIRBase.m */; };
+		ED72838C2088A43D00AE4216 /* GIRField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD4B2087F24000E9FD9F /* GIRField.m */; };
+		ED72838D2088A44300AE4216 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD1E2087F24000E9FD9F /* XMLReader.m */; };
+		ED72838E2088A44A00AE4216 /* CGTKMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD102087F24000E9FD9F /* CGTKMethod.m */; };
+		ED72838F2088A44A00AE4216 /* CGTKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD122087F24000E9FD9F /* CGTKUtil.m */; };
+		ED7283902088A44A00AE4216 /* CGTKClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD162087F24000E9FD9F /* CGTKClass.m */; };
+		ED7283912088A44A00AE4216 /* CGTKClassWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD172087F24000E9FD9F /* CGTKClassWriter.m */; };
+		ED7283922088A44A00AE4216 /* CGTKParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD182087F24000E9FD9F /* CGTKParameter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED72836C2088A3FC00AE4216 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1441CCF42087F24000E9FD9F /* Gir2Objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gir2Objc.h; sourceTree = "<group>"; };
 		1441CCF62087F24000E9FD9F /* CGTK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGTK.h; sourceTree = "<group>"; };
@@ -109,7 +154,18 @@
 		1441CD7A2087F33C00E9FD9F /* config.guess */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.guess; sourceTree = "<group>"; };
 		1441CD7B2087F33C00E9FD9F /* config.sub */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
 		1441CD7D2087F33C00E9FD9F /* buildsys.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = buildsys.m4; sourceTree = "<group>"; };
+		ED72836E2088A3FC00AE4216 /* coregtkgen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = coregtkgen; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED72836B2088A3FC00AE4216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1441CCC92087F08300E9FD9F = {
@@ -123,6 +179,7 @@
 		1441CCD32087F08300E9FD9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				ED72836E2088A3FC00AE4216 /* coregtkgen */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,6 +345,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXNativeTarget section */
+		ED72836D2088A3FC00AE4216 /* coregtkgen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED7283722088A3FC00AE4216 /* Build configuration list for PBXNativeTarget "coregtkgen" */;
+			buildPhases = (
+				ED72836A2088A3FC00AE4216 /* Sources */,
+				ED72836B2088A3FC00AE4216 /* Frameworks */,
+				ED72836C2088A3FC00AE4216 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coregtkgen;
+			productName = coregtkgen;
+			productReference = ED72836E2088A3FC00AE4216 /* coregtkgen */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
 		1441CCCA2087F08300E9FD9F /* Project object */ = {
 			isa = PBXProject;
@@ -297,6 +374,10 @@
 				TargetAttributes = {
 					1441CD872087F71800E9FD9F = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					ED72836D2088A3FC00AE4216 = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -314,6 +395,7 @@
 			projectRoot = "";
 			targets = (
 				1441CD872087F71800E9FD9F /* build */,
+				ED72836D2088A3FC00AE4216 /* coregtkgen */,
 			);
 		};
 /* End PBXProject section */
@@ -333,6 +415,46 @@
 			shellScript = "\"${SRCROOT}/autogen.sh\" &&\n\"${SRCROOT}/configure\" --prefix=/usr/local PKG_CONFIG=/usr/local/opt/pkgconfig/bin/pkg-config PKG_CONFIG_PATH=\"/usr/local/opt/gtk+3/lib/pkgconfig/:/usr/local/opt/glib/lib/pkgconfig/:/usr/local/opt/cairo/lib/pkgconfig/:/usr/local/opt/atk/lib/pkgconfig/:/usr/local/opt/gdk-pixbuf/lib/pkgconfig/\" &&\nmake";
 		};
 /* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED72836A2088A3FC00AE4216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED72838B2088A43D00AE4216 /* GIRBase.m in Sources */,
+				ED7283872088A43D00AE4216 /* GIRProperty.m in Sources */,
+				ED7283832088A43D00AE4216 /* GIRPrerequisite.m in Sources */,
+				ED72838A2088A43D00AE4216 /* GIRFunction.m in Sources */,
+				ED72837A2088A43D00AE4216 /* GIRReturnValue.m in Sources */,
+				ED72837E2088A43D00AE4216 /* GIRVarargs.m in Sources */,
+				ED72837B2088A43D00AE4216 /* GIRConstant.m in Sources */,
+				ED72838E2088A44A00AE4216 /* CGTKMethod.m in Sources */,
+				ED72838D2088A44300AE4216 /* XMLReader.m in Sources */,
+				ED7283852088A43D00AE4216 /* GIRMember.m in Sources */,
+				ED72838F2088A44A00AE4216 /* CGTKUtil.m in Sources */,
+				ED7283792088A43D00AE4216 /* GIRArray.m in Sources */,
+				ED7283782088A43D00AE4216 /* GIRType.m in Sources */,
+				ED7283822088A43D00AE4216 /* GIRDoc.m in Sources */,
+				ED7283922088A44A00AE4216 /* CGTKParameter.m in Sources */,
+				ED72838C2088A43D00AE4216 /* GIRField.m in Sources */,
+				ED72837C2088A43D00AE4216 /* GIRInterface.m in Sources */,
+				ED7283882088A43D00AE4216 /* GIRImplements.m in Sources */,
+				ED7283842088A43D00AE4216 /* GIRNamespace.m in Sources */,
+				ED7283762088A42600AE4216 /* main.m in Sources */,
+				ED72837D2088A43D00AE4216 /* GIRApi.m in Sources */,
+				ED7283772088A43D00AE4216 /* GIRClass.m in Sources */,
+				ED7283862088A43D00AE4216 /* GIRConstructor.m in Sources */,
+				ED7283802088A43D00AE4216 /* GIRMethod.m in Sources */,
+				ED7283752088A42600AE4216 /* Gir2Objc.m in Sources */,
+				ED7283892088A43D00AE4216 /* GIRParameter.m in Sources */,
+				ED7283902088A44A00AE4216 /* CGTKClass.m in Sources */,
+				ED7283912088A44A00AE4216 /* CGTKClassWriter.m in Sources */,
+				ED72837F2088A43D00AE4216 /* GIRVirtualMethod.m in Sources */,
+				ED7283812088A43D00AE4216 /* GIREnumeration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		1441CCD72087F08300E9FD9F /* Debug */ = {
@@ -383,9 +505,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fobjc-runtime=objfw",
+					"-fexceptions",
+					"-fobjc-exceptions",
+					"-funwind-tables",
+					"-fconstant-string-class=OFConstantString",
+					"-fno-constant-cfstrings",
+					"-fblocks",
+					"-fno-modules",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -432,8 +565,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"-fobjc-runtime=objfw",
+					"-fexceptions",
+					"-fobjc-exceptions",
+					"-funwind-tables",
+					"-fconstant-string-class=OFConstantString",
+					"-fno-constant-cfstrings",
+					"-fblocks",
+					"-fno-modules",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -447,6 +591,22 @@
 			name = Debug;
 		};
 		1441CD8A2087F71800E9FD9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ED7283732088A3FC00AE4216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED7283742088A3FC00AE4216 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +631,15 @@
 			buildConfigurations = (
 				1441CD892087F71800E9FD9F /* Debug */,
 				1441CD8A2087F71800E9FD9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED7283722088A3FC00AE4216 /* Build configuration list for PBXNativeTarget "coregtkgen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7283732088A3FC00AE4216 /* Debug */,
+				ED7283742088A3FC00AE4216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
