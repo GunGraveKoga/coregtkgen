@@ -45,7 +45,7 @@
 	return [retVal autorelease];
 }
 
--(id)initWithGObject:(GObject *)obj
+-(instancetype)initWithGObject:(GObject *)obj
 {
 	self = [super init];
 	

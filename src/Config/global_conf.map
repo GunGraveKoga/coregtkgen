@@ -1,5 +1,5 @@
 {
-	"girFile" : "/usr/share/gir-1.0/Gtk-3.0.gir",
+	"girFile" : "/usr/local/opt/gtk+3/share/gir-1.0/Gtk-3.0.gir",
 	
 	"outputDir" : "Output/CoreGTK",
 	

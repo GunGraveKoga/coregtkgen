@@ -32,7 +32,7 @@
 
 @implementation CGTKCallbackData
 
--(id)initWithObject:(id)obj andSEL:(SEL)sel
+-(instancetype)initWithObject:(id)obj andSEL:(SEL)sel
 {
 	self = [super init];
 	if(self)
@@ -46,7 +46,7 @@
 	return self;
 }
 
-+(id)withObject:(id)obj andSEL:(SEL)sel
++(instancetype)withObject:(id)obj andSEL:(SEL)sel
 {
 	return [[[CGTKCallbackData alloc] initWithObject:obj andSEL:sel] autorelease];
 }

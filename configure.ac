@@ -9,12 +9,13 @@ dnl
 
 dnl Specify name, version and contact e-mail of the package.
 AC_INIT(coregtkgen, 1.0)
-BUILDSYS_INIT
 
 dnl Specifies where your sources are.
 AC_CONFIG_SRCDIR(src)
-AC_CONFIG_MACRO_DIR(m4)
 AC_CONFIG_AUX_DIR(build-aux)
+AC_CONFIG_MACRO_DIR(build-aux/m4)
+
+BUILDSYS_INIT
 
 AC_CHECK_TOOL(OBJFW_CONFIG, objfw-config)
 AS_IF([test x"$OBJFW_CONFIG" = x""], [

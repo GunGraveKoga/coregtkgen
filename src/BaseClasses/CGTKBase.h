@@ -68,7 +68,7 @@
  *
  * @returns a new CGTKBase
  */
--(id)initWithGObject:(GObject *)obj;
+-(instancetype)initWithGObject:(GObject *)obj;
 
 /**
  * Gets the internal GtkWidget

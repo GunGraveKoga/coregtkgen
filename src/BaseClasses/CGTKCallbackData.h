@@ -53,7 +53,7 @@
  *
  * @returns a new CGTKCallbackData
  */
-+(id)withObject:(id)obj andSEL:(SEL)sel;
++(instancetype)withObject:(id)obj andSEL:(SEL)sel;
 
 /**
  * Creates and returns a new instance of CGTKCallbackData holding the object and the selector.
@@ -66,7 +66,7 @@
  *
  * @returns a new CGTKCallbackData
  */
--(id)initWithObject:(id)obj andSEL:(SEL)sel;
+-(instancetype)initWithObject:(id)obj andSEL:(SEL)sel;
 
 /**
  * Gets the held object

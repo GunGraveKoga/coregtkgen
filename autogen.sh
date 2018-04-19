@@ -1,3 +1,3 @@
 #!/bin/sh
-aclocal -I m4 || exit 1
-autoconf || exit 1
+aclocal -I build-aux/m4 || exit 1
+autoconf -i || exit 1

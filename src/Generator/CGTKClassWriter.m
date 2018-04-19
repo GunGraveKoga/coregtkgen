@@ -104,7 +104,7 @@
 
         // Constructor declarations
         for (CGTKMethod * ctor in [cgtkClass constructors]) {
-            [output appendFormat:@"-(id)%@;\n", [CGTKUtil convertFunctionToInit:[ctor sig]]];
+            [output appendFormat:@"-(instancetype)%@;\n", [CGTKUtil convertFunctionToInit:[ctor sig]]];
         }
     }
 
@@ -179,7 +179,7 @@
 
     // Constructor implementations
     for (CGTKMethod * ctor in [cgtkClass constructors]) {
-        [output appendFormat:@"-(id)%@", [CGTKUtil convertFunctionToInit:[ctor sig]]];
+        [output appendFormat:@"-(instancetype)%@", [CGTKUtil convertFunctionToInit:[ctor sig]]];
 
         [output appendString:@"\n{\n"];
 

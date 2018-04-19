@@ -33,7 +33,7 @@
 
 @implementation CGTKSignalData : OFObject
 
-- (id) initWithTarget:(id) _target selector:(SEL) _selector data:(void *) _data
+- (instancetype) initWithTarget:(id) _target selector:(SEL) _selector data:(void *) _data
 {
 	[super init];
 	if(self != nil)

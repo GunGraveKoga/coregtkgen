@@ -29,7 +29,7 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/Foundation.h>
+#import <ObjFW/ObjFW.h>
 
 #import "CoreGTK/CGTKBaseBuilder.h"
 #import "CoreGTK/CGTKBuilder.h"
@@ -39,7 +39,7 @@
 #import "CoreGTK/CGTKSignalConnector.h"
 #import "CoreGTK/CGTKWindow.h"
 
-@interface HelloWorld : NSObject
+@interface HelloWorld : OFObject
 /* This is a callback function. The data arguments are ignored
  * in this example. More callbacks below. */
 +(void)hello;
@@ -60,7 +60,7 @@
 
 int main(int argc, char *argv[])
 {	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	OFAutoreleasePool *pool = [[OFAutoreleasePool alloc] init];
 	
 	/* This is called in all GTK applications. Arguments are parsed
     * from the command line and are returned to the application. */
@@ -148,7 +148,7 @@ int main(int argc, char *argv[])
 	
 	if([builder addFromFileWithFilename:@"gladeExample.glade" andErr:NULL] == 0)
 	{
-		NSLog(@"Error loading GUI file");
+		of_log(@"Error loading GUI file");
 		return;
 	}
 
@@ -156,10 +156,10 @@ int main(int argc, char *argv[])
 	[CGTKBaseBuilder setDebug:YES];
 
 	/* Use signal dictionary to connect GLADE objects to Objective-C code */
-	NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:
-		             [CGTKCallbackData withObject:[CGTK class] andSEL:@selector(mainQuit)], @"endGtkLoop",
-		             [CGTKCallbackData withObject:[HelloWorld class] andSEL:@selector(hello)], @"on_button1_clicked",
-		             [CGTKCallbackData withObject:[HelloWorld class] andSEL:@selector(goodbye)], @"on_button2_clicked",
+	OFDictionary *dic = [[OFDictionary alloc] initWithKeysAndObjects:
+		             @"endGtkLoop", [CGTKCallbackData withObject:[CGTK class] andSEL:@selector(mainQuit)],
+		             @"on_button1_clicked", [CGTKCallbackData withObject:[HelloWorld class] andSEL:@selector(hello)],
+		             @"on_button2_clicked", [CGTKCallbackData withObject:[HelloWorld class] andSEL:@selector(goodbye)],
 		             nil];
 
 	/* CGTKBaseBuilder is a helper class to maps GLADE signals to Objective-C code */
@@ -188,7 +188,7 @@ int main(int argc, char *argv[])
  */
 +(void)hello
 {
-    NSLog(@"Hello World");
+    of_log(@"Hello World");
 }
 
 /*
@@ -196,7 +196,7 @@ int main(int argc, char *argv[])
  */
 +(void)goodbye
 {
-    NSLog(@"Goodbye!");
+    of_log(@"Goodbye!");
 }
 
 /*

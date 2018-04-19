@@ -1,0 +1,1409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1441CEB72088037300E9FD9F /* CGTK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE212088005900E9FD9F /* CGTK.h */; };
+		1441CEB82088037300E9FD9F /* CGTK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE8B2088006D00E9FD9F /* CGTK.m */; };
+		1441CEB92088037300E9FD9F /* CGTKAboutDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE452088005F00E9FD9F /* CGTKAboutDialog.h */; };
+		1441CEBA2088037300E9FD9F /* CGTKAboutDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE142088005700E9FD9F /* CGTKAboutDialog.m */; };
+		1441CEBB2088037300E9FD9F /* CGTKAccelLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE532088006100E9FD9F /* CGTKAccelLabel.h */; };
+		1441CEBC2088037300E9FD9F /* CGTKAccelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE1C2088005800E9FD9F /* CGTKAccelLabel.m */; };
+		1441CEBD2088037300E9FD9F /* CGTKActionBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE5A2088006200E9FD9F /* CGTKActionBar.h */; };
+		1441CEBE2088037300E9FD9F /* CGTKActionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE072088005400E9FD9F /* CGTKActionBar.m */; };
+		1441CEBF2088037300E9FD9F /* CGTKAlignment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE622088006300E9FD9F /* CGTKAlignment.h */; };
+		1441CEC02088037300E9FD9F /* CGTKAlignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDAB2088004700E9FD9F /* CGTKAlignment.m */; };
+		1441CEC12088037300E9FD9F /* CGTKAppChooserButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDD02088004C00E9FD9F /* CGTKAppChooserButton.h */; };
+		1441CEC22088037300E9FD9F /* CGTKAppChooserButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE3D2088005D00E9FD9F /* CGTKAppChooserButton.m */; };
+		1441CEC32088037300E9FD9F /* CGTKAppChooserDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE1D2088005900E9FD9F /* CGTKAppChooserDialog.h */; };
+		1441CEC42088037300E9FD9F /* CGTKAppChooserDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDBA2088004900E9FD9F /* CGTKAppChooserDialog.m */; };
+		1441CEC52088037300E9FD9F /* CGTKAppChooserWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDC12088004A00E9FD9F /* CGTKAppChooserWidget.h */; };
+		1441CEC62088037300E9FD9F /* CGTKAppChooserWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDE62088004F00E9FD9F /* CGTKAppChooserWidget.m */; };
+		1441CEC72088037300E9FD9F /* CGTKApplicationWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CD962088004500E9FD9F /* CGTKApplicationWindow.h */; };
+		1441CEC82088037300E9FD9F /* CGTKApplicationWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE082088005500E9FD9F /* CGTKApplicationWindow.m */; };
+		1441CEC92088037300E9FD9F /* CGTKArrow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDDD2088004E00E9FD9F /* CGTKArrow.h */; };
+		1441CECA2088037300E9FD9F /* CGTKArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDF82088005300E9FD9F /* CGTKArrow.m */; };
+		1441CECB2088037300E9FD9F /* CGTKAspectFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE712088006500E9FD9F /* CGTKAspectFrame.h */; };
+		1441CECC2088037300E9FD9F /* CGTKAspectFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDA12088004600E9FD9F /* CGTKAspectFrame.m */; };
+		1441CECD2088037300E9FD9F /* CGTKAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE042088005400E9FD9F /* CGTKAssistant.h */; };
+		1441CECE2088037300E9FD9F /* CGTKAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE8A2088006D00E9FD9F /* CGTKAssistant.m */; };
+		1441CECF2088037300E9FD9F /* CGTKBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE552088006100E9FD9F /* CGTKBase.h */; };
+		1441CED02088037300E9FD9F /* CGTKBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDB42088004800E9FD9F /* CGTKBase.m */; };
+		1441CED12088037300E9FD9F /* CGTKBaseBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE5B2088006200E9FD9F /* CGTKBaseBuilder.h */; };
+		1441CED22088037300E9FD9F /* CGTKBaseBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE542088006100E9FD9F /* CGTKBaseBuilder.m */; };
+		1441CED32088037300E9FD9F /* CGTKBin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDB92088004900E9FD9F /* CGTKBin.h */; };
+		1441CED42088037300E9FD9F /* CGTKBin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDE82088004F00E9FD9F /* CGTKBin.m */; };
+		1441CED52088037300E9FD9F /* CGTKBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE512088006000E9FD9F /* CGTKBox.h */; };
+		1441CED62088037300E9FD9F /* CGTKBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE1E2088005900E9FD9F /* CGTKBox.m */; };
+		1441CED72088037300E9FD9F /* CGTKBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE2F2088005B00E9FD9F /* CGTKBuilder.h */; };
+		1441CED82088037300E9FD9F /* CGTKBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDC52088004A00E9FD9F /* CGTKBuilder.m */; };
+		1441CED92088037300E9FD9F /* CGTKButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CEA02088007000E9FD9F /* CGTKButton.h */; };
+		1441CEDA2088037300E9FD9F /* CGTKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDA72088004700E9FD9F /* CGTKButton.m */; };
+		1441CEDB2088037300E9FD9F /* CGTKButtonBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDEC2088005000E9FD9F /* CGTKButtonBox.h */; };
+		1441CEDC2088037300E9FD9F /* CGTKButtonBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE8F2088006E00E9FD9F /* CGTKButtonBox.m */; };
+		1441CEDD2088037300E9FD9F /* CGTKCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CD9F2088004600E9FD9F /* CGTKCalendar.h */; };
+		1441CEDE2088037300E9FD9F /* CGTKCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDD32088004D00E9FD9F /* CGTKCalendar.m */; };
+		1441CEDF2088037300E9FD9F /* CGTKCallbackData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDDB2088004E00E9FD9F /* CGTKCallbackData.h */; };
+		1441CEE02088037300E9FD9F /* CGTKCallbackData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE642088006300E9FD9F /* CGTKCallbackData.m */; };
+		1441CEE12088037300E9FD9F /* CGTKCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE592088006200E9FD9F /* CGTKCellView.h */; };
+		1441CEE22088037300E9FD9F /* CGTKCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE112088005700E9FD9F /* CGTKCellView.m */; };
+		1441CEE32088037300E9FD9F /* CGTKCheckButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE802088006B00E9FD9F /* CGTKCheckButton.h */; };
+		1441CEE42088037300E9FD9F /* CGTKCheckButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE012088005400E9FD9F /* CGTKCheckButton.m */; };
+		1441CEE52088037300E9FD9F /* CGTKCheckMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE242088005A00E9FD9F /* CGTKCheckMenuItem.h */; };
+		1441CEE62088037300E9FD9F /* CGTKCheckMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDD22088004C00E9FD9F /* CGTKCheckMenuItem.m */; };
+		1441CEE72088037300E9FD9F /* CGTKColorButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE562088006100E9FD9F /* CGTKColorButton.h */; };
+		1441CEE82088037300E9FD9F /* CGTKColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE1B2088005800E9FD9F /* CGTKColorButton.m */; };
+		1441CEE92088037300E9FD9F /* CGTKColorChooserDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE522088006100E9FD9F /* CGTKColorChooserDialog.h */; };
+		1441CEEA2088037300E9FD9F /* CGTKColorChooserDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE6C2088006500E9FD9F /* CGTKColorChooserDialog.m */; };
+		1441CEEB2088037300E9FD9F /* CGTKColorChooserWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE302088005B00E9FD9F /* CGTKColorChooserWidget.h */; };
+		1441CEEC2088037300E9FD9F /* CGTKColorChooserWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE272088005A00E9FD9F /* CGTKColorChooserWidget.m */; };
+		1441CEED2088037300E9FD9F /* CGTKColorSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE822088006C00E9FD9F /* CGTKColorSelection.h */; };
+		1441CEEE2088037300E9FD9F /* CGTKColorSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDA42088004600E9FD9F /* CGTKColorSelection.m */; };
+		1441CEEF2088037300E9FD9F /* CGTKColorSelectionDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE6E2088006500E9FD9F /* CGTKColorSelectionDialog.h */; };
+		1441CEF02088037300E9FD9F /* CGTKColorSelectionDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDB52088004800E9FD9F /* CGTKColorSelectionDialog.m */; };
+		1441CEF12088037300E9FD9F /* CGTKComboBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE7B2088006A00E9FD9F /* CGTKComboBox.h */; };
+		1441CEF22088037300E9FD9F /* CGTKComboBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDE42088004F00E9FD9F /* CGTKComboBox.m */; };
+		1441CEF32088037300E9FD9F /* CGTKComboBoxText.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE2E2088005B00E9FD9F /* CGTKComboBoxText.h */; };
+		1441CEF42088037300E9FD9F /* CGTKComboBoxText.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDCF2088004C00E9FD9F /* CGTKComboBoxText.m */; };
+		1441CEF52088037300E9FD9F /* CGTKContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDDC2088004E00E9FD9F /* CGTKContainer.h */; };
+		1441CEF62088037300E9FD9F /* CGTKContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE472088005F00E9FD9F /* CGTKContainer.m */; };
+		1441CEF72088037300E9FD9F /* CGTKDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDAF2088004800E9FD9F /* CGTKDialog.h */; };
+		1441CEF82088037300E9FD9F /* CGTKDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE382088005D00E9FD9F /* CGTKDialog.m */; };
+		1441CEF92088037300E9FD9F /* CGTKDrawingArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDE02088004E00E9FD9F /* CGTKDrawingArea.h */; };
+		1441CEFA2088037300E9FD9F /* CGTKDrawingArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE9E2088007000E9FD9F /* CGTKDrawingArea.m */; };
+		1441CEFB2088037300E9FD9F /* CGTKEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CD952088004500E9FD9F /* CGTKEntry.h */; };
+		1441CEFC2088037300E9FD9F /* CGTKEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDBE2088004900E9FD9F /* CGTKEntry.m */; };
+		1441CEFD2088037300E9FD9F /* CGTKEventBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE8C2088006D00E9FD9F /* CGTKEventBox.h */; };
+		1441CEFE2088037300E9FD9F /* CGTKEventBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE972088006F00E9FD9F /* CGTKEventBox.m */; };
+		1441CEFF2088037300E9FD9F /* CGTKExpander.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDBB2088004900E9FD9F /* CGTKExpander.h */; };
+		1441CF002088037300E9FD9F /* CGTKExpander.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CEA42088007100E9FD9F /* CGTKExpander.m */; };
+		1441CF012088037300E9FD9F /* CGTKFileChooserButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE0B2088005500E9FD9F /* CGTKFileChooserButton.h */; };
+		1441CF022088037300E9FD9F /* CGTKFileChooserButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE7C2088006B00E9FD9F /* CGTKFileChooserButton.m */; };
+		1441CF032088037300E9FD9F /* CGTKFileChooserDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE762088006900E9FD9F /* CGTKFileChooserDialog.h */; };
+		1441CF042088037300E9FD9F /* CGTKFileChooserDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE392088005D00E9FD9F /* CGTKFileChooserDialog.m */; };
+		1441CF052088037300E9FD9F /* CGTKFileChooserWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDE72088004F00E9FD9F /* CGTKFileChooserWidget.h */; };
+		1441CF062088037300E9FD9F /* CGTKFileChooserWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE362088005C00E9FD9F /* CGTKFileChooserWidget.m */; };
+		1441CF072088037300E9FD9F /* CGTKFixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDF72088005300E9FD9F /* CGTKFixed.h */; };
+		1441CF082088037300E9FD9F /* CGTKFixed.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE662088006400E9FD9F /* CGTKFixed.m */; };
+		1441CF092088037300E9FD9F /* CGTKFlowBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDF52088005200E9FD9F /* CGTKFlowBox.h */; };
+		1441CF0A2088037300E9FD9F /* CGTKFlowBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE4F2088006000E9FD9F /* CGTKFlowBox.m */; };
+		1441CF0B2088037300E9FD9F /* CGTKFlowBoxChild.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDF62088005200E9FD9F /* CGTKFlowBoxChild.h */; };
+		1441CF0C2088037300E9FD9F /* CGTKFlowBoxChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDE52088004F00E9FD9F /* CGTKFlowBoxChild.m */; };
+		1441CF0D2088037300E9FD9F /* CGTKFontButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE132088005700E9FD9F /* CGTKFontButton.h */; };
+		1441CF0E2088037300E9FD9F /* CGTKFontButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE232088005900E9FD9F /* CGTKFontButton.m */; };
+		1441CF0F2088037300E9FD9F /* CGTKFontChooserDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE482088005F00E9FD9F /* CGTKFontChooserDialog.h */; };
+		1441CF102088037300E9FD9F /* CGTKFontChooserDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE722088006600E9FD9F /* CGTKFontChooserDialog.m */; };
+		1441CF112088037300E9FD9F /* CGTKFontChooserWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE862088006C00E9FD9F /* CGTKFontChooserWidget.h */; };
+		1441CF122088037300E9FD9F /* CGTKFontChooserWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE462088005F00E9FD9F /* CGTKFontChooserWidget.m */; };
+		1441CF132088037300E9FD9F /* CGTKFontSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE652088006400E9FD9F /* CGTKFontSelection.h */; };
+		1441CF142088037300E9FD9F /* CGTKFontSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE612088006300E9FD9F /* CGTKFontSelection.m */; };
+		1441CF152088037300E9FD9F /* CGTKFontSelectionDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDDF2088004E00E9FD9F /* CGTKFontSelectionDialog.h */; };
+		1441CF162088037300E9FD9F /* CGTKFontSelectionDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDAE2088004700E9FD9F /* CGTKFontSelectionDialog.m */; };
+		1441CF172088037300E9FD9F /* CGTKFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE3E2088005D00E9FD9F /* CGTKFrame.h */; };
+		1441CF182088037300E9FD9F /* CGTKFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE672088006400E9FD9F /* CGTKFrame.m */; };
+		1441CF192088037300E9FD9F /* CGTKGLArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDF12088005100E9FD9F /* CGTKGLArea.h */; };
+		1441CF1A2088037300E9FD9F /* CGTKGLArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE7D2088006B00E9FD9F /* CGTKGLArea.m */; };
+		1441CF1B2088037300E9FD9F /* CGTKGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CD972088004500E9FD9F /* CGTKGrid.h */; };
+		1441CF1C2088037300E9FD9F /* CGTKGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDC02088004A00E9FD9F /* CGTKGrid.m */; };
+		1441CF1D2088037300E9FD9F /* CGTKHandleBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDD42088004D00E9FD9F /* CGTKHandleBox.h */; };
+		1441CF1E2088037300E9FD9F /* CGTKHandleBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE572088006100E9FD9F /* CGTKHandleBox.m */; };
+		1441CF1F2088037300E9FD9F /* CGTKHBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDE92088005000E9FD9F /* CGTKHBox.h */; };
+		1441CF202088037300E9FD9F /* CGTKHBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDD82088004D00E9FD9F /* CGTKHBox.m */; };
+		1441CF212088037300E9FD9F /* CGTKHButtonBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE332088005C00E9FD9F /* CGTKHButtonBox.h */; };
+		1441CF222088037300E9FD9F /* CGTKHButtonBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE9F2088007000E9FD9F /* CGTKHButtonBox.m */; };
+		1441CF232088037300E9FD9F /* CGTKHeaderBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDA82088004700E9FD9F /* CGTKHeaderBar.h */; };
+		1441CF242088037300E9FD9F /* CGTKHeaderBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDBC2088004900E9FD9F /* CGTKHeaderBar.m */; };
+		1441CF252088037300E9FD9F /* CGTKHPaned.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDA22088004600E9FD9F /* CGTKHPaned.h */; };
+		1441CF262088037300E9FD9F /* CGTKHPaned.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDB72088004900E9FD9F /* CGTKHPaned.m */; };
+		1441CF272088037300E9FD9F /* CGTKHScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE952088006F00E9FD9F /* CGTKHScale.h */; };
+		1441CF282088037300E9FD9F /* CGTKHScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE282088005A00E9FD9F /* CGTKHScale.m */; };
+		1441CF292088037300E9FD9F /* CGTKHScrollbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE402088005E00E9FD9F /* CGTKHScrollbar.h */; };
+		1441CF2A2088037300E9FD9F /* CGTKHScrollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDFA2088005300E9FD9F /* CGTKHScrollbar.m */; };
+		1441CF2B2088037300E9FD9F /* CGTKHSeparator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CEA72088007100E9FD9F /* CGTKHSeparator.h */; };
+		1441CF2C2088037300E9FD9F /* CGTKHSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDCB2088004B00E9FD9F /* CGTKHSeparator.m */; };
+		1441CF2D2088037300E9FD9F /* CGTKHSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE6A2088006400E9FD9F /* CGTKHSV.h */; };
+		1441CF2E2088037300E9FD9F /* CGTKHSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDA02088004600E9FD9F /* CGTKHSV.m */; };
+		1441CF2F2088037300E9FD9F /* CGTKIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDCE2088004B00E9FD9F /* CGTKIconView.h */; };
+		1441CF302088037300E9FD9F /* CGTKIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE2C2088005B00E9FD9F /* CGTKIconView.m */; };
+		1441CF312088037300E9FD9F /* CGTKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE5E2088006300E9FD9F /* CGTKImage.h */; };
+		1441CF322088037300E9FD9F /* CGTKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE912088006E00E9FD9F /* CGTKImage.m */; };
+		1441CF332088037300E9FD9F /* CGTKImageMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDB22088004800E9FD9F /* CGTKImageMenuItem.h */; };
+		1441CF342088037300E9FD9F /* CGTKImageMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE7E2088006B00E9FD9F /* CGTKImageMenuItem.m */; };
+		1441CF352088037300E9FD9F /* CGTKInfoBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDA52088004700E9FD9F /* CGTKInfoBar.h */; };
+		1441CF362088037300E9FD9F /* CGTKInfoBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE262088005A00E9FD9F /* CGTKInfoBar.m */; };
+		1441CF372088037300E9FD9F /* CGTKInvisible.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDF22088005100E9FD9F /* CGTKInvisible.h */; };
+		1441CF382088037300E9FD9F /* CGTKInvisible.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDC42088004A00E9FD9F /* CGTKInvisible.m */; };
+		1441CF392088037300E9FD9F /* CGTKLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CD992088004600E9FD9F /* CGTKLabel.h */; };
+		1441CF3A2088037300E9FD9F /* CGTKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE092088005500E9FD9F /* CGTKLabel.m */; };
+		1441CF3B2088037300E9FD9F /* CGTKLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDEE2088005000E9FD9F /* CGTKLayout.h */; };
+		1441CF3C2088037300E9FD9F /* CGTKLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDDE2088004E00E9FD9F /* CGTKLayout.m */; };
+		1441CF3D2088037300E9FD9F /* CGTKLevelBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE022088005400E9FD9F /* CGTKLevelBar.h */; };
+		1441CF3E2088037300E9FD9F /* CGTKLevelBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE252088005A00E9FD9F /* CGTKLevelBar.m */; };
+		1441CF3F2088037300E9FD9F /* CGTKLinkButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE4C2088006000E9FD9F /* CGTKLinkButton.h */; };
+		1441CF402088037300E9FD9F /* CGTKLinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE772088006900E9FD9F /* CGTKLinkButton.m */; };
+		1441CF412088037300E9FD9F /* CGTKListBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDAA2088004700E9FD9F /* CGTKListBox.h */; };
+		1441CF422088037300E9FD9F /* CGTKListBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE992088006F00E9FD9F /* CGTKListBox.m */; };
+		1441CF432088037300E9FD9F /* CGTKListBoxRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE342088005C00E9FD9F /* CGTKListBoxRow.h */; };
+		1441CF442088037300E9FD9F /* CGTKListBoxRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDBD2088004900E9FD9F /* CGTKListBoxRow.m */; };
+		1441CF452088037300E9FD9F /* CGTKLockButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CD982088004600E9FD9F /* CGTKLockButton.h */; };
+		1441CF462088037300E9FD9F /* CGTKLockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CEA22088007100E9FD9F /* CGTKLockButton.m */; };
+		1441CF472088037300E9FD9F /* CGTKMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDDA2088004E00E9FD9F /* CGTKMenu.h */; };
+		1441CF482088037300E9FD9F /* CGTKMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE9A2088006F00E9FD9F /* CGTKMenu.m */; };
+		1441CF492088037300E9FD9F /* CGTKMenuBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDF32088005100E9FD9F /* CGTKMenuBar.h */; };
+		1441CF4A2088037300E9FD9F /* CGTKMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE1F2088005900E9FD9F /* CGTKMenuBar.m */; };
+		1441CF4B2088037300E9FD9F /* CGTKMenuButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE6D2088006500E9FD9F /* CGTKMenuButton.h */; };
+		1441CF4C2088037300E9FD9F /* CGTKMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE4E2088006000E9FD9F /* CGTKMenuButton.m */; };
+		1441CF4D2088037300E9FD9F /* CGTKMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE982088006F00E9FD9F /* CGTKMenuItem.h */; };
+		1441CF4E2088037300E9FD9F /* CGTKMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE582088006200E9FD9F /* CGTKMenuItem.m */; };
+		1441CF4F2088037300E9FD9F /* CGTKMenuShell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDF42088005200E9FD9F /* CGTKMenuShell.h */; };
+		1441CF502088037300E9FD9F /* CGTKMenuShell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE222088005900E9FD9F /* CGTKMenuShell.m */; };
+		1441CF512088037300E9FD9F /* CGTKMenuToolButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE492088005F00E9FD9F /* CGTKMenuToolButton.h */; };
+		1441CF522088037300E9FD9F /* CGTKMenuToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE352088005C00E9FD9F /* CGTKMenuToolButton.m */; };
+		1441CF532088037300E9FD9F /* CGTKMessageDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE052088005400E9FD9F /* CGTKMessageDialog.h */; };
+		1441CF542088037300E9FD9F /* CGTKMessageDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD9B2088004600E9FD9F /* CGTKMessageDialog.m */; };
+		1441CF552088037300E9FD9F /* CGTKMisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE0C2088005500E9FD9F /* CGTKMisc.h */; };
+		1441CF562088037300E9FD9F /* CGTKMisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE682088006400E9FD9F /* CGTKMisc.m */; };
+		1441CF572088037300E9FD9F /* CGTKModelButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE942088006E00E9FD9F /* CGTKModelButton.h */; };
+		1441CF582088037300E9FD9F /* CGTKModelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE422088005E00E9FD9F /* CGTKModelButton.m */; };
+		1441CF592088037300E9FD9F /* CGTKNativeDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE292088005A00E9FD9F /* CGTKNativeDialog.h */; };
+		1441CF5A2088037300E9FD9F /* CGTKNativeDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE152088005700E9FD9F /* CGTKNativeDialog.m */; };
+		1441CF5B2088037300E9FD9F /* CGTKNotebook.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE502088006000E9FD9F /* CGTKNotebook.h */; };
+		1441CF5C2088037400E9FD9F /* CGTKNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE732088006600E9FD9F /* CGTKNotebook.m */; };
+		1441CF5D2088037400E9FD9F /* CGTKOffscreenWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDEF2088005000E9FD9F /* CGTKOffscreenWindow.h */; };
+		1441CF5E2088037400E9FD9F /* CGTKOffscreenWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE6B2088006400E9FD9F /* CGTKOffscreenWindow.m */; };
+		1441CF5F2088037400E9FD9F /* CGTKOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE122088005700E9FD9F /* CGTKOverlay.h */; };
+		1441CF602088037400E9FD9F /* CGTKOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE892088006D00E9FD9F /* CGTKOverlay.m */; };
+		1441CF612088037400E9FD9F /* CGTKPaned.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDD92088004D00E9FD9F /* CGTKPaned.h */; };
+		1441CF622088037400E9FD9F /* CGTKPaned.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD942088004500E9FD9F /* CGTKPaned.m */; };
+		1441CF632088037400E9FD9F /* CGTKPlacesSidebar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE872088006C00E9FD9F /* CGTKPlacesSidebar.h */; };
+		1441CF642088037400E9FD9F /* CGTKPlacesSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD9A2088004600E9FD9F /* CGTKPlacesSidebar.m */; };
+		1441CF652088037400E9FD9F /* CGTKPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE882088006D00E9FD9F /* CGTKPopover.h */; };
+		1441CF662088037400E9FD9F /* CGTKPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE0D2088005500E9FD9F /* CGTKPopover.m */; };
+		1441CF672088037400E9FD9F /* CGTKPopoverMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDE12088004E00E9FD9F /* CGTKPopoverMenu.h */; };
+		1441CF682088037400E9FD9F /* CGTKPopoverMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDF92088005300E9FD9F /* CGTKPopoverMenu.m */; };
+		1441CF692088037400E9FD9F /* CGTKProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE632088006300E9FD9F /* CGTKProgressBar.h */; };
+		1441CF6A2088037400E9FD9F /* CGTKProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE742088006600E9FD9F /* CGTKProgressBar.m */; };
+		1441CF6B2088037400E9FD9F /* CGTKRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CEA32088007100E9FD9F /* CGTKRadioButton.h */; };
+		1441CF6C2088037400E9FD9F /* CGTKRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD9C2088004600E9FD9F /* CGTKRadioButton.m */; };
+		1441CF6D2088037400E9FD9F /* CGTKRadioMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE852088006C00E9FD9F /* CGTKRadioMenuItem.h */; };
+		1441CF6E2088037400E9FD9F /* CGTKRadioMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD9D2088004600E9FD9F /* CGTKRadioMenuItem.m */; };
+		1441CF6F2088037400E9FD9F /* CGTKRadioToolButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE2A2088005A00E9FD9F /* CGTKRadioToolButton.h */; };
+		1441CF702088037400E9FD9F /* CGTKRadioToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE7F2088006B00E9FD9F /* CGTKRadioToolButton.m */; };
+		1441CF712088037400E9FD9F /* CGTKRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE9B2088007000E9FD9F /* CGTKRange.h */; };
+		1441CF722088037400E9FD9F /* CGTKRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CEA12088007100E9FD9F /* CGTKRange.m */; };
+		1441CF732088037400E9FD9F /* CGTKRecentChooserDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDAC2088004700E9FD9F /* CGTKRecentChooserDialog.h */; };
+		1441CF742088037400E9FD9F /* CGTKRecentChooserDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDC22088004A00E9FD9F /* CGTKRecentChooserDialog.m */; };
+		1441CF752088037400E9FD9F /* CGTKRecentChooserMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE752088006800E9FD9F /* CGTKRecentChooserMenu.h */; };
+		1441CF762088037400E9FD9F /* CGTKRecentChooserMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE8E2088006E00E9FD9F /* CGTKRecentChooserMenu.m */; };
+		1441CF772088037400E9FD9F /* CGTKRecentChooserWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDD12088004C00E9FD9F /* CGTKRecentChooserWidget.h */; };
+		1441CF782088037400E9FD9F /* CGTKRecentChooserWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDE22088004F00E9FD9F /* CGTKRecentChooserWidget.m */; };
+		1441CF792088037400E9FD9F /* CGTKRevealer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE0F2088005600E9FD9F /* CGTKRevealer.h */; };
+		1441CF7A2088037400E9FD9F /* CGTKRevealer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDEB2088005000E9FD9F /* CGTKRevealer.m */; };
+		1441CF7B2088037400E9FD9F /* CGTKScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDB02088004800E9FD9F /* CGTKScale.h */; };
+		1441CF7C2088037400E9FD9F /* CGTKScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDB82088004900E9FD9F /* CGTKScale.m */; };
+		1441CF7D2088037400E9FD9F /* CGTKScaleButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDD72088004D00E9FD9F /* CGTKScaleButton.h */; };
+		1441CF7E2088037400E9FD9F /* CGTKScaleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE182088005800E9FD9F /* CGTKScaleButton.m */; };
+		1441CF7F2088037400E9FD9F /* CGTKScrollbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE5F2088006300E9FD9F /* CGTKScrollbar.h */; };
+		1441CF802088037400E9FD9F /* CGTKScrollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE0E2088005500E9FD9F /* CGTKScrollbar.m */; };
+		1441CF812088037400E9FD9F /* CGTKScrolledWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDB12088004800E9FD9F /* CGTKScrolledWindow.h */; };
+		1441CF822088037400E9FD9F /* CGTKScrolledWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE792088006900E9FD9F /* CGTKScrolledWindow.m */; };
+		1441CF832088037400E9FD9F /* CGTKSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CD932088004500E9FD9F /* CGTKSearchBar.h */; };
+		1441CF842088037400E9FD9F /* CGTKSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CD9E2088004600E9FD9F /* CGTKSearchBar.m */; };
+		1441CF852088037400E9FD9F /* CGTKSearchEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE7A2088006900E9FD9F /* CGTKSearchEntry.h */; };
+		1441CF862088037400E9FD9F /* CGTKSearchEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE312088005B00E9FD9F /* CGTKSearchEntry.m */; };
+		1441CF872088037400E9FD9F /* CGTKSeparator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE832088006C00E9FD9F /* CGTKSeparator.h */; };
+		1441CF882088037400E9FD9F /* CGTKSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE1A2088005800E9FD9F /* CGTKSeparator.m */; };
+		1441CF892088037400E9FD9F /* CGTKSeparatorMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDD52088004D00E9FD9F /* CGTKSeparatorMenuItem.h */; };
+		1441CF8A2088037400E9FD9F /* CGTKSeparatorMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE4A2088005F00E9FD9F /* CGTKSeparatorMenuItem.m */; };
+		1441CF8B2088037400E9FD9F /* CGTKSeparatorToolItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDE32088004F00E9FD9F /* CGTKSeparatorToolItem.h */; };
+		1441CF8C2088037400E9FD9F /* CGTKSeparatorToolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE5C2088006200E9FD9F /* CGTKSeparatorToolItem.m */; };
+		1441CF8D2088037400E9FD9F /* CGTKShortcutsShortcut.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE5D2088006200E9FD9F /* CGTKShortcutsShortcut.h */; };
+		1441CF8E2088037400E9FD9F /* CGTKShortcutsShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE692088006400E9FD9F /* CGTKShortcutsShortcut.m */; };
+		1441CF8F2088037400E9FD9F /* CGTKSignalConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE2B2088005B00E9FD9F /* CGTKSignalConnector.h */; };
+		1441CF902088037400E9FD9F /* CGTKSignalConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE432088005E00E9FD9F /* CGTKSignalConnector.m */; };
+		1441CF912088037400E9FD9F /* CGTKSignalData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE322088005C00E9FD9F /* CGTKSignalData.h */; };
+		1441CF922088037400E9FD9F /* CGTKSignalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDCD2088004B00E9FD9F /* CGTKSignalData.m */; };
+		1441CF932088037400E9FD9F /* CGTKSpinButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE9C2088007000E9FD9F /* CGTKSpinButton.h */; };
+		1441CF942088037400E9FD9F /* CGTKSpinButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE192088005800E9FD9F /* CGTKSpinButton.m */; };
+		1441CF952088037400E9FD9F /* CGTKSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE3B2088005D00E9FD9F /* CGTKSpinner.h */; };
+		1441CF962088037400E9FD9F /* CGTKSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDC62088004A00E9FD9F /* CGTKSpinner.m */; };
+		1441CF972088037400E9FD9F /* CGTKStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDCC2088004B00E9FD9F /* CGTKStack.h */; };
+		1441CF982088037400E9FD9F /* CGTKStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE6F2088006500E9FD9F /* CGTKStack.m */; };
+		1441CF992088037400E9FD9F /* CGTKStackSidebar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDB32088004800E9FD9F /* CGTKStackSidebar.h */; };
+		1441CF9A2088037400E9FD9F /* CGTKStackSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDCA2088004B00E9FD9F /* CGTKStackSidebar.m */; };
+		1441CF9B2088037400E9FD9F /* CGTKStackSwitcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDFB2088005300E9FD9F /* CGTKStackSwitcher.h */; };
+		1441CF9C2088037400E9FD9F /* CGTKStackSwitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE4D2088006000E9FD9F /* CGTKStackSwitcher.m */; };
+		1441CF9D2088037400E9FD9F /* CGTKStatusbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDEA2088005000E9FD9F /* CGTKStatusbar.h */; };
+		1441CF9E2088037400E9FD9F /* CGTKStatusbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDD62088004D00E9FD9F /* CGTKStatusbar.m */; };
+		1441CF9F2088037400E9FD9F /* CGTKSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE842088006C00E9FD9F /* CGTKSwitch.h */; };
+		1441CFA02088037400E9FD9F /* CGTKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDB62088004800E9FD9F /* CGTKSwitch.m */; };
+		1441CFA12088037400E9FD9F /* CGTKTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDAD2088004700E9FD9F /* CGTKTable.h */; };
+		1441CFA22088037400E9FD9F /* CGTKTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CEA52088007100E9FD9F /* CGTKTable.m */; };
+		1441CFA32088037400E9FD9F /* CGTKTearoffMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE162088005800E9FD9F /* CGTKTearoffMenuItem.h */; };
+		1441CFA42088037400E9FD9F /* CGTKTearoffMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDA92088004700E9FD9F /* CGTKTearoffMenuItem.m */; };
+		1441CFA52088037400E9FD9F /* CGTKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE602088006300E9FD9F /* CGTKTextView.h */; };
+		1441CFA62088037400E9FD9F /* CGTKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE962088006F00E9FD9F /* CGTKTextView.m */; };
+		1441CFA72088037400E9FD9F /* CGTKToggleButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE902088006E00E9FD9F /* CGTKToggleButton.h */; };
+		1441CFA82088037400E9FD9F /* CGTKToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDC72088004B00E9FD9F /* CGTKToggleButton.m */; };
+		1441CFA92088037400E9FD9F /* CGTKToggleToolButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDA32088004600E9FD9F /* CGTKToggleToolButton.h */; };
+		1441CFAA2088037400E9FD9F /* CGTKToggleToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE922088006E00E9FD9F /* CGTKToggleToolButton.m */; };
+		1441CFAB2088037400E9FD9F /* CGTKToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE412088005E00E9FD9F /* CGTKToolbar.h */; };
+		1441CFAC2088037400E9FD9F /* CGTKToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE2D2088005B00E9FD9F /* CGTKToolbar.m */; };
+		1441CFAD2088037400E9FD9F /* CGTKToolButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE4B2088006000E9FD9F /* CGTKToolButton.h */; };
+		1441CFAE2088037400E9FD9F /* CGTKToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE442088005E00E9FD9F /* CGTKToolButton.m */; };
+		1441CFAF2088037400E9FD9F /* CGTKToolItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDFD2088005300E9FD9F /* CGTKToolItem.h */; };
+		1441CFB02088037400E9FD9F /* CGTKToolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE372088005C00E9FD9F /* CGTKToolItem.m */; };
+		1441CFB12088037400E9FD9F /* CGTKToolItemGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE062088005400E9FD9F /* CGTKToolItemGroup.h */; };
+		1441CFB22088037400E9FD9F /* CGTKToolItemGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDED2088005000E9FD9F /* CGTKToolItemGroup.m */; };
+		1441CFB32088037400E9FD9F /* CGTKToolPalette.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE782088006900E9FD9F /* CGTKToolPalette.h */; };
+		1441CFB42088037400E9FD9F /* CGTKToolPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CEA62088007100E9FD9F /* CGTKToolPalette.m */; };
+		1441CFB52088037400E9FD9F /* CGTKTreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDFF2088005300E9FD9F /* CGTKTreeView.h */; };
+		1441CFB62088037400E9FD9F /* CGTKTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE172088005800E9FD9F /* CGTKTreeView.m */; };
+		1441CFB72088037400E9FD9F /* CGTKTypeWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDFC2088005300E9FD9F /* CGTKTypeWrapper.h */; };
+		1441CFB82088037400E9FD9F /* CGTKTypeWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CEA82088007200E9FD9F /* CGTKTypeWrapper.m */; };
+		1441CFB92088037400E9FD9F /* CGTKVBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDF02088005000E9FD9F /* CGTKVBox.h */; };
+		1441CFBA2088037400E9FD9F /* CGTKVBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE9D2088007000E9FD9F /* CGTKVBox.m */; };
+		1441CFBB2088037400E9FD9F /* CGTKVButtonBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE3A2088005D00E9FD9F /* CGTKVButtonBox.h */; };
+		1441CFBC2088037400E9FD9F /* CGTKVButtonBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDC32088004A00E9FD9F /* CGTKVButtonBox.m */; };
+		1441CFBD2088037400E9FD9F /* CGTKViewport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDFE2088005300E9FD9F /* CGTKViewport.h */; };
+		1441CFBE2088037400E9FD9F /* CGTKViewport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDC92088004B00E9FD9F /* CGTKViewport.m */; };
+		1441CFBF2088037400E9FD9F /* CGTKVolumeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE812088006C00E9FD9F /* CGTKVolumeButton.h */; };
+		1441CFC02088037400E9FD9F /* CGTKVolumeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CDC82088004B00E9FD9F /* CGTKVolumeButton.m */; };
+		1441CFC12088037400E9FD9F /* CGTKVPaned.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE3C2088005D00E9FD9F /* CGTKVPaned.h */; };
+		1441CFC22088037400E9FD9F /* CGTKVPaned.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE202088005900E9FD9F /* CGTKVPaned.m */; };
+		1441CFC32088037400E9FD9F /* CGTKVScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE102088005600E9FD9F /* CGTKVScale.h */; };
+		1441CFC42088037400E9FD9F /* CGTKVScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE3F2088005E00E9FD9F /* CGTKVScale.m */; };
+		1441CFC52088037400E9FD9F /* CGTKVScrollbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDA62088004700E9FD9F /* CGTKVScrollbar.h */; };
+		1441CFC62088037400E9FD9F /* CGTKVScrollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE002088005400E9FD9F /* CGTKVScrollbar.m */; };
+		1441CFC72088037400E9FD9F /* CGTKVSeparator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CDBF2088004A00E9FD9F /* CGTKVSeparator.h */; };
+		1441CFC82088037400E9FD9F /* CGTKVSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE8D2088006D00E9FD9F /* CGTKVSeparator.m */; };
+		1441CFC92088037400E9FD9F /* CGTKWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE932088006E00E9FD9F /* CGTKWidget.h */; };
+		1441CFCA2088037400E9FD9F /* CGTKWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE702088006500E9FD9F /* CGTKWidget.m */; };
+		1441CFCB2088037400E9FD9F /* CGTKWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1441CE032088005400E9FD9F /* CGTKWindow.h */; };
+		1441CFCC2088037400E9FD9F /* CGTKWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441CE0A2088005500E9FD9F /* CGTKWindow.m */; };
+		1441CFD0208808A600E9FD9F /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 1441CFCF208808A600E9FD9F /* Makefile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1441CD932088004500E9FD9F /* CGTKSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKSearchBar.h; path = src/Output/CoreGTK/CGTKSearchBar.h; sourceTree = "<group>"; };
+		1441CD942088004500E9FD9F /* CGTKPaned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKPaned.m; path = src/Output/CoreGTK/CGTKPaned.m; sourceTree = "<group>"; };
+		1441CD952088004500E9FD9F /* CGTKEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKEntry.h; path = src/Output/CoreGTK/CGTKEntry.h; sourceTree = "<group>"; };
+		1441CD962088004500E9FD9F /* CGTKApplicationWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKApplicationWindow.h; path = src/Output/CoreGTK/CGTKApplicationWindow.h; sourceTree = "<group>"; };
+		1441CD972088004500E9FD9F /* CGTKGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKGrid.h; path = src/Output/CoreGTK/CGTKGrid.h; sourceTree = "<group>"; };
+		1441CD982088004600E9FD9F /* CGTKLockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKLockButton.h; path = src/Output/CoreGTK/CGTKLockButton.h; sourceTree = "<group>"; };
+		1441CD992088004600E9FD9F /* CGTKLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKLabel.h; path = src/Output/CoreGTK/CGTKLabel.h; sourceTree = "<group>"; };
+		1441CD9A2088004600E9FD9F /* CGTKPlacesSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKPlacesSidebar.m; path = src/Output/CoreGTK/CGTKPlacesSidebar.m; sourceTree = "<group>"; };
+		1441CD9B2088004600E9FD9F /* CGTKMessageDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKMessageDialog.m; path = src/Output/CoreGTK/CGTKMessageDialog.m; sourceTree = "<group>"; };
+		1441CD9C2088004600E9FD9F /* CGTKRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKRadioButton.m; path = src/Output/CoreGTK/CGTKRadioButton.m; sourceTree = "<group>"; };
+		1441CD9D2088004600E9FD9F /* CGTKRadioMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKRadioMenuItem.m; path = src/Output/CoreGTK/CGTKRadioMenuItem.m; sourceTree = "<group>"; };
+		1441CD9E2088004600E9FD9F /* CGTKSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKSearchBar.m; path = src/Output/CoreGTK/CGTKSearchBar.m; sourceTree = "<group>"; };
+		1441CD9F2088004600E9FD9F /* CGTKCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKCalendar.h; path = src/Output/CoreGTK/CGTKCalendar.h; sourceTree = "<group>"; };
+		1441CDA02088004600E9FD9F /* CGTKHSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKHSV.m; path = src/Output/CoreGTK/CGTKHSV.m; sourceTree = "<group>"; };
+		1441CDA12088004600E9FD9F /* CGTKAspectFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKAspectFrame.m; path = src/Output/CoreGTK/CGTKAspectFrame.m; sourceTree = "<group>"; };
+		1441CDA22088004600E9FD9F /* CGTKHPaned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKHPaned.h; path = src/Output/CoreGTK/CGTKHPaned.h; sourceTree = "<group>"; };
+		1441CDA32088004600E9FD9F /* CGTKToggleToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKToggleToolButton.h; path = src/Output/CoreGTK/CGTKToggleToolButton.h; sourceTree = "<group>"; };
+		1441CDA42088004600E9FD9F /* CGTKColorSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKColorSelection.m; path = src/Output/CoreGTK/CGTKColorSelection.m; sourceTree = "<group>"; };
+		1441CDA52088004700E9FD9F /* CGTKInfoBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKInfoBar.h; path = src/Output/CoreGTK/CGTKInfoBar.h; sourceTree = "<group>"; };
+		1441CDA62088004700E9FD9F /* CGTKVScrollbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKVScrollbar.h; path = src/Output/CoreGTK/CGTKVScrollbar.h; sourceTree = "<group>"; };
+		1441CDA72088004700E9FD9F /* CGTKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKButton.m; path = src/Output/CoreGTK/CGTKButton.m; sourceTree = "<group>"; };
+		1441CDA82088004700E9FD9F /* CGTKHeaderBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKHeaderBar.h; path = src/Output/CoreGTK/CGTKHeaderBar.h; sourceTree = "<group>"; };
+		1441CDA92088004700E9FD9F /* CGTKTearoffMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKTearoffMenuItem.m; path = src/Output/CoreGTK/CGTKTearoffMenuItem.m; sourceTree = "<group>"; };
+		1441CDAA2088004700E9FD9F /* CGTKListBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKListBox.h; path = src/Output/CoreGTK/CGTKListBox.h; sourceTree = "<group>"; };
+		1441CDAB2088004700E9FD9F /* CGTKAlignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKAlignment.m; path = src/Output/CoreGTK/CGTKAlignment.m; sourceTree = "<group>"; };
+		1441CDAC2088004700E9FD9F /* CGTKRecentChooserDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKRecentChooserDialog.h; path = src/Output/CoreGTK/CGTKRecentChooserDialog.h; sourceTree = "<group>"; };
+		1441CDAD2088004700E9FD9F /* CGTKTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKTable.h; path = src/Output/CoreGTK/CGTKTable.h; sourceTree = "<group>"; };
+		1441CDAE2088004700E9FD9F /* CGTKFontSelectionDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFontSelectionDialog.m; path = src/Output/CoreGTK/CGTKFontSelectionDialog.m; sourceTree = "<group>"; };
+		1441CDAF2088004800E9FD9F /* CGTKDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKDialog.h; path = src/Output/CoreGTK/CGTKDialog.h; sourceTree = "<group>"; };
+		1441CDB02088004800E9FD9F /* CGTKScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKScale.h; path = src/Output/CoreGTK/CGTKScale.h; sourceTree = "<group>"; };
+		1441CDB12088004800E9FD9F /* CGTKScrolledWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKScrolledWindow.h; path = src/Output/CoreGTK/CGTKScrolledWindow.h; sourceTree = "<group>"; };
+		1441CDB22088004800E9FD9F /* CGTKImageMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKImageMenuItem.h; path = src/Output/CoreGTK/CGTKImageMenuItem.h; sourceTree = "<group>"; };
+		1441CDB32088004800E9FD9F /* CGTKStackSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKStackSidebar.h; path = src/Output/CoreGTK/CGTKStackSidebar.h; sourceTree = "<group>"; };
+		1441CDB42088004800E9FD9F /* CGTKBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKBase.m; path = src/Output/CoreGTK/CGTKBase.m; sourceTree = "<group>"; };
+		1441CDB52088004800E9FD9F /* CGTKColorSelectionDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKColorSelectionDialog.m; path = src/Output/CoreGTK/CGTKColorSelectionDialog.m; sourceTree = "<group>"; };
+		1441CDB62088004800E9FD9F /* CGTKSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKSwitch.m; path = src/Output/CoreGTK/CGTKSwitch.m; sourceTree = "<group>"; };
+		1441CDB72088004900E9FD9F /* CGTKHPaned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKHPaned.m; path = src/Output/CoreGTK/CGTKHPaned.m; sourceTree = "<group>"; };
+		1441CDB82088004900E9FD9F /* CGTKScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKScale.m; path = src/Output/CoreGTK/CGTKScale.m; sourceTree = "<group>"; };
+		1441CDB92088004900E9FD9F /* CGTKBin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKBin.h; path = src/Output/CoreGTK/CGTKBin.h; sourceTree = "<group>"; };
+		1441CDBA2088004900E9FD9F /* CGTKAppChooserDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKAppChooserDialog.m; path = src/Output/CoreGTK/CGTKAppChooserDialog.m; sourceTree = "<group>"; };
+		1441CDBB2088004900E9FD9F /* CGTKExpander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKExpander.h; path = src/Output/CoreGTK/CGTKExpander.h; sourceTree = "<group>"; };
+		1441CDBC2088004900E9FD9F /* CGTKHeaderBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKHeaderBar.m; path = src/Output/CoreGTK/CGTKHeaderBar.m; sourceTree = "<group>"; };
+		1441CDBD2088004900E9FD9F /* CGTKListBoxRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKListBoxRow.m; path = src/Output/CoreGTK/CGTKListBoxRow.m; sourceTree = "<group>"; };
+		1441CDBE2088004900E9FD9F /* CGTKEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKEntry.m; path = src/Output/CoreGTK/CGTKEntry.m; sourceTree = "<group>"; };
+		1441CDBF2088004A00E9FD9F /* CGTKVSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKVSeparator.h; path = src/Output/CoreGTK/CGTKVSeparator.h; sourceTree = "<group>"; };
+		1441CDC02088004A00E9FD9F /* CGTKGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKGrid.m; path = src/Output/CoreGTK/CGTKGrid.m; sourceTree = "<group>"; };
+		1441CDC12088004A00E9FD9F /* CGTKAppChooserWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKAppChooserWidget.h; path = src/Output/CoreGTK/CGTKAppChooserWidget.h; sourceTree = "<group>"; };
+		1441CDC22088004A00E9FD9F /* CGTKRecentChooserDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKRecentChooserDialog.m; path = src/Output/CoreGTK/CGTKRecentChooserDialog.m; sourceTree = "<group>"; };
+		1441CDC32088004A00E9FD9F /* CGTKVButtonBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKVButtonBox.m; path = src/Output/CoreGTK/CGTKVButtonBox.m; sourceTree = "<group>"; };
+		1441CDC42088004A00E9FD9F /* CGTKInvisible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKInvisible.m; path = src/Output/CoreGTK/CGTKInvisible.m; sourceTree = "<group>"; };
+		1441CDC52088004A00E9FD9F /* CGTKBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKBuilder.m; path = src/Output/CoreGTK/CGTKBuilder.m; sourceTree = "<group>"; };
+		1441CDC62088004A00E9FD9F /* CGTKSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKSpinner.m; path = src/Output/CoreGTK/CGTKSpinner.m; sourceTree = "<group>"; };
+		1441CDC72088004B00E9FD9F /* CGTKToggleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKToggleButton.m; path = src/Output/CoreGTK/CGTKToggleButton.m; sourceTree = "<group>"; };
+		1441CDC82088004B00E9FD9F /* CGTKVolumeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKVolumeButton.m; path = src/Output/CoreGTK/CGTKVolumeButton.m; sourceTree = "<group>"; };
+		1441CDC92088004B00E9FD9F /* CGTKViewport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKViewport.m; path = src/Output/CoreGTK/CGTKViewport.m; sourceTree = "<group>"; };
+		1441CDCA2088004B00E9FD9F /* CGTKStackSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKStackSidebar.m; path = src/Output/CoreGTK/CGTKStackSidebar.m; sourceTree = "<group>"; };
+		1441CDCB2088004B00E9FD9F /* CGTKHSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKHSeparator.m; path = src/Output/CoreGTK/CGTKHSeparator.m; sourceTree = "<group>"; };
+		1441CDCC2088004B00E9FD9F /* CGTKStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKStack.h; path = src/Output/CoreGTK/CGTKStack.h; sourceTree = "<group>"; };
+		1441CDCD2088004B00E9FD9F /* CGTKSignalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKSignalData.m; path = src/Output/CoreGTK/CGTKSignalData.m; sourceTree = "<group>"; };
+		1441CDCE2088004B00E9FD9F /* CGTKIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKIconView.h; path = src/Output/CoreGTK/CGTKIconView.h; sourceTree = "<group>"; };
+		1441CDCF2088004C00E9FD9F /* CGTKComboBoxText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKComboBoxText.m; path = src/Output/CoreGTK/CGTKComboBoxText.m; sourceTree = "<group>"; };
+		1441CDD02088004C00E9FD9F /* CGTKAppChooserButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKAppChooserButton.h; path = src/Output/CoreGTK/CGTKAppChooserButton.h; sourceTree = "<group>"; };
+		1441CDD12088004C00E9FD9F /* CGTKRecentChooserWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKRecentChooserWidget.h; path = src/Output/CoreGTK/CGTKRecentChooserWidget.h; sourceTree = "<group>"; };
+		1441CDD22088004C00E9FD9F /* CGTKCheckMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKCheckMenuItem.m; path = src/Output/CoreGTK/CGTKCheckMenuItem.m; sourceTree = "<group>"; };
+		1441CDD32088004D00E9FD9F /* CGTKCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKCalendar.m; path = src/Output/CoreGTK/CGTKCalendar.m; sourceTree = "<group>"; };
+		1441CDD42088004D00E9FD9F /* CGTKHandleBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKHandleBox.h; path = src/Output/CoreGTK/CGTKHandleBox.h; sourceTree = "<group>"; };
+		1441CDD52088004D00E9FD9F /* CGTKSeparatorMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKSeparatorMenuItem.h; path = src/Output/CoreGTK/CGTKSeparatorMenuItem.h; sourceTree = "<group>"; };
+		1441CDD62088004D00E9FD9F /* CGTKStatusbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKStatusbar.m; path = src/Output/CoreGTK/CGTKStatusbar.m; sourceTree = "<group>"; };
+		1441CDD72088004D00E9FD9F /* CGTKScaleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKScaleButton.h; path = src/Output/CoreGTK/CGTKScaleButton.h; sourceTree = "<group>"; };
+		1441CDD82088004D00E9FD9F /* CGTKHBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKHBox.m; path = src/Output/CoreGTK/CGTKHBox.m; sourceTree = "<group>"; };
+		1441CDD92088004D00E9FD9F /* CGTKPaned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKPaned.h; path = src/Output/CoreGTK/CGTKPaned.h; sourceTree = "<group>"; };
+		1441CDDA2088004E00E9FD9F /* CGTKMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKMenu.h; path = src/Output/CoreGTK/CGTKMenu.h; sourceTree = "<group>"; };
+		1441CDDB2088004E00E9FD9F /* CGTKCallbackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKCallbackData.h; path = src/Output/CoreGTK/CGTKCallbackData.h; sourceTree = "<group>"; };
+		1441CDDC2088004E00E9FD9F /* CGTKContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKContainer.h; path = src/Output/CoreGTK/CGTKContainer.h; sourceTree = "<group>"; };
+		1441CDDD2088004E00E9FD9F /* CGTKArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKArrow.h; path = src/Output/CoreGTK/CGTKArrow.h; sourceTree = "<group>"; };
+		1441CDDE2088004E00E9FD9F /* CGTKLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKLayout.m; path = src/Output/CoreGTK/CGTKLayout.m; sourceTree = "<group>"; };
+		1441CDDF2088004E00E9FD9F /* CGTKFontSelectionDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFontSelectionDialog.h; path = src/Output/CoreGTK/CGTKFontSelectionDialog.h; sourceTree = "<group>"; };
+		1441CDE02088004E00E9FD9F /* CGTKDrawingArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKDrawingArea.h; path = src/Output/CoreGTK/CGTKDrawingArea.h; sourceTree = "<group>"; };
+		1441CDE12088004E00E9FD9F /* CGTKPopoverMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKPopoverMenu.h; path = src/Output/CoreGTK/CGTKPopoverMenu.h; sourceTree = "<group>"; };
+		1441CDE22088004F00E9FD9F /* CGTKRecentChooserWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKRecentChooserWidget.m; path = src/Output/CoreGTK/CGTKRecentChooserWidget.m; sourceTree = "<group>"; };
+		1441CDE32088004F00E9FD9F /* CGTKSeparatorToolItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKSeparatorToolItem.h; path = src/Output/CoreGTK/CGTKSeparatorToolItem.h; sourceTree = "<group>"; };
+		1441CDE42088004F00E9FD9F /* CGTKComboBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKComboBox.m; path = src/Output/CoreGTK/CGTKComboBox.m; sourceTree = "<group>"; };
+		1441CDE52088004F00E9FD9F /* CGTKFlowBoxChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFlowBoxChild.m; path = src/Output/CoreGTK/CGTKFlowBoxChild.m; sourceTree = "<group>"; };
+		1441CDE62088004F00E9FD9F /* CGTKAppChooserWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKAppChooserWidget.m; path = src/Output/CoreGTK/CGTKAppChooserWidget.m; sourceTree = "<group>"; };
+		1441CDE72088004F00E9FD9F /* CGTKFileChooserWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFileChooserWidget.h; path = src/Output/CoreGTK/CGTKFileChooserWidget.h; sourceTree = "<group>"; };
+		1441CDE82088004F00E9FD9F /* CGTKBin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKBin.m; path = src/Output/CoreGTK/CGTKBin.m; sourceTree = "<group>"; };
+		1441CDE92088005000E9FD9F /* CGTKHBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKHBox.h; path = src/Output/CoreGTK/CGTKHBox.h; sourceTree = "<group>"; };
+		1441CDEA2088005000E9FD9F /* CGTKStatusbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKStatusbar.h; path = src/Output/CoreGTK/CGTKStatusbar.h; sourceTree = "<group>"; };
+		1441CDEB2088005000E9FD9F /* CGTKRevealer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKRevealer.m; path = src/Output/CoreGTK/CGTKRevealer.m; sourceTree = "<group>"; };
+		1441CDEC2088005000E9FD9F /* CGTKButtonBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKButtonBox.h; path = src/Output/CoreGTK/CGTKButtonBox.h; sourceTree = "<group>"; };
+		1441CDED2088005000E9FD9F /* CGTKToolItemGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKToolItemGroup.m; path = src/Output/CoreGTK/CGTKToolItemGroup.m; sourceTree = "<group>"; };
+		1441CDEE2088005000E9FD9F /* CGTKLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKLayout.h; path = src/Output/CoreGTK/CGTKLayout.h; sourceTree = "<group>"; };
+		1441CDEF2088005000E9FD9F /* CGTKOffscreenWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKOffscreenWindow.h; path = src/Output/CoreGTK/CGTKOffscreenWindow.h; sourceTree = "<group>"; };
+		1441CDF02088005000E9FD9F /* CGTKVBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKVBox.h; path = src/Output/CoreGTK/CGTKVBox.h; sourceTree = "<group>"; };
+		1441CDF12088005100E9FD9F /* CGTKGLArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKGLArea.h; path = src/Output/CoreGTK/CGTKGLArea.h; sourceTree = "<group>"; };
+		1441CDF22088005100E9FD9F /* CGTKInvisible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKInvisible.h; path = src/Output/CoreGTK/CGTKInvisible.h; sourceTree = "<group>"; };
+		1441CDF32088005100E9FD9F /* CGTKMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKMenuBar.h; path = src/Output/CoreGTK/CGTKMenuBar.h; sourceTree = "<group>"; };
+		1441CDF42088005200E9FD9F /* CGTKMenuShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKMenuShell.h; path = src/Output/CoreGTK/CGTKMenuShell.h; sourceTree = "<group>"; };
+		1441CDF52088005200E9FD9F /* CGTKFlowBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFlowBox.h; path = src/Output/CoreGTK/CGTKFlowBox.h; sourceTree = "<group>"; };
+		1441CDF62088005200E9FD9F /* CGTKFlowBoxChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFlowBoxChild.h; path = src/Output/CoreGTK/CGTKFlowBoxChild.h; sourceTree = "<group>"; };
+		1441CDF72088005300E9FD9F /* CGTKFixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFixed.h; path = src/Output/CoreGTK/CGTKFixed.h; sourceTree = "<group>"; };
+		1441CDF82088005300E9FD9F /* CGTKArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKArrow.m; path = src/Output/CoreGTK/CGTKArrow.m; sourceTree = "<group>"; };
+		1441CDF92088005300E9FD9F /* CGTKPopoverMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKPopoverMenu.m; path = src/Output/CoreGTK/CGTKPopoverMenu.m; sourceTree = "<group>"; };
+		1441CDFA2088005300E9FD9F /* CGTKHScrollbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKHScrollbar.m; path = src/Output/CoreGTK/CGTKHScrollbar.m; sourceTree = "<group>"; };
+		1441CDFB2088005300E9FD9F /* CGTKStackSwitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKStackSwitcher.h; path = src/Output/CoreGTK/CGTKStackSwitcher.h; sourceTree = "<group>"; };
+		1441CDFC2088005300E9FD9F /* CGTKTypeWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKTypeWrapper.h; path = src/Output/CoreGTK/CGTKTypeWrapper.h; sourceTree = "<group>"; };
+		1441CDFD2088005300E9FD9F /* CGTKToolItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKToolItem.h; path = src/Output/CoreGTK/CGTKToolItem.h; sourceTree = "<group>"; };
+		1441CDFE2088005300E9FD9F /* CGTKViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKViewport.h; path = src/Output/CoreGTK/CGTKViewport.h; sourceTree = "<group>"; };
+		1441CDFF2088005300E9FD9F /* CGTKTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKTreeView.h; path = src/Output/CoreGTK/CGTKTreeView.h; sourceTree = "<group>"; };
+		1441CE002088005400E9FD9F /* CGTKVScrollbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKVScrollbar.m; path = src/Output/CoreGTK/CGTKVScrollbar.m; sourceTree = "<group>"; };
+		1441CE012088005400E9FD9F /* CGTKCheckButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKCheckButton.m; path = src/Output/CoreGTK/CGTKCheckButton.m; sourceTree = "<group>"; };
+		1441CE022088005400E9FD9F /* CGTKLevelBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKLevelBar.h; path = src/Output/CoreGTK/CGTKLevelBar.h; sourceTree = "<group>"; };
+		1441CE032088005400E9FD9F /* CGTKWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKWindow.h; path = src/Output/CoreGTK/CGTKWindow.h; sourceTree = "<group>"; };
+		1441CE042088005400E9FD9F /* CGTKAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKAssistant.h; path = src/Output/CoreGTK/CGTKAssistant.h; sourceTree = "<group>"; };
+		1441CE052088005400E9FD9F /* CGTKMessageDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKMessageDialog.h; path = src/Output/CoreGTK/CGTKMessageDialog.h; sourceTree = "<group>"; };
+		1441CE062088005400E9FD9F /* CGTKToolItemGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKToolItemGroup.h; path = src/Output/CoreGTK/CGTKToolItemGroup.h; sourceTree = "<group>"; };
+		1441CE072088005400E9FD9F /* CGTKActionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKActionBar.m; path = src/Output/CoreGTK/CGTKActionBar.m; sourceTree = "<group>"; };
+		1441CE082088005500E9FD9F /* CGTKApplicationWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKApplicationWindow.m; path = src/Output/CoreGTK/CGTKApplicationWindow.m; sourceTree = "<group>"; };
+		1441CE092088005500E9FD9F /* CGTKLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKLabel.m; path = src/Output/CoreGTK/CGTKLabel.m; sourceTree = "<group>"; };
+		1441CE0A2088005500E9FD9F /* CGTKWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKWindow.m; path = src/Output/CoreGTK/CGTKWindow.m; sourceTree = "<group>"; };
+		1441CE0B2088005500E9FD9F /* CGTKFileChooserButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFileChooserButton.h; path = src/Output/CoreGTK/CGTKFileChooserButton.h; sourceTree = "<group>"; };
+		1441CE0C2088005500E9FD9F /* CGTKMisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKMisc.h; path = src/Output/CoreGTK/CGTKMisc.h; sourceTree = "<group>"; };
+		1441CE0D2088005500E9FD9F /* CGTKPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKPopover.m; path = src/Output/CoreGTK/CGTKPopover.m; sourceTree = "<group>"; };
+		1441CE0E2088005500E9FD9F /* CGTKScrollbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKScrollbar.m; path = src/Output/CoreGTK/CGTKScrollbar.m; sourceTree = "<group>"; };
+		1441CE0F2088005600E9FD9F /* CGTKRevealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKRevealer.h; path = src/Output/CoreGTK/CGTKRevealer.h; sourceTree = "<group>"; };
+		1441CE102088005600E9FD9F /* CGTKVScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKVScale.h; path = src/Output/CoreGTK/CGTKVScale.h; sourceTree = "<group>"; };
+		1441CE112088005700E9FD9F /* CGTKCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKCellView.m; path = src/Output/CoreGTK/CGTKCellView.m; sourceTree = "<group>"; };
+		1441CE122088005700E9FD9F /* CGTKOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKOverlay.h; path = src/Output/CoreGTK/CGTKOverlay.h; sourceTree = "<group>"; };
+		1441CE132088005700E9FD9F /* CGTKFontButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFontButton.h; path = src/Output/CoreGTK/CGTKFontButton.h; sourceTree = "<group>"; };
+		1441CE142088005700E9FD9F /* CGTKAboutDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKAboutDialog.m; path = src/Output/CoreGTK/CGTKAboutDialog.m; sourceTree = "<group>"; };
+		1441CE152088005700E9FD9F /* CGTKNativeDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKNativeDialog.m; path = src/Output/CoreGTK/CGTKNativeDialog.m; sourceTree = "<group>"; };
+		1441CE162088005800E9FD9F /* CGTKTearoffMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKTearoffMenuItem.h; path = src/Output/CoreGTK/CGTKTearoffMenuItem.h; sourceTree = "<group>"; };
+		1441CE172088005800E9FD9F /* CGTKTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKTreeView.m; path = src/Output/CoreGTK/CGTKTreeView.m; sourceTree = "<group>"; };
+		1441CE182088005800E9FD9F /* CGTKScaleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKScaleButton.m; path = src/Output/CoreGTK/CGTKScaleButton.m; sourceTree = "<group>"; };
+		1441CE192088005800E9FD9F /* CGTKSpinButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKSpinButton.m; path = src/Output/CoreGTK/CGTKSpinButton.m; sourceTree = "<group>"; };
+		1441CE1A2088005800E9FD9F /* CGTKSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKSeparator.m; path = src/Output/CoreGTK/CGTKSeparator.m; sourceTree = "<group>"; };
+		1441CE1B2088005800E9FD9F /* CGTKColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKColorButton.m; path = src/Output/CoreGTK/CGTKColorButton.m; sourceTree = "<group>"; };
+		1441CE1C2088005800E9FD9F /* CGTKAccelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKAccelLabel.m; path = src/Output/CoreGTK/CGTKAccelLabel.m; sourceTree = "<group>"; };
+		1441CE1D2088005900E9FD9F /* CGTKAppChooserDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKAppChooserDialog.h; path = src/Output/CoreGTK/CGTKAppChooserDialog.h; sourceTree = "<group>"; };
+		1441CE1E2088005900E9FD9F /* CGTKBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKBox.m; path = src/Output/CoreGTK/CGTKBox.m; sourceTree = "<group>"; };
+		1441CE1F2088005900E9FD9F /* CGTKMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKMenuBar.m; path = src/Output/CoreGTK/CGTKMenuBar.m; sourceTree = "<group>"; };
+		1441CE202088005900E9FD9F /* CGTKVPaned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKVPaned.m; path = src/Output/CoreGTK/CGTKVPaned.m; sourceTree = "<group>"; };
+		1441CE212088005900E9FD9F /* CGTK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTK.h; path = src/Output/CoreGTK/CGTK.h; sourceTree = "<group>"; };
+		1441CE222088005900E9FD9F /* CGTKMenuShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKMenuShell.m; path = src/Output/CoreGTK/CGTKMenuShell.m; sourceTree = "<group>"; };
+		1441CE232088005900E9FD9F /* CGTKFontButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFontButton.m; path = src/Output/CoreGTK/CGTKFontButton.m; sourceTree = "<group>"; };
+		1441CE242088005A00E9FD9F /* CGTKCheckMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKCheckMenuItem.h; path = src/Output/CoreGTK/CGTKCheckMenuItem.h; sourceTree = "<group>"; };
+		1441CE252088005A00E9FD9F /* CGTKLevelBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKLevelBar.m; path = src/Output/CoreGTK/CGTKLevelBar.m; sourceTree = "<group>"; };
+		1441CE262088005A00E9FD9F /* CGTKInfoBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKInfoBar.m; path = src/Output/CoreGTK/CGTKInfoBar.m; sourceTree = "<group>"; };
+		1441CE272088005A00E9FD9F /* CGTKColorChooserWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKColorChooserWidget.m; path = src/Output/CoreGTK/CGTKColorChooserWidget.m; sourceTree = "<group>"; };
+		1441CE282088005A00E9FD9F /* CGTKHScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKHScale.m; path = src/Output/CoreGTK/CGTKHScale.m; sourceTree = "<group>"; };
+		1441CE292088005A00E9FD9F /* CGTKNativeDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKNativeDialog.h; path = src/Output/CoreGTK/CGTKNativeDialog.h; sourceTree = "<group>"; };
+		1441CE2A2088005A00E9FD9F /* CGTKRadioToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKRadioToolButton.h; path = src/Output/CoreGTK/CGTKRadioToolButton.h; sourceTree = "<group>"; };
+		1441CE2B2088005B00E9FD9F /* CGTKSignalConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKSignalConnector.h; path = src/Output/CoreGTK/CGTKSignalConnector.h; sourceTree = "<group>"; };
+		1441CE2C2088005B00E9FD9F /* CGTKIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKIconView.m; path = src/Output/CoreGTK/CGTKIconView.m; sourceTree = "<group>"; };
+		1441CE2D2088005B00E9FD9F /* CGTKToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKToolbar.m; path = src/Output/CoreGTK/CGTKToolbar.m; sourceTree = "<group>"; };
+		1441CE2E2088005B00E9FD9F /* CGTKComboBoxText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKComboBoxText.h; path = src/Output/CoreGTK/CGTKComboBoxText.h; sourceTree = "<group>"; };
+		1441CE2F2088005B00E9FD9F /* CGTKBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKBuilder.h; path = src/Output/CoreGTK/CGTKBuilder.h; sourceTree = "<group>"; };
+		1441CE302088005B00E9FD9F /* CGTKColorChooserWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKColorChooserWidget.h; path = src/Output/CoreGTK/CGTKColorChooserWidget.h; sourceTree = "<group>"; };
+		1441CE312088005B00E9FD9F /* CGTKSearchEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKSearchEntry.m; path = src/Output/CoreGTK/CGTKSearchEntry.m; sourceTree = "<group>"; };
+		1441CE322088005C00E9FD9F /* CGTKSignalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKSignalData.h; path = src/Output/CoreGTK/CGTKSignalData.h; sourceTree = "<group>"; };
+		1441CE332088005C00E9FD9F /* CGTKHButtonBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKHButtonBox.h; path = src/Output/CoreGTK/CGTKHButtonBox.h; sourceTree = "<group>"; };
+		1441CE342088005C00E9FD9F /* CGTKListBoxRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKListBoxRow.h; path = src/Output/CoreGTK/CGTKListBoxRow.h; sourceTree = "<group>"; };
+		1441CE352088005C00E9FD9F /* CGTKMenuToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKMenuToolButton.m; path = src/Output/CoreGTK/CGTKMenuToolButton.m; sourceTree = "<group>"; };
+		1441CE362088005C00E9FD9F /* CGTKFileChooserWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFileChooserWidget.m; path = src/Output/CoreGTK/CGTKFileChooserWidget.m; sourceTree = "<group>"; };
+		1441CE372088005C00E9FD9F /* CGTKToolItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKToolItem.m; path = src/Output/CoreGTK/CGTKToolItem.m; sourceTree = "<group>"; };
+		1441CE382088005D00E9FD9F /* CGTKDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKDialog.m; path = src/Output/CoreGTK/CGTKDialog.m; sourceTree = "<group>"; };
+		1441CE392088005D00E9FD9F /* CGTKFileChooserDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFileChooserDialog.m; path = src/Output/CoreGTK/CGTKFileChooserDialog.m; sourceTree = "<group>"; };
+		1441CE3A2088005D00E9FD9F /* CGTKVButtonBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKVButtonBox.h; path = src/Output/CoreGTK/CGTKVButtonBox.h; sourceTree = "<group>"; };
+		1441CE3B2088005D00E9FD9F /* CGTKSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKSpinner.h; path = src/Output/CoreGTK/CGTKSpinner.h; sourceTree = "<group>"; };
+		1441CE3C2088005D00E9FD9F /* CGTKVPaned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKVPaned.h; path = src/Output/CoreGTK/CGTKVPaned.h; sourceTree = "<group>"; };
+		1441CE3D2088005D00E9FD9F /* CGTKAppChooserButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKAppChooserButton.m; path = src/Output/CoreGTK/CGTKAppChooserButton.m; sourceTree = "<group>"; };
+		1441CE3E2088005D00E9FD9F /* CGTKFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFrame.h; path = src/Output/CoreGTK/CGTKFrame.h; sourceTree = "<group>"; };
+		1441CE3F2088005E00E9FD9F /* CGTKVScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKVScale.m; path = src/Output/CoreGTK/CGTKVScale.m; sourceTree = "<group>"; };
+		1441CE402088005E00E9FD9F /* CGTKHScrollbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKHScrollbar.h; path = src/Output/CoreGTK/CGTKHScrollbar.h; sourceTree = "<group>"; };
+		1441CE412088005E00E9FD9F /* CGTKToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKToolbar.h; path = src/Output/CoreGTK/CGTKToolbar.h; sourceTree = "<group>"; };
+		1441CE422088005E00E9FD9F /* CGTKModelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKModelButton.m; path = src/Output/CoreGTK/CGTKModelButton.m; sourceTree = "<group>"; };
+		1441CE432088005E00E9FD9F /* CGTKSignalConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKSignalConnector.m; path = src/Output/CoreGTK/CGTKSignalConnector.m; sourceTree = "<group>"; };
+		1441CE442088005E00E9FD9F /* CGTKToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKToolButton.m; path = src/Output/CoreGTK/CGTKToolButton.m; sourceTree = "<group>"; };
+		1441CE452088005F00E9FD9F /* CGTKAboutDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKAboutDialog.h; path = src/Output/CoreGTK/CGTKAboutDialog.h; sourceTree = "<group>"; };
+		1441CE462088005F00E9FD9F /* CGTKFontChooserWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFontChooserWidget.m; path = src/Output/CoreGTK/CGTKFontChooserWidget.m; sourceTree = "<group>"; };
+		1441CE472088005F00E9FD9F /* CGTKContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKContainer.m; path = src/Output/CoreGTK/CGTKContainer.m; sourceTree = "<group>"; };
+		1441CE482088005F00E9FD9F /* CGTKFontChooserDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFontChooserDialog.h; path = src/Output/CoreGTK/CGTKFontChooserDialog.h; sourceTree = "<group>"; };
+		1441CE492088005F00E9FD9F /* CGTKMenuToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKMenuToolButton.h; path = src/Output/CoreGTK/CGTKMenuToolButton.h; sourceTree = "<group>"; };
+		1441CE4A2088005F00E9FD9F /* CGTKSeparatorMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKSeparatorMenuItem.m; path = src/Output/CoreGTK/CGTKSeparatorMenuItem.m; sourceTree = "<group>"; };
+		1441CE4B2088006000E9FD9F /* CGTKToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKToolButton.h; path = src/Output/CoreGTK/CGTKToolButton.h; sourceTree = "<group>"; };
+		1441CE4C2088006000E9FD9F /* CGTKLinkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKLinkButton.h; path = src/Output/CoreGTK/CGTKLinkButton.h; sourceTree = "<group>"; };
+		1441CE4D2088006000E9FD9F /* CGTKStackSwitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKStackSwitcher.m; path = src/Output/CoreGTK/CGTKStackSwitcher.m; sourceTree = "<group>"; };
+		1441CE4E2088006000E9FD9F /* CGTKMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKMenuButton.m; path = src/Output/CoreGTK/CGTKMenuButton.m; sourceTree = "<group>"; };
+		1441CE4F2088006000E9FD9F /* CGTKFlowBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFlowBox.m; path = src/Output/CoreGTK/CGTKFlowBox.m; sourceTree = "<group>"; };
+		1441CE502088006000E9FD9F /* CGTKNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKNotebook.h; path = src/Output/CoreGTK/CGTKNotebook.h; sourceTree = "<group>"; };
+		1441CE512088006000E9FD9F /* CGTKBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKBox.h; path = src/Output/CoreGTK/CGTKBox.h; sourceTree = "<group>"; };
+		1441CE522088006100E9FD9F /* CGTKColorChooserDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKColorChooserDialog.h; path = src/Output/CoreGTK/CGTKColorChooserDialog.h; sourceTree = "<group>"; };
+		1441CE532088006100E9FD9F /* CGTKAccelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKAccelLabel.h; path = src/Output/CoreGTK/CGTKAccelLabel.h; sourceTree = "<group>"; };
+		1441CE542088006100E9FD9F /* CGTKBaseBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKBaseBuilder.m; path = src/Output/CoreGTK/CGTKBaseBuilder.m; sourceTree = "<group>"; };
+		1441CE552088006100E9FD9F /* CGTKBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKBase.h; path = src/Output/CoreGTK/CGTKBase.h; sourceTree = "<group>"; };
+		1441CE562088006100E9FD9F /* CGTKColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKColorButton.h; path = src/Output/CoreGTK/CGTKColorButton.h; sourceTree = "<group>"; };
+		1441CE572088006100E9FD9F /* CGTKHandleBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKHandleBox.m; path = src/Output/CoreGTK/CGTKHandleBox.m; sourceTree = "<group>"; };
+		1441CE582088006200E9FD9F /* CGTKMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKMenuItem.m; path = src/Output/CoreGTK/CGTKMenuItem.m; sourceTree = "<group>"; };
+		1441CE592088006200E9FD9F /* CGTKCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKCellView.h; path = src/Output/CoreGTK/CGTKCellView.h; sourceTree = "<group>"; };
+		1441CE5A2088006200E9FD9F /* CGTKActionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKActionBar.h; path = src/Output/CoreGTK/CGTKActionBar.h; sourceTree = "<group>"; };
+		1441CE5B2088006200E9FD9F /* CGTKBaseBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKBaseBuilder.h; path = src/Output/CoreGTK/CGTKBaseBuilder.h; sourceTree = "<group>"; };
+		1441CE5C2088006200E9FD9F /* CGTKSeparatorToolItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKSeparatorToolItem.m; path = src/Output/CoreGTK/CGTKSeparatorToolItem.m; sourceTree = "<group>"; };
+		1441CE5D2088006200E9FD9F /* CGTKShortcutsShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKShortcutsShortcut.h; path = src/Output/CoreGTK/CGTKShortcutsShortcut.h; sourceTree = "<group>"; };
+		1441CE5E2088006300E9FD9F /* CGTKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKImage.h; path = src/Output/CoreGTK/CGTKImage.h; sourceTree = "<group>"; };
+		1441CE5F2088006300E9FD9F /* CGTKScrollbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKScrollbar.h; path = src/Output/CoreGTK/CGTKScrollbar.h; sourceTree = "<group>"; };
+		1441CE602088006300E9FD9F /* CGTKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKTextView.h; path = src/Output/CoreGTK/CGTKTextView.h; sourceTree = "<group>"; };
+		1441CE612088006300E9FD9F /* CGTKFontSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFontSelection.m; path = src/Output/CoreGTK/CGTKFontSelection.m; sourceTree = "<group>"; };
+		1441CE622088006300E9FD9F /* CGTKAlignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKAlignment.h; path = src/Output/CoreGTK/CGTKAlignment.h; sourceTree = "<group>"; };
+		1441CE632088006300E9FD9F /* CGTKProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKProgressBar.h; path = src/Output/CoreGTK/CGTKProgressBar.h; sourceTree = "<group>"; };
+		1441CE642088006300E9FD9F /* CGTKCallbackData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKCallbackData.m; path = src/Output/CoreGTK/CGTKCallbackData.m; sourceTree = "<group>"; };
+		1441CE652088006400E9FD9F /* CGTKFontSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFontSelection.h; path = src/Output/CoreGTK/CGTKFontSelection.h; sourceTree = "<group>"; };
+		1441CE662088006400E9FD9F /* CGTKFixed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFixed.m; path = src/Output/CoreGTK/CGTKFixed.m; sourceTree = "<group>"; };
+		1441CE672088006400E9FD9F /* CGTKFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFrame.m; path = src/Output/CoreGTK/CGTKFrame.m; sourceTree = "<group>"; };
+		1441CE682088006400E9FD9F /* CGTKMisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKMisc.m; path = src/Output/CoreGTK/CGTKMisc.m; sourceTree = "<group>"; };
+		1441CE692088006400E9FD9F /* CGTKShortcutsShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKShortcutsShortcut.m; path = src/Output/CoreGTK/CGTKShortcutsShortcut.m; sourceTree = "<group>"; };
+		1441CE6A2088006400E9FD9F /* CGTKHSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKHSV.h; path = src/Output/CoreGTK/CGTKHSV.h; sourceTree = "<group>"; };
+		1441CE6B2088006400E9FD9F /* CGTKOffscreenWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKOffscreenWindow.m; path = src/Output/CoreGTK/CGTKOffscreenWindow.m; sourceTree = "<group>"; };
+		1441CE6C2088006500E9FD9F /* CGTKColorChooserDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKColorChooserDialog.m; path = src/Output/CoreGTK/CGTKColorChooserDialog.m; sourceTree = "<group>"; };
+		1441CE6D2088006500E9FD9F /* CGTKMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKMenuButton.h; path = src/Output/CoreGTK/CGTKMenuButton.h; sourceTree = "<group>"; };
+		1441CE6E2088006500E9FD9F /* CGTKColorSelectionDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKColorSelectionDialog.h; path = src/Output/CoreGTK/CGTKColorSelectionDialog.h; sourceTree = "<group>"; };
+		1441CE6F2088006500E9FD9F /* CGTKStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKStack.m; path = src/Output/CoreGTK/CGTKStack.m; sourceTree = "<group>"; };
+		1441CE702088006500E9FD9F /* CGTKWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKWidget.m; path = src/Output/CoreGTK/CGTKWidget.m; sourceTree = "<group>"; };
+		1441CE712088006500E9FD9F /* CGTKAspectFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKAspectFrame.h; path = src/Output/CoreGTK/CGTKAspectFrame.h; sourceTree = "<group>"; };
+		1441CE722088006600E9FD9F /* CGTKFontChooserDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFontChooserDialog.m; path = src/Output/CoreGTK/CGTKFontChooserDialog.m; sourceTree = "<group>"; };
+		1441CE732088006600E9FD9F /* CGTKNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKNotebook.m; path = src/Output/CoreGTK/CGTKNotebook.m; sourceTree = "<group>"; };
+		1441CE742088006600E9FD9F /* CGTKProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKProgressBar.m; path = src/Output/CoreGTK/CGTKProgressBar.m; sourceTree = "<group>"; };
+		1441CE752088006800E9FD9F /* CGTKRecentChooserMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKRecentChooserMenu.h; path = src/Output/CoreGTK/CGTKRecentChooserMenu.h; sourceTree = "<group>"; };
+		1441CE762088006900E9FD9F /* CGTKFileChooserDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFileChooserDialog.h; path = src/Output/CoreGTK/CGTKFileChooserDialog.h; sourceTree = "<group>"; };
+		1441CE772088006900E9FD9F /* CGTKLinkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKLinkButton.m; path = src/Output/CoreGTK/CGTKLinkButton.m; sourceTree = "<group>"; };
+		1441CE782088006900E9FD9F /* CGTKToolPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKToolPalette.h; path = src/Output/CoreGTK/CGTKToolPalette.h; sourceTree = "<group>"; };
+		1441CE792088006900E9FD9F /* CGTKScrolledWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKScrolledWindow.m; path = src/Output/CoreGTK/CGTKScrolledWindow.m; sourceTree = "<group>"; };
+		1441CE7A2088006900E9FD9F /* CGTKSearchEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKSearchEntry.h; path = src/Output/CoreGTK/CGTKSearchEntry.h; sourceTree = "<group>"; };
+		1441CE7B2088006A00E9FD9F /* CGTKComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKComboBox.h; path = src/Output/CoreGTK/CGTKComboBox.h; sourceTree = "<group>"; };
+		1441CE7C2088006B00E9FD9F /* CGTKFileChooserButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKFileChooserButton.m; path = src/Output/CoreGTK/CGTKFileChooserButton.m; sourceTree = "<group>"; };
+		1441CE7D2088006B00E9FD9F /* CGTKGLArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKGLArea.m; path = src/Output/CoreGTK/CGTKGLArea.m; sourceTree = "<group>"; };
+		1441CE7E2088006B00E9FD9F /* CGTKImageMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKImageMenuItem.m; path = src/Output/CoreGTK/CGTKImageMenuItem.m; sourceTree = "<group>"; };
+		1441CE7F2088006B00E9FD9F /* CGTKRadioToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKRadioToolButton.m; path = src/Output/CoreGTK/CGTKRadioToolButton.m; sourceTree = "<group>"; };
+		1441CE802088006B00E9FD9F /* CGTKCheckButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKCheckButton.h; path = src/Output/CoreGTK/CGTKCheckButton.h; sourceTree = "<group>"; };
+		1441CE812088006C00E9FD9F /* CGTKVolumeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKVolumeButton.h; path = src/Output/CoreGTK/CGTKVolumeButton.h; sourceTree = "<group>"; };
+		1441CE822088006C00E9FD9F /* CGTKColorSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKColorSelection.h; path = src/Output/CoreGTK/CGTKColorSelection.h; sourceTree = "<group>"; };
+		1441CE832088006C00E9FD9F /* CGTKSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKSeparator.h; path = src/Output/CoreGTK/CGTKSeparator.h; sourceTree = "<group>"; };
+		1441CE842088006C00E9FD9F /* CGTKSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKSwitch.h; path = src/Output/CoreGTK/CGTKSwitch.h; sourceTree = "<group>"; };
+		1441CE852088006C00E9FD9F /* CGTKRadioMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKRadioMenuItem.h; path = src/Output/CoreGTK/CGTKRadioMenuItem.h; sourceTree = "<group>"; };
+		1441CE862088006C00E9FD9F /* CGTKFontChooserWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKFontChooserWidget.h; path = src/Output/CoreGTK/CGTKFontChooserWidget.h; sourceTree = "<group>"; };
+		1441CE872088006C00E9FD9F /* CGTKPlacesSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKPlacesSidebar.h; path = src/Output/CoreGTK/CGTKPlacesSidebar.h; sourceTree = "<group>"; };
+		1441CE882088006D00E9FD9F /* CGTKPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKPopover.h; path = src/Output/CoreGTK/CGTKPopover.h; sourceTree = "<group>"; };
+		1441CE892088006D00E9FD9F /* CGTKOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKOverlay.m; path = src/Output/CoreGTK/CGTKOverlay.m; sourceTree = "<group>"; };
+		1441CE8A2088006D00E9FD9F /* CGTKAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKAssistant.m; path = src/Output/CoreGTK/CGTKAssistant.m; sourceTree = "<group>"; };
+		1441CE8B2088006D00E9FD9F /* CGTK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTK.m; path = src/Output/CoreGTK/CGTK.m; sourceTree = "<group>"; };
+		1441CE8C2088006D00E9FD9F /* CGTKEventBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKEventBox.h; path = src/Output/CoreGTK/CGTKEventBox.h; sourceTree = "<group>"; };
+		1441CE8D2088006D00E9FD9F /* CGTKVSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKVSeparator.m; path = src/Output/CoreGTK/CGTKVSeparator.m; sourceTree = "<group>"; };
+		1441CE8E2088006E00E9FD9F /* CGTKRecentChooserMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKRecentChooserMenu.m; path = src/Output/CoreGTK/CGTKRecentChooserMenu.m; sourceTree = "<group>"; };
+		1441CE8F2088006E00E9FD9F /* CGTKButtonBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKButtonBox.m; path = src/Output/CoreGTK/CGTKButtonBox.m; sourceTree = "<group>"; };
+		1441CE902088006E00E9FD9F /* CGTKToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKToggleButton.h; path = src/Output/CoreGTK/CGTKToggleButton.h; sourceTree = "<group>"; };
+		1441CE912088006E00E9FD9F /* CGTKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKImage.m; path = src/Output/CoreGTK/CGTKImage.m; sourceTree = "<group>"; };
+		1441CE922088006E00E9FD9F /* CGTKToggleToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKToggleToolButton.m; path = src/Output/CoreGTK/CGTKToggleToolButton.m; sourceTree = "<group>"; };
+		1441CE932088006E00E9FD9F /* CGTKWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKWidget.h; path = src/Output/CoreGTK/CGTKWidget.h; sourceTree = "<group>"; };
+		1441CE942088006E00E9FD9F /* CGTKModelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKModelButton.h; path = src/Output/CoreGTK/CGTKModelButton.h; sourceTree = "<group>"; };
+		1441CE952088006F00E9FD9F /* CGTKHScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKHScale.h; path = src/Output/CoreGTK/CGTKHScale.h; sourceTree = "<group>"; };
+		1441CE962088006F00E9FD9F /* CGTKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKTextView.m; path = src/Output/CoreGTK/CGTKTextView.m; sourceTree = "<group>"; };
+		1441CE972088006F00E9FD9F /* CGTKEventBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKEventBox.m; path = src/Output/CoreGTK/CGTKEventBox.m; sourceTree = "<group>"; };
+		1441CE982088006F00E9FD9F /* CGTKMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKMenuItem.h; path = src/Output/CoreGTK/CGTKMenuItem.h; sourceTree = "<group>"; };
+		1441CE992088006F00E9FD9F /* CGTKListBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKListBox.m; path = src/Output/CoreGTK/CGTKListBox.m; sourceTree = "<group>"; };
+		1441CE9A2088006F00E9FD9F /* CGTKMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKMenu.m; path = src/Output/CoreGTK/CGTKMenu.m; sourceTree = "<group>"; };
+		1441CE9B2088007000E9FD9F /* CGTKRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKRange.h; path = src/Output/CoreGTK/CGTKRange.h; sourceTree = "<group>"; };
+		1441CE9C2088007000E9FD9F /* CGTKSpinButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKSpinButton.h; path = src/Output/CoreGTK/CGTKSpinButton.h; sourceTree = "<group>"; };
+		1441CE9D2088007000E9FD9F /* CGTKVBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKVBox.m; path = src/Output/CoreGTK/CGTKVBox.m; sourceTree = "<group>"; };
+		1441CE9E2088007000E9FD9F /* CGTKDrawingArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKDrawingArea.m; path = src/Output/CoreGTK/CGTKDrawingArea.m; sourceTree = "<group>"; };
+		1441CE9F2088007000E9FD9F /* CGTKHButtonBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKHButtonBox.m; path = src/Output/CoreGTK/CGTKHButtonBox.m; sourceTree = "<group>"; };
+		1441CEA02088007000E9FD9F /* CGTKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKButton.h; path = src/Output/CoreGTK/CGTKButton.h; sourceTree = "<group>"; };
+		1441CEA12088007100E9FD9F /* CGTKRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKRange.m; path = src/Output/CoreGTK/CGTKRange.m; sourceTree = "<group>"; };
+		1441CEA22088007100E9FD9F /* CGTKLockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKLockButton.m; path = src/Output/CoreGTK/CGTKLockButton.m; sourceTree = "<group>"; };
+		1441CEA32088007100E9FD9F /* CGTKRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKRadioButton.h; path = src/Output/CoreGTK/CGTKRadioButton.h; sourceTree = "<group>"; };
+		1441CEA42088007100E9FD9F /* CGTKExpander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKExpander.m; path = src/Output/CoreGTK/CGTKExpander.m; sourceTree = "<group>"; };
+		1441CEA52088007100E9FD9F /* CGTKTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKTable.m; path = src/Output/CoreGTK/CGTKTable.m; sourceTree = "<group>"; };
+		1441CEA62088007100E9FD9F /* CGTKToolPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKToolPalette.m; path = src/Output/CoreGTK/CGTKToolPalette.m; sourceTree = "<group>"; };
+		1441CEA72088007100E9FD9F /* CGTKHSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGTKHSeparator.h; path = src/Output/CoreGTK/CGTKHSeparator.h; sourceTree = "<group>"; };
+		1441CEA82088007200E9FD9F /* CGTKTypeWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGTKTypeWrapper.m; path = src/Output/CoreGTK/CGTKTypeWrapper.m; sourceTree = "<group>"; };
+		1441CEAD2088033900E9FD9F /* libCoreGTK.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCoreGTK.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		1441CFCD2088045C00E9FD9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = src/Output/main.m; sourceTree = "<group>"; };
+		1441CFCE2088045D00E9FD9F /* gladeExample.glade */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = gladeExample.glade; path = src/Output/gladeExample.glade; sourceTree = "<group>"; };
+		1441CFCF208808A600E9FD9F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = src/Output/Makefile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1441CEAA2088033900E9FD9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1441CCDD2087F19200E9FD9F = {
+			isa = PBXGroup;
+			children = (
+				1441CFCF208808A600E9FD9F /* Makefile */,
+				1441CFCE2088045D00E9FD9F /* gladeExample.glade */,
+				1441CFCD2088045C00E9FD9F /* main.m */,
+				1441CCF22087F1F900E9FD9F /* CoreGTK */,
+				1441CCE72087F19200E9FD9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1441CCE72087F19200E9FD9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1441CEAD2088033900E9FD9F /* libCoreGTK.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1441CCF22087F1F900E9FD9F /* CoreGTK */ = {
+			isa = PBXGroup;
+			children = (
+				1441CE212088005900E9FD9F /* CGTK.h */,
+				1441CE8B2088006D00E9FD9F /* CGTK.m */,
+				1441CE452088005F00E9FD9F /* CGTKAboutDialog.h */,
+				1441CE142088005700E9FD9F /* CGTKAboutDialog.m */,
+				1441CE532088006100E9FD9F /* CGTKAccelLabel.h */,
+				1441CE1C2088005800E9FD9F /* CGTKAccelLabel.m */,
+				1441CE5A2088006200E9FD9F /* CGTKActionBar.h */,
+				1441CE072088005400E9FD9F /* CGTKActionBar.m */,
+				1441CE622088006300E9FD9F /* CGTKAlignment.h */,
+				1441CDAB2088004700E9FD9F /* CGTKAlignment.m */,
+				1441CDD02088004C00E9FD9F /* CGTKAppChooserButton.h */,
+				1441CE3D2088005D00E9FD9F /* CGTKAppChooserButton.m */,
+				1441CE1D2088005900E9FD9F /* CGTKAppChooserDialog.h */,
+				1441CDBA2088004900E9FD9F /* CGTKAppChooserDialog.m */,
+				1441CDC12088004A00E9FD9F /* CGTKAppChooserWidget.h */,
+				1441CDE62088004F00E9FD9F /* CGTKAppChooserWidget.m */,
+				1441CD962088004500E9FD9F /* CGTKApplicationWindow.h */,
+				1441CE082088005500E9FD9F /* CGTKApplicationWindow.m */,
+				1441CDDD2088004E00E9FD9F /* CGTKArrow.h */,
+				1441CDF82088005300E9FD9F /* CGTKArrow.m */,
+				1441CE712088006500E9FD9F /* CGTKAspectFrame.h */,
+				1441CDA12088004600E9FD9F /* CGTKAspectFrame.m */,
+				1441CE042088005400E9FD9F /* CGTKAssistant.h */,
+				1441CE8A2088006D00E9FD9F /* CGTKAssistant.m */,
+				1441CE552088006100E9FD9F /* CGTKBase.h */,
+				1441CDB42088004800E9FD9F /* CGTKBase.m */,
+				1441CE5B2088006200E9FD9F /* CGTKBaseBuilder.h */,
+				1441CE542088006100E9FD9F /* CGTKBaseBuilder.m */,
+				1441CDB92088004900E9FD9F /* CGTKBin.h */,
+				1441CDE82088004F00E9FD9F /* CGTKBin.m */,
+				1441CE512088006000E9FD9F /* CGTKBox.h */,
+				1441CE1E2088005900E9FD9F /* CGTKBox.m */,
+				1441CE2F2088005B00E9FD9F /* CGTKBuilder.h */,
+				1441CDC52088004A00E9FD9F /* CGTKBuilder.m */,
+				1441CEA02088007000E9FD9F /* CGTKButton.h */,
+				1441CDA72088004700E9FD9F /* CGTKButton.m */,
+				1441CDEC2088005000E9FD9F /* CGTKButtonBox.h */,
+				1441CE8F2088006E00E9FD9F /* CGTKButtonBox.m */,
+				1441CD9F2088004600E9FD9F /* CGTKCalendar.h */,
+				1441CDD32088004D00E9FD9F /* CGTKCalendar.m */,
+				1441CDDB2088004E00E9FD9F /* CGTKCallbackData.h */,
+				1441CE642088006300E9FD9F /* CGTKCallbackData.m */,
+				1441CE592088006200E9FD9F /* CGTKCellView.h */,
+				1441CE112088005700E9FD9F /* CGTKCellView.m */,
+				1441CE802088006B00E9FD9F /* CGTKCheckButton.h */,
+				1441CE012088005400E9FD9F /* CGTKCheckButton.m */,
+				1441CE242088005A00E9FD9F /* CGTKCheckMenuItem.h */,
+				1441CDD22088004C00E9FD9F /* CGTKCheckMenuItem.m */,
+				1441CE562088006100E9FD9F /* CGTKColorButton.h */,
+				1441CE1B2088005800E9FD9F /* CGTKColorButton.m */,
+				1441CE522088006100E9FD9F /* CGTKColorChooserDialog.h */,
+				1441CE6C2088006500E9FD9F /* CGTKColorChooserDialog.m */,
+				1441CE302088005B00E9FD9F /* CGTKColorChooserWidget.h */,
+				1441CE272088005A00E9FD9F /* CGTKColorChooserWidget.m */,
+				1441CE822088006C00E9FD9F /* CGTKColorSelection.h */,
+				1441CDA42088004600E9FD9F /* CGTKColorSelection.m */,
+				1441CE6E2088006500E9FD9F /* CGTKColorSelectionDialog.h */,
+				1441CDB52088004800E9FD9F /* CGTKColorSelectionDialog.m */,
+				1441CE7B2088006A00E9FD9F /* CGTKComboBox.h */,
+				1441CDE42088004F00E9FD9F /* CGTKComboBox.m */,
+				1441CE2E2088005B00E9FD9F /* CGTKComboBoxText.h */,
+				1441CDCF2088004C00E9FD9F /* CGTKComboBoxText.m */,
+				1441CDDC2088004E00E9FD9F /* CGTKContainer.h */,
+				1441CE472088005F00E9FD9F /* CGTKContainer.m */,
+				1441CDAF2088004800E9FD9F /* CGTKDialog.h */,
+				1441CE382088005D00E9FD9F /* CGTKDialog.m */,
+				1441CDE02088004E00E9FD9F /* CGTKDrawingArea.h */,
+				1441CE9E2088007000E9FD9F /* CGTKDrawingArea.m */,
+				1441CD952088004500E9FD9F /* CGTKEntry.h */,
+				1441CDBE2088004900E9FD9F /* CGTKEntry.m */,
+				1441CE8C2088006D00E9FD9F /* CGTKEventBox.h */,
+				1441CE972088006F00E9FD9F /* CGTKEventBox.m */,
+				1441CDBB2088004900E9FD9F /* CGTKExpander.h */,
+				1441CEA42088007100E9FD9F /* CGTKExpander.m */,
+				1441CE0B2088005500E9FD9F /* CGTKFileChooserButton.h */,
+				1441CE7C2088006B00E9FD9F /* CGTKFileChooserButton.m */,
+				1441CE762088006900E9FD9F /* CGTKFileChooserDialog.h */,
+				1441CE392088005D00E9FD9F /* CGTKFileChooserDialog.m */,
+				1441CDE72088004F00E9FD9F /* CGTKFileChooserWidget.h */,
+				1441CE362088005C00E9FD9F /* CGTKFileChooserWidget.m */,
+				1441CDF72088005300E9FD9F /* CGTKFixed.h */,
+				1441CE662088006400E9FD9F /* CGTKFixed.m */,
+				1441CDF52088005200E9FD9F /* CGTKFlowBox.h */,
+				1441CE4F2088006000E9FD9F /* CGTKFlowBox.m */,
+				1441CDF62088005200E9FD9F /* CGTKFlowBoxChild.h */,
+				1441CDE52088004F00E9FD9F /* CGTKFlowBoxChild.m */,
+				1441CE132088005700E9FD9F /* CGTKFontButton.h */,
+				1441CE232088005900E9FD9F /* CGTKFontButton.m */,
+				1441CE482088005F00E9FD9F /* CGTKFontChooserDialog.h */,
+				1441CE722088006600E9FD9F /* CGTKFontChooserDialog.m */,
+				1441CE862088006C00E9FD9F /* CGTKFontChooserWidget.h */,
+				1441CE462088005F00E9FD9F /* CGTKFontChooserWidget.m */,
+				1441CE652088006400E9FD9F /* CGTKFontSelection.h */,
+				1441CE612088006300E9FD9F /* CGTKFontSelection.m */,
+				1441CDDF2088004E00E9FD9F /* CGTKFontSelectionDialog.h */,
+				1441CDAE2088004700E9FD9F /* CGTKFontSelectionDialog.m */,
+				1441CE3E2088005D00E9FD9F /* CGTKFrame.h */,
+				1441CE672088006400E9FD9F /* CGTKFrame.m */,
+				1441CDF12088005100E9FD9F /* CGTKGLArea.h */,
+				1441CE7D2088006B00E9FD9F /* CGTKGLArea.m */,
+				1441CD972088004500E9FD9F /* CGTKGrid.h */,
+				1441CDC02088004A00E9FD9F /* CGTKGrid.m */,
+				1441CDD42088004D00E9FD9F /* CGTKHandleBox.h */,
+				1441CE572088006100E9FD9F /* CGTKHandleBox.m */,
+				1441CDE92088005000E9FD9F /* CGTKHBox.h */,
+				1441CDD82088004D00E9FD9F /* CGTKHBox.m */,
+				1441CE332088005C00E9FD9F /* CGTKHButtonBox.h */,
+				1441CE9F2088007000E9FD9F /* CGTKHButtonBox.m */,
+				1441CDA82088004700E9FD9F /* CGTKHeaderBar.h */,
+				1441CDBC2088004900E9FD9F /* CGTKHeaderBar.m */,
+				1441CDA22088004600E9FD9F /* CGTKHPaned.h */,
+				1441CDB72088004900E9FD9F /* CGTKHPaned.m */,
+				1441CE952088006F00E9FD9F /* CGTKHScale.h */,
+				1441CE282088005A00E9FD9F /* CGTKHScale.m */,
+				1441CE402088005E00E9FD9F /* CGTKHScrollbar.h */,
+				1441CDFA2088005300E9FD9F /* CGTKHScrollbar.m */,
+				1441CEA72088007100E9FD9F /* CGTKHSeparator.h */,
+				1441CDCB2088004B00E9FD9F /* CGTKHSeparator.m */,
+				1441CE6A2088006400E9FD9F /* CGTKHSV.h */,
+				1441CDA02088004600E9FD9F /* CGTKHSV.m */,
+				1441CDCE2088004B00E9FD9F /* CGTKIconView.h */,
+				1441CE2C2088005B00E9FD9F /* CGTKIconView.m */,
+				1441CE5E2088006300E9FD9F /* CGTKImage.h */,
+				1441CE912088006E00E9FD9F /* CGTKImage.m */,
+				1441CDB22088004800E9FD9F /* CGTKImageMenuItem.h */,
+				1441CE7E2088006B00E9FD9F /* CGTKImageMenuItem.m */,
+				1441CDA52088004700E9FD9F /* CGTKInfoBar.h */,
+				1441CE262088005A00E9FD9F /* CGTKInfoBar.m */,
+				1441CDF22088005100E9FD9F /* CGTKInvisible.h */,
+				1441CDC42088004A00E9FD9F /* CGTKInvisible.m */,
+				1441CD992088004600E9FD9F /* CGTKLabel.h */,
+				1441CE092088005500E9FD9F /* CGTKLabel.m */,
+				1441CDEE2088005000E9FD9F /* CGTKLayout.h */,
+				1441CDDE2088004E00E9FD9F /* CGTKLayout.m */,
+				1441CE022088005400E9FD9F /* CGTKLevelBar.h */,
+				1441CE252088005A00E9FD9F /* CGTKLevelBar.m */,
+				1441CE4C2088006000E9FD9F /* CGTKLinkButton.h */,
+				1441CE772088006900E9FD9F /* CGTKLinkButton.m */,
+				1441CDAA2088004700E9FD9F /* CGTKListBox.h */,
+				1441CE992088006F00E9FD9F /* CGTKListBox.m */,
+				1441CE342088005C00E9FD9F /* CGTKListBoxRow.h */,
+				1441CDBD2088004900E9FD9F /* CGTKListBoxRow.m */,
+				1441CD982088004600E9FD9F /* CGTKLockButton.h */,
+				1441CEA22088007100E9FD9F /* CGTKLockButton.m */,
+				1441CDDA2088004E00E9FD9F /* CGTKMenu.h */,
+				1441CE9A2088006F00E9FD9F /* CGTKMenu.m */,
+				1441CDF32088005100E9FD9F /* CGTKMenuBar.h */,
+				1441CE1F2088005900E9FD9F /* CGTKMenuBar.m */,
+				1441CE6D2088006500E9FD9F /* CGTKMenuButton.h */,
+				1441CE4E2088006000E9FD9F /* CGTKMenuButton.m */,
+				1441CE982088006F00E9FD9F /* CGTKMenuItem.h */,
+				1441CE582088006200E9FD9F /* CGTKMenuItem.m */,
+				1441CDF42088005200E9FD9F /* CGTKMenuShell.h */,
+				1441CE222088005900E9FD9F /* CGTKMenuShell.m */,
+				1441CE492088005F00E9FD9F /* CGTKMenuToolButton.h */,
+				1441CE352088005C00E9FD9F /* CGTKMenuToolButton.m */,
+				1441CE052088005400E9FD9F /* CGTKMessageDialog.h */,
+				1441CD9B2088004600E9FD9F /* CGTKMessageDialog.m */,
+				1441CE0C2088005500E9FD9F /* CGTKMisc.h */,
+				1441CE682088006400E9FD9F /* CGTKMisc.m */,
+				1441CE942088006E00E9FD9F /* CGTKModelButton.h */,
+				1441CE422088005E00E9FD9F /* CGTKModelButton.m */,
+				1441CE292088005A00E9FD9F /* CGTKNativeDialog.h */,
+				1441CE152088005700E9FD9F /* CGTKNativeDialog.m */,
+				1441CE502088006000E9FD9F /* CGTKNotebook.h */,
+				1441CE732088006600E9FD9F /* CGTKNotebook.m */,
+				1441CDEF2088005000E9FD9F /* CGTKOffscreenWindow.h */,
+				1441CE6B2088006400E9FD9F /* CGTKOffscreenWindow.m */,
+				1441CE122088005700E9FD9F /* CGTKOverlay.h */,
+				1441CE892088006D00E9FD9F /* CGTKOverlay.m */,
+				1441CDD92088004D00E9FD9F /* CGTKPaned.h */,
+				1441CD942088004500E9FD9F /* CGTKPaned.m */,
+				1441CE872088006C00E9FD9F /* CGTKPlacesSidebar.h */,
+				1441CD9A2088004600E9FD9F /* CGTKPlacesSidebar.m */,
+				1441CE882088006D00E9FD9F /* CGTKPopover.h */,
+				1441CE0D2088005500E9FD9F /* CGTKPopover.m */,
+				1441CDE12088004E00E9FD9F /* CGTKPopoverMenu.h */,
+				1441CDF92088005300E9FD9F /* CGTKPopoverMenu.m */,
+				1441CE632088006300E9FD9F /* CGTKProgressBar.h */,
+				1441CE742088006600E9FD9F /* CGTKProgressBar.m */,
+				1441CEA32088007100E9FD9F /* CGTKRadioButton.h */,
+				1441CD9C2088004600E9FD9F /* CGTKRadioButton.m */,
+				1441CE852088006C00E9FD9F /* CGTKRadioMenuItem.h */,
+				1441CD9D2088004600E9FD9F /* CGTKRadioMenuItem.m */,
+				1441CE2A2088005A00E9FD9F /* CGTKRadioToolButton.h */,
+				1441CE7F2088006B00E9FD9F /* CGTKRadioToolButton.m */,
+				1441CE9B2088007000E9FD9F /* CGTKRange.h */,
+				1441CEA12088007100E9FD9F /* CGTKRange.m */,
+				1441CDAC2088004700E9FD9F /* CGTKRecentChooserDialog.h */,
+				1441CDC22088004A00E9FD9F /* CGTKRecentChooserDialog.m */,
+				1441CE752088006800E9FD9F /* CGTKRecentChooserMenu.h */,
+				1441CE8E2088006E00E9FD9F /* CGTKRecentChooserMenu.m */,
+				1441CDD12088004C00E9FD9F /* CGTKRecentChooserWidget.h */,
+				1441CDE22088004F00E9FD9F /* CGTKRecentChooserWidget.m */,
+				1441CE0F2088005600E9FD9F /* CGTKRevealer.h */,
+				1441CDEB2088005000E9FD9F /* CGTKRevealer.m */,
+				1441CDB02088004800E9FD9F /* CGTKScale.h */,
+				1441CDB82088004900E9FD9F /* CGTKScale.m */,
+				1441CDD72088004D00E9FD9F /* CGTKScaleButton.h */,
+				1441CE182088005800E9FD9F /* CGTKScaleButton.m */,
+				1441CE5F2088006300E9FD9F /* CGTKScrollbar.h */,
+				1441CE0E2088005500E9FD9F /* CGTKScrollbar.m */,
+				1441CDB12088004800E9FD9F /* CGTKScrolledWindow.h */,
+				1441CE792088006900E9FD9F /* CGTKScrolledWindow.m */,
+				1441CD932088004500E9FD9F /* CGTKSearchBar.h */,
+				1441CD9E2088004600E9FD9F /* CGTKSearchBar.m */,
+				1441CE7A2088006900E9FD9F /* CGTKSearchEntry.h */,
+				1441CE312088005B00E9FD9F /* CGTKSearchEntry.m */,
+				1441CE832088006C00E9FD9F /* CGTKSeparator.h */,
+				1441CE1A2088005800E9FD9F /* CGTKSeparator.m */,
+				1441CDD52088004D00E9FD9F /* CGTKSeparatorMenuItem.h */,
+				1441CE4A2088005F00E9FD9F /* CGTKSeparatorMenuItem.m */,
+				1441CDE32088004F00E9FD9F /* CGTKSeparatorToolItem.h */,
+				1441CE5C2088006200E9FD9F /* CGTKSeparatorToolItem.m */,
+				1441CE5D2088006200E9FD9F /* CGTKShortcutsShortcut.h */,
+				1441CE692088006400E9FD9F /* CGTKShortcutsShortcut.m */,
+				1441CE2B2088005B00E9FD9F /* CGTKSignalConnector.h */,
+				1441CE432088005E00E9FD9F /* CGTKSignalConnector.m */,
+				1441CE322088005C00E9FD9F /* CGTKSignalData.h */,
+				1441CDCD2088004B00E9FD9F /* CGTKSignalData.m */,
+				1441CE9C2088007000E9FD9F /* CGTKSpinButton.h */,
+				1441CE192088005800E9FD9F /* CGTKSpinButton.m */,
+				1441CE3B2088005D00E9FD9F /* CGTKSpinner.h */,
+				1441CDC62088004A00E9FD9F /* CGTKSpinner.m */,
+				1441CDCC2088004B00E9FD9F /* CGTKStack.h */,
+				1441CE6F2088006500E9FD9F /* CGTKStack.m */,
+				1441CDB32088004800E9FD9F /* CGTKStackSidebar.h */,
+				1441CDCA2088004B00E9FD9F /* CGTKStackSidebar.m */,
+				1441CDFB2088005300E9FD9F /* CGTKStackSwitcher.h */,
+				1441CE4D2088006000E9FD9F /* CGTKStackSwitcher.m */,
+				1441CDEA2088005000E9FD9F /* CGTKStatusbar.h */,
+				1441CDD62088004D00E9FD9F /* CGTKStatusbar.m */,
+				1441CE842088006C00E9FD9F /* CGTKSwitch.h */,
+				1441CDB62088004800E9FD9F /* CGTKSwitch.m */,
+				1441CDAD2088004700E9FD9F /* CGTKTable.h */,
+				1441CEA52088007100E9FD9F /* CGTKTable.m */,
+				1441CE162088005800E9FD9F /* CGTKTearoffMenuItem.h */,
+				1441CDA92088004700E9FD9F /* CGTKTearoffMenuItem.m */,
+				1441CE602088006300E9FD9F /* CGTKTextView.h */,
+				1441CE962088006F00E9FD9F /* CGTKTextView.m */,
+				1441CE902088006E00E9FD9F /* CGTKToggleButton.h */,
+				1441CDC72088004B00E9FD9F /* CGTKToggleButton.m */,
+				1441CDA32088004600E9FD9F /* CGTKToggleToolButton.h */,
+				1441CE922088006E00E9FD9F /* CGTKToggleToolButton.m */,
+				1441CE412088005E00E9FD9F /* CGTKToolbar.h */,
+				1441CE2D2088005B00E9FD9F /* CGTKToolbar.m */,
+				1441CE4B2088006000E9FD9F /* CGTKToolButton.h */,
+				1441CE442088005E00E9FD9F /* CGTKToolButton.m */,
+				1441CDFD2088005300E9FD9F /* CGTKToolItem.h */,
+				1441CE372088005C00E9FD9F /* CGTKToolItem.m */,
+				1441CE062088005400E9FD9F /* CGTKToolItemGroup.h */,
+				1441CDED2088005000E9FD9F /* CGTKToolItemGroup.m */,
+				1441CE782088006900E9FD9F /* CGTKToolPalette.h */,
+				1441CEA62088007100E9FD9F /* CGTKToolPalette.m */,
+				1441CDFF2088005300E9FD9F /* CGTKTreeView.h */,
+				1441CE172088005800E9FD9F /* CGTKTreeView.m */,
+				1441CDFC2088005300E9FD9F /* CGTKTypeWrapper.h */,
+				1441CEA82088007200E9FD9F /* CGTKTypeWrapper.m */,
+				1441CDF02088005000E9FD9F /* CGTKVBox.h */,
+				1441CE9D2088007000E9FD9F /* CGTKVBox.m */,
+				1441CE3A2088005D00E9FD9F /* CGTKVButtonBox.h */,
+				1441CDC32088004A00E9FD9F /* CGTKVButtonBox.m */,
+				1441CDFE2088005300E9FD9F /* CGTKViewport.h */,
+				1441CDC92088004B00E9FD9F /* CGTKViewport.m */,
+				1441CE812088006C00E9FD9F /* CGTKVolumeButton.h */,
+				1441CDC82088004B00E9FD9F /* CGTKVolumeButton.m */,
+				1441CE3C2088005D00E9FD9F /* CGTKVPaned.h */,
+				1441CE202088005900E9FD9F /* CGTKVPaned.m */,
+				1441CE102088005600E9FD9F /* CGTKVScale.h */,
+				1441CE3F2088005E00E9FD9F /* CGTKVScale.m */,
+				1441CDA62088004700E9FD9F /* CGTKVScrollbar.h */,
+				1441CE002088005400E9FD9F /* CGTKVScrollbar.m */,
+				1441CDBF2088004A00E9FD9F /* CGTKVSeparator.h */,
+				1441CE8D2088006D00E9FD9F /* CGTKVSeparator.m */,
+				1441CE932088006E00E9FD9F /* CGTKWidget.h */,
+				1441CE702088006500E9FD9F /* CGTKWidget.m */,
+				1441CE032088005400E9FD9F /* CGTKWindow.h */,
+				1441CE0A2088005500E9FD9F /* CGTKWindow.m */,
+			);
+			name = CoreGTK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1441CEAB2088033900E9FD9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1441CECB2088037300E9FD9F /* CGTKAspectFrame.h in Headers */,
+				1441CF6B2088037400E9FD9F /* CGTKRadioButton.h in Headers */,
+				1441CEDB2088037300E9FD9F /* CGTKButtonBox.h in Headers */,
+				1441CF9D2088037400E9FD9F /* CGTKStatusbar.h in Headers */,
+				1441CF692088037400E9FD9F /* CGTKProgressBar.h in Headers */,
+				1441CFA52088037400E9FD9F /* CGTKTextView.h in Headers */,
+				1441CEF12088037300E9FD9F /* CGTKComboBox.h in Headers */,
+				1441CF3F2088037300E9FD9F /* CGTKLinkButton.h in Headers */,
+				1441CF252088037300E9FD9F /* CGTKHPaned.h in Headers */,
+				1441CEE12088037300E9FD9F /* CGTKCellView.h in Headers */,
+				1441CF0B2088037300E9FD9F /* CGTKFlowBoxChild.h in Headers */,
+				1441CF192088037300E9FD9F /* CGTKGLArea.h in Headers */,
+				1441CED52088037300E9FD9F /* CGTKBox.h in Headers */,
+				1441CF6F2088037400E9FD9F /* CGTKRadioToolButton.h in Headers */,
+				1441CEE52088037300E9FD9F /* CGTKCheckMenuItem.h in Headers */,
+				1441CF1B2088037300E9FD9F /* CGTKGrid.h in Headers */,
+				1441CF9F2088037400E9FD9F /* CGTKSwitch.h in Headers */,
+				1441CFBF2088037400E9FD9F /* CGTKVolumeButton.h in Headers */,
+				1441CF4B2088037300E9FD9F /* CGTKMenuButton.h in Headers */,
+				1441CFAF2088037400E9FD9F /* CGTKToolItem.h in Headers */,
+				1441CFC32088037400E9FD9F /* CGTKVScale.h in Headers */,
+				1441CF932088037400E9FD9F /* CGTKSpinButton.h in Headers */,
+				1441CF3D2088037300E9FD9F /* CGTKLevelBar.h in Headers */,
+				1441CF852088037400E9FD9F /* CGTKSearchEntry.h in Headers */,
+				1441CFC12088037400E9FD9F /* CGTKVPaned.h in Headers */,
+				1441CF532088037300E9FD9F /* CGTKMessageDialog.h in Headers */,
+				1441CFAB2088037400E9FD9F /* CGTKToolbar.h in Headers */,
+				1441CFB92088037400E9FD9F /* CGTKVBox.h in Headers */,
+				1441CFCB2088037400E9FD9F /* CGTKWindow.h in Headers */,
+				1441CFB72088037400E9FD9F /* CGTKTypeWrapper.h in Headers */,
+				1441CEBF2088037300E9FD9F /* CGTKAlignment.h in Headers */,
+				1441CF132088037300E9FD9F /* CGTKFontSelection.h in Headers */,
+				1441CED32088037300E9FD9F /* CGTKBin.h in Headers */,
+				1441CF332088037300E9FD9F /* CGTKImageMenuItem.h in Headers */,
+				1441CF572088037300E9FD9F /* CGTKModelButton.h in Headers */,
+				1441CF772088037400E9FD9F /* CGTKRecentChooserWidget.h in Headers */,
+				1441CF4D2088037300E9FD9F /* CGTKMenuItem.h in Headers */,
+				1441CFBD2088037400E9FD9F /* CGTKViewport.h in Headers */,
+				1441CFC72088037400E9FD9F /* CGTKVSeparator.h in Headers */,
+				1441CFBB2088037400E9FD9F /* CGTKVButtonBox.h in Headers */,
+				1441CF3B2088037300E9FD9F /* CGTKLayout.h in Headers */,
+				1441CF812088037400E9FD9F /* CGTKScrolledWindow.h in Headers */,
+				1441CEF72088037300E9FD9F /* CGTKDialog.h in Headers */,
+				1441CF112088037300E9FD9F /* CGTKFontChooserWidget.h in Headers */,
+				1441CEB72088037300E9FD9F /* CGTK.h in Headers */,
+				1441CF5B2088037300E9FD9F /* CGTKNotebook.h in Headers */,
+				1441CF492088037300E9FD9F /* CGTKMenuBar.h in Headers */,
+				1441CEF32088037300E9FD9F /* CGTKComboBoxText.h in Headers */,
+				1441CF5D2088037400E9FD9F /* CGTKOffscreenWindow.h in Headers */,
+				1441CF752088037400E9FD9F /* CGTKRecentChooserMenu.h in Headers */,
+				1441CEF92088037300E9FD9F /* CGTKDrawingArea.h in Headers */,
+				1441CEED2088037300E9FD9F /* CGTKColorSelection.h in Headers */,
+				1441CF052088037300E9FD9F /* CGTKFileChooserWidget.h in Headers */,
+				1441CF652088037400E9FD9F /* CGTKPopover.h in Headers */,
+				1441CF4F2088037300E9FD9F /* CGTKMenuShell.h in Headers */,
+				1441CF832088037400E9FD9F /* CGTKSearchBar.h in Headers */,
+				1441CEE32088037300E9FD9F /* CGTKCheckButton.h in Headers */,
+				1441CF712088037400E9FD9F /* CGTKRange.h in Headers */,
+				1441CF732088037400E9FD9F /* CGTKRecentChooserDialog.h in Headers */,
+				1441CF312088037300E9FD9F /* CGTKImage.h in Headers */,
+				1441CF8D2088037400E9FD9F /* CGTKShortcutsShortcut.h in Headers */,
+				1441CF892088037400E9FD9F /* CGTKSeparatorMenuItem.h in Headers */,
+				1441CEBD2088037300E9FD9F /* CGTKActionBar.h in Headers */,
+				1441CEFF2088037300E9FD9F /* CGTKExpander.h in Headers */,
+				1441CF672088037400E9FD9F /* CGTKPopoverMenu.h in Headers */,
+				1441CEC12088037300E9FD9F /* CGTKAppChooserButton.h in Headers */,
+				1441CF152088037300E9FD9F /* CGTKFontSelectionDialog.h in Headers */,
+				1441CFA72088037400E9FD9F /* CGTKToggleButton.h in Headers */,
+				1441CF072088037300E9FD9F /* CGTKFixed.h in Headers */,
+				1441CF172088037300E9FD9F /* CGTKFrame.h in Headers */,
+				1441CF2B2088037300E9FD9F /* CGTKHSeparator.h in Headers */,
+				1441CF6D2088037400E9FD9F /* CGTKRadioMenuItem.h in Headers */,
+				1441CEFD2088037300E9FD9F /* CGTKEventBox.h in Headers */,
+				1441CF8B2088037400E9FD9F /* CGTKSeparatorToolItem.h in Headers */,
+				1441CF2D2088037300E9FD9F /* CGTKHSV.h in Headers */,
+				1441CEE92088037300E9FD9F /* CGTKColorChooserDialog.h in Headers */,
+				1441CF092088037300E9FD9F /* CGTKFlowBox.h in Headers */,
+				1441CEC32088037300E9FD9F /* CGTKAppChooserDialog.h in Headers */,
+				1441CEC92088037300E9FD9F /* CGTKArrow.h in Headers */,
+				1441CEF52088037300E9FD9F /* CGTKContainer.h in Headers */,
+				1441CEC52088037300E9FD9F /* CGTKAppChooserWidget.h in Headers */,
+				1441CF032088037300E9FD9F /* CGTKFileChooserDialog.h in Headers */,
+				1441CED72088037300E9FD9F /* CGTKBuilder.h in Headers */,
+				1441CF8F2088037400E9FD9F /* CGTKSignalConnector.h in Headers */,
+				1441CECD2088037300E9FD9F /* CGTKAssistant.h in Headers */,
+				1441CF452088037300E9FD9F /* CGTKLockButton.h in Headers */,
+				1441CEEB2088037300E9FD9F /* CGTKColorChooserWidget.h in Headers */,
+				1441CF392088037300E9FD9F /* CGTKLabel.h in Headers */,
+				1441CF472088037300E9FD9F /* CGTKMenu.h in Headers */,
+				1441CF372088037300E9FD9F /* CGTKInvisible.h in Headers */,
+				1441CF952088037400E9FD9F /* CGTKSpinner.h in Headers */,
+				1441CFC52088037400E9FD9F /* CGTKVScrollbar.h in Headers */,
+				1441CFB12088037400E9FD9F /* CGTKToolItemGroup.h in Headers */,
+				1441CEB92088037300E9FD9F /* CGTKAboutDialog.h in Headers */,
+				1441CF212088037300E9FD9F /* CGTKHButtonBox.h in Headers */,
+				1441CF872088037400E9FD9F /* CGTKSeparator.h in Headers */,
+				1441CF432088037300E9FD9F /* CGTKListBoxRow.h in Headers */,
+				1441CF2F2088037300E9FD9F /* CGTKIconView.h in Headers */,
+				1441CF352088037300E9FD9F /* CGTKInfoBar.h in Headers */,
+				1441CF7D2088037400E9FD9F /* CGTKScaleButton.h in Headers */,
+				1441CF992088037400E9FD9F /* CGTKStackSidebar.h in Headers */,
+				1441CFAD2088037400E9FD9F /* CGTKToolButton.h in Headers */,
+				1441CF592088037300E9FD9F /* CGTKNativeDialog.h in Headers */,
+				1441CF012088037300E9FD9F /* CGTKFileChooserButton.h in Headers */,
+				1441CFA12088037400E9FD9F /* CGTKTable.h in Headers */,
+				1441CEE72088037300E9FD9F /* CGTKColorButton.h in Headers */,
+				1441CF9B2088037400E9FD9F /* CGTKStackSwitcher.h in Headers */,
+				1441CF7B2088037400E9FD9F /* CGTKScale.h in Headers */,
+				1441CF972088037400E9FD9F /* CGTKStack.h in Headers */,
+				1441CF632088037400E9FD9F /* CGTKPlacesSidebar.h in Headers */,
+				1441CF412088037300E9FD9F /* CGTKListBox.h in Headers */,
+				1441CED92088037300E9FD9F /* CGTKButton.h in Headers */,
+				1441CEDD2088037300E9FD9F /* CGTKCalendar.h in Headers */,
+				1441CF612088037400E9FD9F /* CGTKPaned.h in Headers */,
+				1441CFA32088037400E9FD9F /* CGTKTearoffMenuItem.h in Headers */,
+				1441CF1F2088037300E9FD9F /* CGTKHBox.h in Headers */,
+				1441CECF2088037300E9FD9F /* CGTKBase.h in Headers */,
+				1441CEDF2088037300E9FD9F /* CGTKCallbackData.h in Headers */,
+				1441CF5F2088037400E9FD9F /* CGTKOverlay.h in Headers */,
+				1441CFA92088037400E9FD9F /* CGTKToggleToolButton.h in Headers */,
+				1441CF0F2088037300E9FD9F /* CGTKFontChooserDialog.h in Headers */,
+				1441CF912088037400E9FD9F /* CGTKSignalData.h in Headers */,
+				1441CFC92088037400E9FD9F /* CGTKWidget.h in Headers */,
+				1441CF272088037300E9FD9F /* CGTKHScale.h in Headers */,
+				1441CF552088037300E9FD9F /* CGTKMisc.h in Headers */,
+				1441CF0D2088037300E9FD9F /* CGTKFontButton.h in Headers */,
+				1441CEBB2088037300E9FD9F /* CGTKAccelLabel.h in Headers */,
+				1441CFB32088037400E9FD9F /* CGTKToolPalette.h in Headers */,
+				1441CED12088037300E9FD9F /* CGTKBaseBuilder.h in Headers */,
+				1441CEEF2088037300E9FD9F /* CGTKColorSelectionDialog.h in Headers */,
+				1441CF792088037400E9FD9F /* CGTKRevealer.h in Headers */,
+				1441CFB52088037400E9FD9F /* CGTKTreeView.h in Headers */,
+				1441CF292088037300E9FD9F /* CGTKHScrollbar.h in Headers */,
+				1441CF7F2088037400E9FD9F /* CGTKScrollbar.h in Headers */,
+				1441CEFB2088037300E9FD9F /* CGTKEntry.h in Headers */,
+				1441CF512088037300E9FD9F /* CGTKMenuToolButton.h in Headers */,
+				1441CF232088037300E9FD9F /* CGTKHeaderBar.h in Headers */,
+				1441CEC72088037300E9FD9F /* CGTKApplicationWindow.h in Headers */,
+				1441CF1D2088037300E9FD9F /* CGTKHandleBox.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1441CEAC2088033900E9FD9F /* CoreGTK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1441CEB32088033900E9FD9F /* Build configuration list for PBXNativeTarget "CoreGTK" */;
+			buildPhases = (
+				1441CEB62088034F00E9FD9F /* ShellScript */,
+				1441CEA92088033900E9FD9F /* Sources */,
+				1441CEAA2088033900E9FD9F /* Frameworks */,
+				1441CEAB2088033900E9FD9F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreGTK;
+			productName = CoreGTK;
+			productReference = 1441CEAD2088033900E9FD9F /* libCoreGTK.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1441CCDE2087F19200E9FD9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Yury Vovk";
+				TargetAttributes = {
+					1441CEAC2088033900E9FD9F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1441CCE12087F19200E9FD9F /* Build configuration list for PBXProject "CoreGTK" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1441CCDD2087F19200E9FD9F;
+			productRefGroup = 1441CCE72087F19200E9FD9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1441CEAC2088033900E9FD9F /* CoreGTK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1441CEB62088034F00E9FD9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${SRCROOT}/src\"\n\"${SRCROOT}/src/coregtkgen\"\ncd \"${SRCROOT}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1441CEA92088033900E9FD9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1441CEF82088037300E9FD9F /* CGTKDialog.m in Sources */,
+				1441CF542088037300E9FD9F /* CGTKMessageDialog.m in Sources */,
+				1441CEDE2088037300E9FD9F /* CGTKCalendar.m in Sources */,
+				1441CF022088037300E9FD9F /* CGTKFileChooserButton.m in Sources */,
+				1441CF762088037400E9FD9F /* CGTKRecentChooserMenu.m in Sources */,
+				1441CF0C2088037300E9FD9F /* CGTKFlowBoxChild.m in Sources */,
+				1441CFC22088037400E9FD9F /* CGTKVPaned.m in Sources */,
+				1441CEE62088037300E9FD9F /* CGTKCheckMenuItem.m in Sources */,
+				1441CF682088037400E9FD9F /* CGTKPopoverMenu.m in Sources */,
+				1441CF822088037400E9FD9F /* CGTKScrolledWindow.m in Sources */,
+				1441CED02088037300E9FD9F /* CGTKBase.m in Sources */,
+				1441CECA2088037300E9FD9F /* CGTKArrow.m in Sources */,
+				1441CF842088037400E9FD9F /* CGTKSearchBar.m in Sources */,
+				1441CF882088037400E9FD9F /* CGTKSeparator.m in Sources */,
+				1441CFC62088037400E9FD9F /* CGTKVScrollbar.m in Sources */,
+				1441CF402088037300E9FD9F /* CGTKLinkButton.m in Sources */,
+				1441CEFE2088037300E9FD9F /* CGTKEventBox.m in Sources */,
+				1441CED42088037300E9FD9F /* CGTKBin.m in Sources */,
+				1441CFC82088037400E9FD9F /* CGTKVSeparator.m in Sources */,
+				1441CEEE2088037300E9FD9F /* CGTKColorSelection.m in Sources */,
+				1441CF582088037300E9FD9F /* CGTKModelButton.m in Sources */,
+				1441CEC02088037300E9FD9F /* CGTKAlignment.m in Sources */,
+				1441CF0E2088037300E9FD9F /* CGTKFontButton.m in Sources */,
+				1441CF802088037400E9FD9F /* CGTKScrollbar.m in Sources */,
+				1441CF782088037400E9FD9F /* CGTKRecentChooserWidget.m in Sources */,
+				1441CF5A2088037300E9FD9F /* CGTKNativeDialog.m in Sources */,
+				1441CEBC2088037300E9FD9F /* CGTKAccelLabel.m in Sources */,
+				1441CF742088037400E9FD9F /* CGTKRecentChooserDialog.m in Sources */,
+				1441CFA02088037400E9FD9F /* CGTKSwitch.m in Sources */,
+				1441CF4E2088037300E9FD9F /* CGTKMenuItem.m in Sources */,
+				1441CFC02088037400E9FD9F /* CGTKVolumeButton.m in Sources */,
+				1441CF282088037300E9FD9F /* CGTKHScale.m in Sources */,
+				1441CFAC2088037400E9FD9F /* CGTKToolbar.m in Sources */,
+				1441CF502088037300E9FD9F /* CGTKMenuShell.m in Sources */,
+				1441CF942088037400E9FD9F /* CGTKSpinButton.m in Sources */,
+				1441CF7C2088037400E9FD9F /* CGTKScale.m in Sources */,
+				1441CF2E2088037300E9FD9F /* CGTKHSV.m in Sources */,
+				1441CF042088037300E9FD9F /* CGTKFileChooserDialog.m in Sources */,
+				1441CFB42088037400E9FD9F /* CGTKToolPalette.m in Sources */,
+				1441CEE82088037300E9FD9F /* CGTKColorButton.m in Sources */,
+				1441CF902088037400E9FD9F /* CGTKSignalConnector.m in Sources */,
+				1441CF082088037300E9FD9F /* CGTKFixed.m in Sources */,
+				1441CEEA2088037300E9FD9F /* CGTKColorChooserDialog.m in Sources */,
+				1441CF9A2088037400E9FD9F /* CGTKStackSidebar.m in Sources */,
+				1441CFCA2088037400E9FD9F /* CGTKWidget.m in Sources */,
+				1441CF702088037400E9FD9F /* CGTKRadioToolButton.m in Sources */,
+				1441CEE02088037300E9FD9F /* CGTKCallbackData.m in Sources */,
+				1441CF642088037400E9FD9F /* CGTKPlacesSidebar.m in Sources */,
+				1441CFAE2088037400E9FD9F /* CGTKToolButton.m in Sources */,
+				1441CF4C2088037300E9FD9F /* CGTKMenuButton.m in Sources */,
+				1441CED82088037300E9FD9F /* CGTKBuilder.m in Sources */,
+				1441CF5C2088037400E9FD9F /* CGTKNotebook.m in Sources */,
+				1441CEC82088037300E9FD9F /* CGTKApplicationWindow.m in Sources */,
+				1441CF7E2088037400E9FD9F /* CGTKScaleButton.m in Sources */,
+				1441CF382088037300E9FD9F /* CGTKInvisible.m in Sources */,
+				1441CED62088037300E9FD9F /* CGTKBox.m in Sources */,
+				1441CF062088037300E9FD9F /* CGTKFileChooserWidget.m in Sources */,
+				1441CF722088037400E9FD9F /* CGTKRange.m in Sources */,
+				1441CF962088037400E9FD9F /* CGTKSpinner.m in Sources */,
+				1441CF982088037400E9FD9F /* CGTKStack.m in Sources */,
+				1441CEE42088037300E9FD9F /* CGTKCheckButton.m in Sources */,
+				1441CF102088037300E9FD9F /* CGTKFontChooserDialog.m in Sources */,
+				1441CEC62088037300E9FD9F /* CGTKAppChooserWidget.m in Sources */,
+				1441CF2C2088037300E9FD9F /* CGTKHSeparator.m in Sources */,
+				1441CF522088037300E9FD9F /* CGTKMenuToolButton.m in Sources */,
+				1441CF9E2088037400E9FD9F /* CGTKStatusbar.m in Sources */,
+				1441CF342088037300E9FD9F /* CGTKImageMenuItem.m in Sources */,
+				1441CFA42088037400E9FD9F /* CGTKTearoffMenuItem.m in Sources */,
+				1441CF122088037300E9FD9F /* CGTKFontChooserWidget.m in Sources */,
+				1441CF6E2088037400E9FD9F /* CGTKRadioMenuItem.m in Sources */,
+				1441CF202088037300E9FD9F /* CGTKHBox.m in Sources */,
+				1441CEDC2088037300E9FD9F /* CGTKButtonBox.m in Sources */,
+				1441CF8A2088037400E9FD9F /* CGTKSeparatorMenuItem.m in Sources */,
+				1441CF182088037300E9FD9F /* CGTKFrame.m in Sources */,
+				1441CFB82088037400E9FD9F /* CGTKTypeWrapper.m in Sources */,
+				1441CFB02088037400E9FD9F /* CGTKToolItem.m in Sources */,
+				1441CECE2088037300E9FD9F /* CGTKAssistant.m in Sources */,
+				1441CF142088037300E9FD9F /* CGTKFontSelection.m in Sources */,
+				1441CFA22088037400E9FD9F /* CGTKTable.m in Sources */,
+				1441CEBA2088037300E9FD9F /* CGTKAboutDialog.m in Sources */,
+				1441CFCC2088037400E9FD9F /* CGTKWindow.m in Sources */,
+				1441CEEC2088037300E9FD9F /* CGTKColorChooserWidget.m in Sources */,
+				1441CF322088037300E9FD9F /* CGTKImage.m in Sources */,
+				1441CF002088037300E9FD9F /* CGTKExpander.m in Sources */,
+				1441CF8C2088037400E9FD9F /* CGTKSeparatorToolItem.m in Sources */,
+				1441CFBA2088037400E9FD9F /* CGTKVBox.m in Sources */,
+				1441CFAA2088037400E9FD9F /* CGTKToggleToolButton.m in Sources */,
+				1441CF1C2088037300E9FD9F /* CGTKGrid.m in Sources */,
+				1441CEBE2088037300E9FD9F /* CGTKActionBar.m in Sources */,
+				1441CED22088037300E9FD9F /* CGTKBaseBuilder.m in Sources */,
+				1441CF2A2088037300E9FD9F /* CGTKHScrollbar.m in Sources */,
+				1441CEFC2088037300E9FD9F /* CGTKEntry.m in Sources */,
+				1441CEF62088037300E9FD9F /* CGTKContainer.m in Sources */,
+				1441CFBC2088037400E9FD9F /* CGTKVButtonBox.m in Sources */,
+				1441CECC2088037300E9FD9F /* CGTKAspectFrame.m in Sources */,
+				1441CF302088037300E9FD9F /* CGTKIconView.m in Sources */,
+				1441CEF42088037300E9FD9F /* CGTKComboBoxText.m in Sources */,
+				1441CEFA2088037300E9FD9F /* CGTKDrawingArea.m in Sources */,
+				1441CF1A2088037300E9FD9F /* CGTKGLArea.m in Sources */,
+				1441CF362088037300E9FD9F /* CGTKInfoBar.m in Sources */,
+				1441CEDA2088037300E9FD9F /* CGTKButton.m in Sources */,
+				1441CEC22088037300E9FD9F /* CGTKAppChooserButton.m in Sources */,
+				1441CF1E2088037300E9FD9F /* CGTKHandleBox.m in Sources */,
+				1441CF862088037400E9FD9F /* CGTKSearchEntry.m in Sources */,
+				1441CFA62088037400E9FD9F /* CGTKTextView.m in Sources */,
+				1441CF0A2088037300E9FD9F /* CGTKFlowBox.m in Sources */,
+				1441CF462088037300E9FD9F /* CGTKLockButton.m in Sources */,
+				1441CFB22088037400E9FD9F /* CGTKToolItemGroup.m in Sources */,
+				1441CF602088037400E9FD9F /* CGTKOverlay.m in Sources */,
+				1441CF162088037300E9FD9F /* CGTKFontSelectionDialog.m in Sources */,
+				1441CFD0208808A600E9FD9F /* Makefile in Sources */,
+				1441CF3A2088037300E9FD9F /* CGTKLabel.m in Sources */,
+				1441CF262088037300E9FD9F /* CGTKHPaned.m in Sources */,
+				1441CEC42088037300E9FD9F /* CGTKAppChooserDialog.m in Sources */,
+				1441CF482088037300E9FD9F /* CGTKMenu.m in Sources */,
+				1441CF922088037400E9FD9F /* CGTKSignalData.m in Sources */,
+				1441CF4A2088037300E9FD9F /* CGTKMenuBar.m in Sources */,
+				1441CF6C2088037400E9FD9F /* CGTKRadioButton.m in Sources */,
+				1441CF5E2088037400E9FD9F /* CGTKOffscreenWindow.m in Sources */,
+				1441CEF02088037300E9FD9F /* CGTKColorSelectionDialog.m in Sources */,
+				1441CF6A2088037400E9FD9F /* CGTKProgressBar.m in Sources */,
+				1441CF662088037400E9FD9F /* CGTKPopover.m in Sources */,
+				1441CEF22088037300E9FD9F /* CGTKComboBox.m in Sources */,
+				1441CF222088037300E9FD9F /* CGTKHButtonBox.m in Sources */,
+				1441CF7A2088037400E9FD9F /* CGTKRevealer.m in Sources */,
+				1441CFC42088037400E9FD9F /* CGTKVScale.m in Sources */,
+				1441CFBE2088037400E9FD9F /* CGTKViewport.m in Sources */,
+				1441CFA82088037400E9FD9F /* CGTKToggleButton.m in Sources */,
+				1441CF3E2088037300E9FD9F /* CGTKLevelBar.m in Sources */,
+				1441CF242088037300E9FD9F /* CGTKHeaderBar.m in Sources */,
+				1441CF622088037400E9FD9F /* CGTKPaned.m in Sources */,
+				1441CF9C2088037400E9FD9F /* CGTKStackSwitcher.m in Sources */,
+				1441CF562088037300E9FD9F /* CGTKMisc.m in Sources */,
+				1441CF8E2088037400E9FD9F /* CGTKShortcutsShortcut.m in Sources */,
+				1441CF3C2088037300E9FD9F /* CGTKLayout.m in Sources */,
+				1441CEB82088037300E9FD9F /* CGTK.m in Sources */,
+				1441CF422088037300E9FD9F /* CGTKListBox.m in Sources */,
+				1441CFB62088037400E9FD9F /* CGTKTreeView.m in Sources */,
+				1441CF442088037300E9FD9F /* CGTKListBoxRow.m in Sources */,
+				1441CEE22088037300E9FD9F /* CGTKCellView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1441CCED2087F19200E9FD9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1441CCEE2087F19200E9FD9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1441CEB42088033900E9FD9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1441CEB52088033900E9FD9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1441CCE12087F19200E9FD9F /* Build configuration list for PBXProject "CoreGTK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1441CCED2087F19200E9FD9F /* Debug */,
+				1441CCEE2087F19200E9FD9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1441CEB32088033900E9FD9F /* Build configuration list for PBXNativeTarget "CoreGTK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1441CEB42088033900E9FD9F /* Debug */,
+				1441CEB52088033900E9FD9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1441CCDE2087F19200E9FD9F /* Project object */;
+}

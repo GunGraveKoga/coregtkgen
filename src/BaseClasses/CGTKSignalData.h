@@ -42,7 +42,7 @@
 	BOOL retained;
 }
 
--(id)initWithTarget:(id) target selector:(SEL) selector data:(void *) data;
+-(instancetype)initWithTarget:(id) target selector:(SEL) selector data:(void *) data;
 -(id)target;
 -(SEL)selector;
 -(void*)data;
